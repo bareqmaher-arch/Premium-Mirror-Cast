@@ -119,15 +119,15 @@ pub mod qobject {
         #[qproperty(QString, mirror_quality)]
         /// Send the clipboard to the phone when control moves to it.
         #[qproperty(bool, flow_follow_clipboard)]
-        /// Floating Nectar Island pill at the top center of the screen.
+        /// Floating Cast Island pill at the top center of the screen.
         #[qproperty(bool, nectar_island)]
-        /// Trigger Nectar Island for phone calls.
+        /// Trigger Cast Island for phone calls.
         #[qproperty(bool, nectar_island_calls)]
-        /// Trigger Nectar Island for file transfers.
+        /// Trigger Cast Island for file transfers.
         #[qproperty(bool, nectar_island_transfers)]
-        /// Trigger Nectar Island for media playback.
+        /// Trigger Cast Island for media playback.
         #[qproperty(bool, nectar_island_media)]
-        /// Trigger Nectar Island for phone notifications.
+        /// Trigger Cast Island for phone notifications.
         #[qproperty(bool, nectar_island_notifications)]
         /// Stream PC system audio to the connected phone via WASAPI loopback.
         #[qproperty(bool, stream_pc_audio_to_phone)]

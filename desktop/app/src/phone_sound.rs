@@ -217,7 +217,7 @@ fn start(device: DeviceId, name: String, quiet: bool) {
             show_message(match e {
                 Error::Denied => tr!("PhoneSound", "Mirroring is turned off for this phone."),
                 Error::Unsupported => {
-                    tr!("PhoneSound", "Update NectarLink on %1 to play its sound here.", name)
+                    tr!("PhoneSound", "Update Premium Cast on %1 to play its sound here.", name)
                 }
                 Error::Offline | Error::NotPaired => tr!("PhoneSound", "The phone isn't connected."),
                 // The phone couldn't show its request (notifications off, say).
@@ -225,7 +225,7 @@ fn start(device: DeviceId, name: String, quiet: bool) {
                     tracing::warn!(error = %e, "the phone couldn't share its sound");
                     tr!(
                         "PhoneSound",
-                        "%1 couldn't ask to share its sound. Check that NectarLink can show notifications on the phone.",
+                        "%1 couldn't ask to share its sound. Check that Premium Cast can show notifications on the phone.",
                         name
                     )
                 }

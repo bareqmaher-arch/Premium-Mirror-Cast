@@ -24,7 +24,7 @@ Window {
     // Recording and a dark phone screen show in the title, where they cover
     // nothing of the app (#340).
     title: [info.app ? qsTr("%1 · %2").arg(info.title).arg(deviceName)
-                     : deviceName.length > 0 ? qsTr("%1 · NectarLink").arg(deviceName) : qsTr("Phone screen · NectarLink"),
+                     : deviceName.length > 0 ? qsTr("%1 · Premium Cast").arg(deviceName) : qsTr("Phone screen · Premium Cast"),
             info.recording === true ? qsTr("Recording") : "",
             info.screenOff === true ? qsTr("Phone screen off") : ""].filter(t => t.length > 0).join(" · ")
     color: "black"
@@ -924,7 +924,7 @@ Window {
             wrapMode: Text.WordWrap
             role: "bodySmall"
             color: "white"
-            text: qsTr("To control the phone, turn on Control from your PC in NectarLink's settings on the phone.")
+            text: qsTr("To control the phone, turn on Control from your PC in Premium Cast's settings on the phone.")
         }
         Button {
             id: notifyPhoneBtn

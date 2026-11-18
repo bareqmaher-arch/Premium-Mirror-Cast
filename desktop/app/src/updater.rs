@@ -45,7 +45,7 @@ use crate::{
     feed::{self, RELEASE_DOWNLOADS},
     state::Changes,
     version::{self, Channel},
-    win::{autostart, http, toast},
+    win::{http, toast},
 };
 
 const LATEST: &str = "https://api.github.com/repos/thtbee/nectarlink/releases/latest";
@@ -220,7 +220,9 @@ pub fn set_auto_install(on: bool) {
 /// Whether this copy updates itself (an installed one, not a build run
 /// from its folder).
 pub fn can_update() -> bool {
-    std::env::current_exe().is_ok_and(|exe| autostart::is_installed(&exe))
+    // Premium Cast never updates itself: the original project's releases
+    // would replace this build (and its name, design and changes).
+    false
 }
 
 /// Checks soon after startup, then on the channel's schedule ([`check_every`])
@@ -271,6 +273,10 @@ pub fn start() {
 /// Checks now (blocking). `told`: the user asked, so say "up to date" too.
 /// Returns what to tell the user.
 pub fn check_now(told: bool) -> Option<String> {
+    // Premium Cast: no update source, so nothing is ever fetched.
+    if !can_update() {
+        return told.then(|| "Premium Cast doesn't update itself. Install a newer build to update.".to_owned());
+    }
     if CHECKING.swap(true, Ordering::AcqRel) {
         return None;
     }
@@ -284,7 +290,7 @@ pub fn check_now(told: bool) -> Option<String> {
             if new {
                 announce(&update);
             }
-            Some(tr!("Updater", "NectarLink %1 is available.", update.title()))
+            Some(tr!("Updater", "Premium Cast %1 is available.", update.title()))
         }
         Ok(None) => {
             // Nothing newer on this channel now (it may have just changed):
@@ -292,7 +298,7 @@ pub fn check_now(told: bool) -> Option<String> {
             if found().take().is_some() {
                 core_host::host().hub.update(|_| Changes::UPDATE);
             }
-            told.then(|| tr!("Updater", "NectarLink is up to date."))
+            told.then(|| tr!("Updater", "Premium Cast is up to date."))
         }
         Err(e) => {
             tracing::info!(error = %e, "couldn't check for updates");
@@ -305,9 +311,9 @@ fn announce(update: &Update) {
     toast::show(toast::Toast {
         device: TOAST_GROUP.into(),
         key: update.version.clone(),
-        title: tr!("Updater", "NectarLink %1 is available", update.title()),
+        title: tr!("Updater", "Premium Cast %1 is available", update.title()),
         body: tr!("Updater", "Update now, or later from Settings."),
-        attribution: "NectarLink".into(),
+        attribution: "Premium Cast".into(),
         icon: None,
         image: None,
         actions: vec![(ACTION_UPDATE.into(), "Update".into())],
@@ -1152,7 +1158,7 @@ set -- \"$dir\"/Nectarlink-*/install.sh\n\
 fn relaunch_after_install(exe: &Path, version: &str) -> Result<(), String> {
     spawn_relauncher(exe, version, true).map_err(|e| {
         tracing::warn!(error = e, "installed, but can't start the new version");
-        tr!("Updater", "The update is installed. Restart NectarLink to use it.")
+        tr!("Updater", "The update is installed. Restart Premium Cast to use it.")
     })
 }
 
@@ -1310,7 +1316,7 @@ pub fn announce_update(previous: String, shown: bool) {
     tracing::info!(from = previous, to = current, "updated");
     after_start(
         shown,
-        tr!("Updater", "NectarLink is updated to %1", current),
+        tr!("Updater", "Premium Cast is updated to %1", current),
         tr!("Updater", "Your phone reconnects on its own."),
     );
 }
@@ -1322,7 +1328,7 @@ pub fn announce_update_failed(shown: bool) {
     after_start(
         shown,
         tr!("Updater", "The update didn't install"),
-        tr!("Updater", "NectarLink is still on the version you had. Try again from Settings."),
+        tr!("Updater", "Premium Cast is still on the version you had. Try again from Settings."),
     );
 }
 
@@ -1338,7 +1344,7 @@ fn after_start(shown: bool, title: String, body: String) {
             key: "updated".into(),
             title,
             body,
-            attribution: "NectarLink".into(),
+            attribution: "Premium Cast".into(),
             icon: None,
             image: None,
             actions: Vec::new(),

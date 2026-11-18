@@ -5,9 +5,8 @@
 # release again.
 name: Channels
 
+# Premium Cast: by hand only (the apps don't read an update feed).
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       tag:

@@ -55,28 +55,28 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="17"/>
-        <source>NectarLink · %1</source>
-        <translation>NectarLink · %1</translation>
+        <source>Premium Cast · %1</source>
+        <translation>Premium Cast · %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="18"/>
-        <source>NectarLink · %1 devices connected</source>
-        <translation>NectarLink · %1 thiết bị đã kết nối</translation>
+        <source>Premium Cast · %1 devices connected</source>
+        <translation>Premium Cast · %1 thiết bị đã kết nối</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="19"/>
-        <source>NectarLink · 1 device connected</source>
-        <translation>NectarLink · 1 thiết bị đã kết nối</translation>
+        <source>Premium Cast · 1 device connected</source>
+        <translation>Premium Cast · 1 thiết bị đã kết nối</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="20"/>
-        <source>NectarLink · no devices paired</source>
-        <translation>NectarLink · chưa ghép nối thiết bị nào</translation>
+        <source>Premium Cast · no devices paired</source>
+        <translation>Premium Cast · chưa ghép nối thiết bị nào</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="21"/>
-        <source>NectarLink · not connected</source>
-        <translation>NectarLink · chưa kết nối</translation>
+        <source>Premium Cast · not connected</source>
+        <translation>Premium Cast · chưa kết nối</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="22"/>
@@ -85,8 +85,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="23"/>
-        <source>Open NectarLink</source>
-        <translation>Mở NectarLink</translation>
+        <source>Open Premium Cast</source>
+        <translation>Mở Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="24"/>
@@ -100,8 +100,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="26"/>
-        <source>Quit NectarLink</source>
-        <translation>Thoát NectarLink</translation>
+        <source>Quit Premium Cast</source>
+        <translation>Thoát Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="27"/>
@@ -208,8 +208,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AppsPage.qml" line="94"/>
-        <source>Set up Wireless debugging in NectarLink on the phone to open its apps here.</source>
-        <translation>Thiết lập Gỡ lỗi không dây trong NectarLink trên điện thoại để mở ứng dụng tại đây.</translation>
+        <source>Set up Wireless debugging in Premium Cast on the phone to open its apps here.</source>
+        <translation>Thiết lập Gỡ lỗi không dây trong Premium Cast trên điện thoại để mở ứng dụng tại đây.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AppsPage.qml" line="147"/>
@@ -819,8 +819,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="65"/>
-        <source>Update NectarLink on %1 to send it images.</source>
-        <translation>Cập nhật NectarLink trên %1 để gửi ảnh.</translation>
+        <source>Update Premium Cast on %1 to send it images.</source>
+        <translation>Cập nhật Premium Cast trên %1 để gửi ảnh.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="66"/>
@@ -1077,8 +1077,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="107"/>
-        <source>Opened Recordings folder. Start a voice note in NectarLink on %1 to send it here.</source>
-        <translation>Đã mở thư mục Recordings. Bắt đầu ghi âm trong NectarLink trên %1 để gửi tới đây.</translation>
+        <source>Opened Recordings folder. Start a voice note in Premium Cast on %1 to send it here.</source>
+        <translation>Đã mở thư mục Recordings. Bắt đầu ghi âm trong Premium Cast trên %1 để gửi tới đây.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="108"/>
@@ -1252,8 +1252,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="142"/>
-        <source>Stream %1&apos;s camera into the NectarLink virtual webcam</source>
-        <translation>Truyền máy ảnh của %1 vào webcam ảo NectarLink</translation>
+        <source>Stream %1&apos;s camera into the Premium Cast virtual webcam</source>
+        <translation>Truyền máy ảnh của %1 vào webcam ảo Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="143"/>
@@ -1913,13 +1913,13 @@
     <name>Doctor</name>
     <message>
         <location filename="rust_strings.h" line="192"/>
-        <source>%1 Open NectarLink on the phone and keep both on the same network. If the phone asks to run in the background, allow it.</source>
-        <translation>%1 Mở NectarLink trên điện thoại và giữ cả hai thiết bị trên cùng mạng. Nếu điện thoại hỏi có muốn chạy trong nền, hãy cho phép.</translation>
+        <source>%1 Open Premium Cast on the phone and keep both on the same network. If the phone asks to run in the background, allow it.</source>
+        <translation>%1 Mở Premium Cast trên điện thoại và giữ cả hai thiết bị trên cùng mạng. Nếu điện thoại hỏi có muốn chạy trong nền, hãy cho phép.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="193"/>
-        <source>%1 announces itself at %2, which isn&apos;t in a private range such as 192.168.x.x. NectarLink connects on such a network once both apps are up to date. Until then, turn on Connect over mobile data on both, or connect with a USB cable.</source>
-        <translation>%1 tự quảng bá tại %2, địa chỉ này không thuộc dải riêng tư như 192.168.x.x. NectarLink sẽ kết nối được trên mạng như vậy khi cả hai ứng dụng đều được cập nhật. Cho đến lúc đó, hãy bật Kết nối qua dữ liệu di động trên cả hai thiết bị, hoặc kết nối bằng cáp USB.</translation>
+        <source>%1 announces itself at %2, which isn&apos;t in a private range such as 192.168.x.x. Premium Cast connects on such a network once both apps are up to date. Until then, turn on Connect over mobile data on both, or connect with a USB cable.</source>
+        <translation>%1 tự quảng bá tại %2, địa chỉ này không thuộc dải riêng tư như 192.168.x.x. Premium Cast sẽ kết nối được trên mạng như vậy khi cả hai ứng dụng đều được cập nhật. Cho đến lúc đó, hãy bật Kết nối qua dữ liệu di động trên cả hai thiết bị, hoặc kết nối bằng cáp USB.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="194"/>
@@ -1978,8 +1978,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="205"/>
-        <source>A firewall rule blocks incoming NectarLink connections. Allow it, and your phone can connect.</source>
-        <translation>Một quy tắc tường lửa đang chặn các kết nối NectarLink đến. Hãy cho phép, điện thoại của bạn sẽ kết nối được.</translation>
+        <source>A firewall rule blocks incoming Premium Cast connections. Allow it, and your phone can connect.</source>
+        <translation>Một quy tắc tường lửa đang chặn các kết nối Premium Cast đến. Hãy cho phép, điện thoại của bạn sẽ kết nối được.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="206"/>
@@ -2048,48 +2048,48 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="219"/>
-        <source>NectarLink can&apos;t show its icon in the top bar</source>
-        <translation>NectarLink không thể hiển thị biểu tượng của nó trên thanh trên cùng</translation>
+        <source>Premium Cast can&apos;t show its icon in the top bar</source>
+        <translation>Premium Cast không thể hiển thị biểu tượng của nó trên thanh trên cùng</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="220"/>
-        <source>NectarLink is in the top bar</source>
-        <translation>NectarLink đang hiển thị trên thanh trên cùng</translation>
+        <source>Premium Cast is in the top bar</source>
+        <translation>Premium Cast đang hiển thị trên thanh trên cùng</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="221"/>
-        <source>NectarLink isn&apos;t allowed through Windows Firewall</source>
-        <translation>NectarLink chưa được Windows Firewall cho phép</translation>
+        <source>Premium Cast isn&apos;t allowed through Windows Firewall</source>
+        <translation>Premium Cast chưa được Windows Firewall cho phép</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="222"/>
-        <source>NectarLink isn&apos;t allowed through the firewall</source>
-        <translation>NectarLink chưa được tường lửa cho phép</translation>
+        <source>Premium Cast isn&apos;t allowed through the firewall</source>
+        <translation>Premium Cast chưa được tường lửa cho phép</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="223"/>
-        <source>On Huawei / Honor: open Settings → Battery → App launch, turn off Manage automatically for NectarLink, and keep Auto-launch, Secondary launch, and Run in background on.</source>
-        <translation>Trên Huawei / Honor: mở Settings → Battery → App launch, tắt Manage automatically cho NectarLink, và giữ Auto-launch, Secondary launch và Run in background ở trạng thái bật.</translation>
+        <source>On Huawei / Honor: open Settings → Battery → App launch, turn off Manage automatically for Premium Cast, and keep Auto-launch, Secondary launch, and Run in background on.</source>
+        <translation>Trên Huawei / Honor: mở Settings → Battery → App launch, tắt Manage automatically cho Premium Cast, và giữ Auto-launch, Secondary launch và Run in background ở trạng thái bật.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="224"/>
-        <source>On OnePlus / OxygenOS: open Settings → Apps → App management → NectarLink → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
-        <translation>Trên OnePlus / OxygenOS: mở Settings → Apps → App management → NectarLink → Battery usage và bật Allow background activity và Allow auto-launch.</translation>
+        <source>On OnePlus / OxygenOS: open Settings → Apps → App management → Premium Cast → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
+        <translation>Trên OnePlus / OxygenOS: mở Settings → Apps → App management → Premium Cast → Battery usage và bật Allow background activity và Allow auto-launch.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="225"/>
-        <source>On Oppo / Realme: open Settings → Apps → App management → NectarLink → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
-        <translation>Trên Oppo / Realme: mở Settings → Apps → App management → NectarLink → Battery usage và bật Allow background activity và Allow auto-launch.</translation>
+        <source>On Oppo / Realme: open Settings → Apps → App management → Premium Cast → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
+        <translation>Trên Oppo / Realme: mở Settings → Apps → App management → Premium Cast → Battery usage và bật Allow background activity và Allow auto-launch.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="226"/>
-        <source>On Pixel: open Settings → Apps → See all apps → NectarLink → App battery usage, tap Allow background usage, and choose Unrestricted.</source>
-        <translation>Trên Pixel: mở Settings → Apps → See all apps → NectarLink → App battery usage, nhấn Allow background usage và chọn Unrestricted.</translation>
+        <source>On Pixel: open Settings → Apps → See all apps → Premium Cast → App battery usage, tap Allow background usage, and choose Unrestricted.</source>
+        <translation>Trên Pixel: mở Settings → Apps → See all apps → Premium Cast → App battery usage, nhấn Allow background usage và chọn Unrestricted.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="227"/>
-        <source>On Samsung: open Settings → Apps → NectarLink → Battery and choose Unrestricted, then in Device care → Battery → Background usage limits make sure NectarLink is never put to sleep.</source>
-        <translation>Trên Samsung: mở Settings → Apps → NectarLink → Battery và chọn Unrestricted, sau đó trong Device care → Battery → Background usage limits hãy đảm bảo NectarLink không bao giờ bị đưa vào chế độ ngủ.</translation>
+        <source>On Samsung: open Settings → Apps → Premium Cast → Battery and choose Unrestricted, then in Device care → Battery → Background usage limits make sure Premium Cast is never put to sleep.</source>
+        <translation>Trên Samsung: mở Settings → Apps → Premium Cast → Battery và chọn Unrestricted, sau đó trong Device care → Battery → Background usage limits hãy đảm bảo Premium Cast không bao giờ bị đưa vào chế độ ngủ.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="228"/>
@@ -2098,13 +2098,13 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="229"/>
-        <source>On Vivo / OriginOS / Funtouch: open Settings → Battery → Background power consumption management → NectarLink and choose Unrestricted, and allow Autostart.</source>
-        <translation>Trên Vivo / OriginOS / Funtouch: mở Settings → Battery → Background power consumption management → NectarLink và chọn Unrestricted, đồng thời cho phép Autostart.</translation>
+        <source>On Vivo / OriginOS / Funtouch: open Settings → Battery → Background power consumption management → Premium Cast and choose Unrestricted, and allow Autostart.</source>
+        <translation>Trên Vivo / OriginOS / Funtouch: mở Settings → Battery → Background power consumption management → Premium Cast và chọn Unrestricted, đồng thời cho phép Autostart.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="230"/>
-        <source>On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → NectarLink, turn on Autostart, and set Battery saver to No restrictions.</source>
-        <translation>Trên Xiaomi / HyperOS / MIUI: mở Settings → Apps → Manage apps → NectarLink, bật Autostart và đặt Battery saver thành No restrictions.</translation>
+        <source>On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → Premium Cast, turn on Autostart, and set Battery saver to No restrictions.</source>
+        <translation>Trên Xiaomi / HyperOS / MIUI: mở Settings → Apps → Manage apps → Premium Cast, bật Autostart và đặt Battery saver thành No restrictions.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="231"/>
@@ -2143,8 +2143,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="238"/>
-        <source>Phones on a USB cable connect through adb. NectarLink starts it every minute or so; start it now if a phone on a cable isn&apos;t showing up.</source>
-        <translation>Điện thoại cắm cáp USB kết nối qua adb. NectarLink khởi động nó khoảng mỗi phút; hãy khởi động ngay nếu điện thoại cắm cáp không hiện lên.</translation>
+        <source>Phones on a USB cable connect through adb. Premium Cast starts it every minute or so; start it now if a phone on a cable isn&apos;t showing up.</source>
+        <translation>Điện thoại cắm cáp USB kết nối qua adb. Premium Cast khởi động nó khoảng mỗi phút; hãy khởi động ngay nếu điện thoại cắm cáp không hiện lên.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="239"/>
@@ -2168,8 +2168,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="243"/>
-        <source>The firewall blocks NectarLink</source>
-        <translation>Tường lửa chặn NectarLink</translation>
+        <source>The firewall blocks Premium Cast</source>
+        <translation>Tường lửa chặn Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="244"/>
@@ -2208,9 +2208,9 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="251"/>
-        <source>To connect over a cable, NectarLink can get Android&apos;s USB tools from Google for you, and the phone needs USB debugging on. Wi-Fi works without them.</source>
+        <source>To connect over a cable, Premium Cast can get Android&apos;s USB tools from Google for you, and the phone needs USB debugging on. Wi-Fi works without them.</source>
         <oldsource>To connect over a cable, install Android&apos;s platform-tools or Android Studio, and turn on USB debugging on the phone. Wi-Fi works without it.</oldsource>
-        <translation>Để kết nối qua cáp, NectarLink có thể tải công cụ USB của Android từ Google giúp bạn, và điện thoại cần bật gỡ lỗi USB. Wi-Fi vẫn hoạt động mà không cần chúng.</translation>
+        <translation>Để kết nối qua cáp, Premium Cast có thể tải công cụ USB của Android từ Google giúp bạn, và điện thoại cần bật gỡ lỗi USB. Wi-Fi vẫn hoạt động mà không cần chúng.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="252"/>
@@ -2224,8 +2224,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="254"/>
-        <source>Windows Firewall blocks NectarLink</source>
-        <translation>Windows Firewall chặn NectarLink</translation>
+        <source>Windows Firewall blocks Premium Cast</source>
+        <translation>Windows Firewall chặn Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="255"/>
@@ -2526,8 +2526,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="586"/>
-        <source>Every feature in NectarLink, what it needs, and where to find it.</source>
-        <translation>Mọi tính năng trong NectarLink, những gì nó cần và nơi tìm thấy.</translation>
+        <source>Every feature in Premium Cast, what it needs, and where to find it.</source>
+        <translation>Mọi tính năng trong Premium Cast, những gì nó cần và nơi tìm thấy.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="625"/>
@@ -2821,8 +2821,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="260"/>
-        <source>Use your phone camera as the NectarLink Virtual Camera in Zoom, Teams, Meet, and OBS.</source>
-        <translation>Dùng máy ảnh điện thoại làm NectarLink Virtual Camera trong Zoom, Teams, Meet và OBS.</translation>
+        <source>Use your phone camera as the Premium Cast Virtual Camera in Zoom, Teams, Meet, and OBS.</source>
+        <translation>Dùng máy ảnh điện thoại làm Premium Cast Virtual Camera trong Zoom, Teams, Meet và OBS.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="261"/>
@@ -3007,8 +3007,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="388"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="395"/>
@@ -3017,13 +3017,13 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="396"/>
-        <source>Settings › General › Nectar Island</source>
-        <translation>Cài đặt › Chung › Nectar Island</translation>
+        <source>Settings › General › Cast Island</source>
+        <translation>Cài đặt › Chung › Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="397"/>
-        <source>Nectar Island enabled in Settings</source>
-        <translation>Đã bật Nectar Island trong Cài đặt</translation>
+        <source>Cast Island enabled in Settings</source>
+        <translation>Đã bật Cast Island trong Cài đặt</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="403"/>
@@ -3178,15 +3178,15 @@
     <name>Guide</name>
     <message>
         <location filename="rust_strings.h" line="277"/>
-        <source>1. Install NectarLink on your PC (Windows 11 or Linux) and your Android phone (Android 8.0 or newer).
+        <source>1. Install Premium Cast on your PC (Windows 11 or Linux) and your Android phone (Android 8.0 or newer).
 2. Connect both devices to the same Wi-Fi network, or plug your phone into your PC with a USB cable.
 3. Open the Pair step in the setup walkthrough, or click + (Pair a new device) at the bottom of the left rail.
-4. Scan the QR code from the NectarLink Android app, or select your phone from the nearby devices list and confirm that the 6-digit code matches on both screens.
+4. Scan the QR code from the Premium Cast Android app, or select your phone from the nearby devices list and confirm that the 6-digit code matches on both screens.
 5. Choose which features to share for that phone and grant only the Android permissions you want to use.</source>
-        <translation>1. Cài đặt NectarLink trên PC của bạn (Windows 11 hoặc Linux) và điện thoại Android của bạn (Android 8.0 trở lên).
+        <translation>1. Cài đặt Premium Cast trên PC của bạn (Windows 11 hoặc Linux) và điện thoại Android của bạn (Android 8.0 trở lên).
 2. Kết nối cả hai thiết bị vào cùng một mạng Wi-Fi, hoặc cắm điện thoại vào PC bằng cáp USB.
 3. Mở bước Ghép nối trong hướng dẫn thiết lập, hoặc nhấp vào + (Ghép nối thiết bị mới) ở cuối thanh dọc bên trái.
-4. Quét mã QR từ ứng dụng NectarLink trên Android, hoặc chọn điện thoại của bạn từ danh sách thiết bị lân cận và xác nhận rằng mã 6 chữ số khớp nhau trên cả hai màn hình.
+4. Quét mã QR từ ứng dụng Premium Cast trên Android, hoặc chọn điện thoại của bạn từ danh sách thiết bị lân cận và xác nhận rằng mã 6 chữ số khớp nhau trên cả hai màn hình.
 5. Chọn những tính năng muốn chia sẻ cho điện thoại đó và chỉ cấp các quyền Android mà bạn muốn sử dụng.</translation>
     </message>
     <message>
@@ -3259,15 +3259,15 @@
         <source>If your phone and PC do not see each other:
 
 1. Open Connection Doctor from Settings › Connection &amp; About or the Command Palette.
-2. Check that your Wi-Fi network profile in Windows is set to Private rather than Public, or click Fix in Connection Doctor to allow NectarLink through Windows Firewall.
+2. Check that your Wi-Fi network profile in Windows is set to Private rather than Public, or click Fix in Connection Doctor to allow Premium Cast through Windows Firewall.
 3. Verify that both devices are on the same subnet and that guest Wi-Fi client isolation is turned off on your router.
-4. You can also connect over a USB cable with USB debugging enabled; NectarLink automatically sets up a local tunnel.</source>
+4. You can also connect over a USB cable with USB debugging enabled; Premium Cast automatically sets up a local tunnel.</source>
         <translation>Nếu điện thoại và PC của bạn không nhìn thấy nhau:
 
 1. Mở Chẩn đoán kết nối từ Cài đặt › Kết nối &amp; Giới thiệu hoặc Bảng lệnh.
-2. Kiểm tra rằng hồ sơ mạng Wi-Fi của bạn trong Windows được đặt là Private thay vì Public, hoặc nhấp vào Sửa trong Chẩn đoán kết nối để cho phép NectarLink đi qua Windows Firewall.
+2. Kiểm tra rằng hồ sơ mạng Wi-Fi của bạn trong Windows được đặt là Private thay vì Public, hoặc nhấp vào Sửa trong Chẩn đoán kết nối để cho phép Premium Cast đi qua Windows Firewall.
 3. Xác minh rằng cả hai thiết bị cùng nằm trên một subnet và tính năng cô lập client Wi-Fi khách đã tắt trên router của bạn.
-4. Bạn cũng có thể kết nối qua cáp USB với gỡ lỗi USB được bật; NectarLink tự động thiết lập một đường hầm cục bộ.</translation>
+4. Bạn cũng có thể kết nối qua cáp USB với gỡ lỗi USB được bật; Premium Cast tự động thiết lập một đường hầm cục bộ.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="292"/>
@@ -3310,7 +3310,7 @@ Các khả năng nhạy cảm như Chia sẻ thư mục PC, Điều khiển từ
     </message>
     <message>
         <location filename="rust_strings.h" line="297"/>
-        <source>Most NectarLink features work in Standard mode with regular Android permissions. Two optional modes unlock deeper system integration:
+        <source>Most Premium Cast features work in Standard mode with regular Android permissions. Two optional modes unlock deeper system integration:
 
 Elevated mode (Wireless debugging or root)
 - Captures the phone screen without showing the Android cast confirmation prompt every time.
@@ -3319,8 +3319,8 @@ Elevated mode (Wireless debugging or root)
 
 Assist mode (Android Accessibility Service)
 - Injects mouse clicks, scrolling, and touch gestures when you control your phone from your PC.
-- NectarLink never reads screen text or logs keystrokes through the Accessibility service.</source>
-        <translation>Hầu hết các tính năng của NectarLink hoạt động ở chế độ Tiêu chuẩn với các quyền Android thông thường. Hai chế độ tùy chọn mở khóa tích hợp sâu hơn với hệ thống:
+- Premium Cast never reads screen text or logs keystrokes through the Accessibility service.</source>
+        <translation>Hầu hết các tính năng của Premium Cast hoạt động ở chế độ Tiêu chuẩn với các quyền Android thông thường. Hai chế độ tùy chọn mở khóa tích hợp sâu hơn với hệ thống:
 
 Chế độ Nâng cao (Gỡ lỗi không dây hoặc root)
 - Chụp màn hình điện thoại mà không hiện hộp thoại xác nhận chiếu màn hình Android mỗi lần.
@@ -3329,16 +3329,16 @@ Chế độ Nâng cao (Gỡ lỗi không dây hoặc root)
 
 Chế độ Hỗ trợ (Android Accessibility Service)
 - Bơm các cú nhấp chuột, thao tác cuộn và cử chỉ chạm khi bạn điều khiển điện thoại từ PC.
-- NectarLink không bao giờ đọc văn bản màn hình hay ghi lại phím gõ qua Accessibility service.</translation>
+- Premium Cast không bao giờ đọc văn bản màn hình hay ghi lại phím gõ qua Accessibility service.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="298"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="299"/>
-        <source>NectarLink links your Android phone and your PC directly on your local network or over a USB cable.
+        <source>Premium Cast links your Android phone and your PC directly on your local network or over a USB cable.
 
 How it works
 - Devices discover each other over local Wi-Fi (mDNS) or USB (ADB reverse tunnel) and connect over QUIC (TLS 1.3).
@@ -3349,7 +3349,7 @@ Capability tiers on Android
 - Standard mode: Works right after installation with standard Android permissions.
 - Elevated mode (optional): Uses Wireless debugging (set up once in the phone app) or root for phone apps in their own windows, mirroring without the screen capture prompt, and more phone controls.
 - Assist mode (optional): Uses the Android Accessibility service only when you enable Remote input so your PC mouse and keyboard can control the phone.</source>
-        <translation>NectarLink kết nối trực tiếp điện thoại Android và PC của bạn trên mạng cục bộ hoặc qua cáp USB.
+        <translation>Premium Cast kết nối trực tiếp điện thoại Android và PC của bạn trên mạng cục bộ hoặc qua cáp USB.
 
 Cách thức hoạt động
 - Các thiết bị khám phá lẫn nhau qua Wi-Fi cục bộ (mDNS) hoặc USB (ADB reverse tunnel) và kết nối qua QUIC (TLS 1.3).
@@ -3363,14 +3363,14 @@ Các mức khả năng trên Android
     </message>
     <message>
         <location filename="rust_strings.h" line="300"/>
-        <source>NectarLink never asks for every permission up front. Each feature works independently:
+        <source>Premium Cast never asks for every permission up front. Each feature works independently:
 
 - Notification Access: Required only if you want phone notifications, inline replies, and notification-backed chat threads on your PC.
 - SMS and Contacts: Required only if you want to read and send SMS/MMS messages or look up contact names on your PC.
 - Phone and Call Log: Required only if you want incoming call alerts, call history, or dialing from your PC.
 - Media and Photos: Required only if you want the Photos gallery, Shelf latest photo, or folder sync.
 - Camera and Microphone: Required only while streaming your phone as a webcam, taking a Continuity Camera shot, or recording a voice note.</source>
-        <translation>NectarLink không bao giờ yêu cầu tất cả quyền cùng lúc. Mỗi tính năng hoạt động độc lập:
+        <translation>Premium Cast không bao giờ yêu cầu tất cả quyền cùng lúc. Mỗi tính năng hoạt động độc lập:
 
 - Quyền truy cập Thông báo: Chỉ cần khi bạn muốn xem thông báo điện thoại, trả lời trực tiếp và các cuộc trò chuyện dựa trên thông báo trên PC.
 - SMS và Danh bạ: Chỉ cần khi bạn muốn đọc và gửi tin nhắn SMS/MMS hoặc tra cứu tên liên hệ trên PC.
@@ -3380,8 +3380,8 @@ Các mức khả năng trên Android
     </message>
     <message>
         <location filename="rust_strings.h" line="301"/>
-        <source>NectarLink overview</source>
-        <translation>Tổng quan về NectarLink</translation>
+        <source>Premium Cast overview</source>
+        <translation>Tổng quan về Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="302"/>
@@ -3537,23 +3537,23 @@ Nó cần gì
 Displays a compact pill at the top center of your primary monitor for incoming calls, live file transfer progress, media playback, and optional notification previews.
 
 Where to find it
-- Settings › General › Nectar Island.
+- Settings › General › Cast Island.
 
 What it needs
-- Turn on Nectar Island in Settings › General and pick which events should appear.</source>
+- Turn on Cast Island in Settings › General and pick which events should appear.</source>
         <translation>Nó làm gì
 Hiển thị một viên thuốc nhỏ gọn ở giữa cạnh trên của màn hình chính cho cuộc gọi đến, tiến trình chuyển tệp theo thời gian thực, phát media và bản xem trước thông báo tùy chọn.
 
 Tìm nó ở đâu
-- Cài đặt › Chung › Nectar Island.
+- Cài đặt › Chung › Cast Island.
 
 Nó cần gì
-- Bật Nectar Island trong Cài đặt › Chung và chọn những sự kiện nào sẽ xuất hiện.</translation>
+- Bật Cast Island trong Cài đặt › Chung và chọn những sự kiện nào sẽ xuất hiện.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="323"/>
         <source>What it does
-Exposes an opt-in localhost HTTP/JSON and Server-Sent Events API on 127.0.0.1 (default port 53320) protected by a bearer token so scripts, CLI tools, and Stream Deck plugins can trigger NectarLink actions.
+Exposes an opt-in localhost HTTP/JSON and Server-Sent Events API on 127.0.0.1 (default port 53320) protected by a bearer token so scripts, CLI tools, and Stream Deck plugins can trigger Premium Cast actions.
 
 Where to find it
 - Settings › Connection &amp; About › Local automation API.
@@ -3561,7 +3561,7 @@ Where to find it
 What it needs
 - Turn on Local automation API in Settings › Connection &amp; About and read the bearer token from api-token.json.</source>
         <translation>Nó làm gì
-Cung cấp một API HTTP/JSON localhost và Server-Sent Events opt-in trên 127.0.0.1 (cổng mặc định 53320) được bảo vệ bằng bearer token để các script, công cụ CLI và plugin Stream Deck có thể kích hoạt các hành động của NectarLink.
+Cung cấp một API HTTP/JSON localhost và Server-Sent Events opt-in trên 127.0.0.1 (cổng mặc định 53320) được bảo vệ bằng bearer token để các script, công cụ CLI và plugin Stream Deck có thể kích hoạt các hành động của Premium Cast.
 
 Tìm nó ở đâu
 - Cài đặt › Kết nối &amp; Giới thiệu › API tự động hóa cục bộ.
@@ -3579,7 +3579,7 @@ Where to find it
 - Command Palette › Type on phone with PC keyboard.
 
 What it needs
-- Assist mode (Accessibility service), the NectarLink input method, or Elevated mode on your phone.</source>
+- Assist mode (Accessibility service), the Premium Cast input method, or Elevated mode on your phone.</source>
         <translation>Nó làm gì
 Chuyển tiếp các phím gõ và văn bản dán từ bàn phím PC của bạn trực tiếp đến điện thoại mà không cần phản chiếu màn hình điện thoại.
 
@@ -3588,7 +3588,7 @@ Tìm nó ở đâu
 - Bảng lệnh › Gõ trên điện thoại bằng bàn phím PC.
 
 Nó cần gì
-- Chế độ Hỗ trợ (Accessibility service), phương thức nhập NectarLink, hoặc chế độ Nâng cao trên điện thoại của bạn.</translation>
+- Chế độ Hỗ trợ (Accessibility service), phương thức nhập Premium Cast, hoặc chế độ Nâng cao trên điện thoại của bạn.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="325"/>
@@ -3708,7 +3708,7 @@ Where to find it
 - Settings › General › Copy one-time codes.
 
 What it needs
-- Notification Access permission enabled for NectarLink on your Android phone.
+- Notification Access permission enabled for Premium Cast on your Android phone.
 - The per-device Notifications toggle enabled on your PC.</source>
         <translation>Nó làm gì
 Phản chiếu thông báo điện thoại của bạn lên bảng tin Trang chủ và các pop-up thông báo Windows. Bạn có thể trả lời trực tiếp tin nhắn, nhấp vào các nút hành động, bỏ qua từng thông báo hoặc nhóm thông báo, và hoàn tác một lần bỏ qua gần đây.
@@ -3719,7 +3719,7 @@ Tìm nó ở đâu
 - Cài đặt › Chung › Sao chép mã một lần.
 
 Nó cần gì
-- Quyền truy cập Thông báo được bật cho NectarLink trên điện thoại Android của bạn.
+- Quyền truy cập Thông báo được bật cho Premium Cast trên điện thoại Android của bạn.
 - Công tắc Thông báo theo từng thiết bị được bật trên PC của bạn.</translation>
     </message>
     <message>
@@ -3728,7 +3728,7 @@ Nó cần gì
 Opens a keyboard-first search bar over actions, contacts, message threads, mirrorable apps, phone quick toggles, clipboard history, and navigation pages.
 
 Where to find it
-- Global hotkey Ctrl+Alt+Space (or Ctrl+K inside the NectarLink window).
+- Global hotkey Ctrl+Alt+Space (or Ctrl+K inside the Premium Cast window).
 - Commands in the top bar.
 
 What it needs
@@ -3737,7 +3737,7 @@ What it needs
 Mở một thanh tìm kiếm ưu tiên bàn phím cho các hành động, danh bạ, luồng tin nhắn, ứng dụng có thể phản chiếu, công tắc nhanh điện thoại, lịch sử bảng nhớ tạm và các trang điều hướng.
 
 Tìm nó ở đâu
-- Phím tắt toàn cục Ctrl+Alt+Space (hoặc Ctrl+K trong cửa sổ NectarLink).
+- Phím tắt toàn cục Ctrl+Alt+Space (hoặc Ctrl+K trong cửa sổ Premium Cast).
 - Các lệnh trên thanh trên cùng.
 
 Nó cần gì
@@ -3830,7 +3830,7 @@ Nó cần gì
     <message>
         <location filename="rust_strings.h" line="336"/>
         <source>What it does
-Sends files, folders, links, and text between your phone and PC at local network speed. If your phone is offline when you send, NectarLink places the item in the Waiting to send queue and delivers it automatically as soon as your phone reconnects.
+Sends files, folders, links, and text between your phone and PC at local network speed. If your phone is offline when you send, Premium Cast places the item in the Waiting to send queue and delivers it automatically as soon as your phone reconnects.
 
 Where to find it
 - Home › Send files button, drag-and-drop anywhere on the window, Waiting to send card, and Transfers list.
@@ -3839,7 +3839,7 @@ Where to find it
 What it needs
 - Paired phone and the per-device Files toggle enabled.</source>
         <translation>Nó làm gì
-Gửi tệp, thư mục, liên kết và văn bản giữa điện thoại và PC của bạn ở tốc độ mạng cục bộ. Nếu điện thoại ngoại tuyến khi bạn gửi, NectarLink đặt mục đó vào hàng đợi Chờ gửi và tự động chuyển khi điện thoại kết nối lại.
+Gửi tệp, thư mục, liên kết và văn bản giữa điện thoại và PC của bạn ở tốc độ mạng cục bộ. Nếu điện thoại ngoại tuyến khi bạn gửi, Premium Cast đặt mục đó vào hàng đợi Chờ gửi và tự động chuyển khi điện thoại kết nối lại.
 
 Tìm nó ở đâu
 - Trang chủ › nút Gửi tệp, kéo-thả vào bất kỳ đâu trong cửa sổ, thẻ Chờ gửi và danh sách Chuyển tệp.
@@ -3878,7 +3878,7 @@ Where to find it
 
 What it needs
 - Automatic PC-to-phone clipboard send works whenever your phone is connected.
-- Background phone-to-PC clipboard sync on Android 10+ uses notifications, the NectarLink quick tile, or Elevated mode.</source>
+- Background phone-to-PC clipboard sync on Android 10+ uses notifications, the Premium Cast quick tile, or Elevated mode.</source>
         <translation>Nó làm gì
 Chia sẻ văn bản đã sao chép, văn bản HTML/RTF phong phú, ảnh và các bộ tệp nhỏ đã sao chép giữa PC và điện thoại của bạn. Giữ một lịch sử cục bộ được mã hóa tối đa 50 mục với tính năng ghim và các chip ngữ cảnh thông minh cho liên kết, số điện thoại, địa chỉ và mã theo dõi.
 
@@ -3888,7 +3888,7 @@ Tìm nó ở đâu
 
 Nó cần gì
 - Gửi bảng nhớ tạm tự động từ PC sang điện thoại hoạt động bất cứ khi nào điện thoại kết nối.
-- Đồng bộ bảng nhớ tạm nền từ điện thoại sang PC trên Android 10+ dùng thông báo, ô nhanh NectarLink hoặc chế độ Nâng cao.</translation>
+- Đồng bộ bảng nhớ tạm nền từ điện thoại sang PC trên Android 10+ dùng thông báo, ô nhanh Premium Cast hoặc chế độ Nâng cao.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="339"/>
@@ -3897,7 +3897,7 @@ Shows incoming and active phone calls on your PC with Answer, Decline, and Rejec
 
 Where to find it
 - Left navigation rail › Calls.
-- Incoming call banner on Home and Nectar Island.
+- Incoming call banner on Home and Cast Island.
 
 What it needs
 - Phone, Call Log, and Contacts permissions on your Android phone.
@@ -3907,7 +3907,7 @@ Hiển thị các cuộc gọi đến và đang hoạt động trên PC của b�
 
 Tìm nó ở đâu
 - Thanh điều hướng bên trái › Cuộc gọi.
-- Biểu ngữ cuộc gọi đến trên Trang chủ và Nectar Island.
+- Biểu ngữ cuộc gọi đến trên Trang chủ và Cast Island.
 
 Nó cần gì
 - Quyền Điện thoại, Nhật ký cuộc gọi và Danh bạ trên điện thoại Android của bạn.
@@ -3940,7 +3940,7 @@ Nó cần gì
 Streams your PC&apos;s screen to your phone so you can view your desktop from across the room and use your phone as a trackpad or laser pointer.
 
 Where to find it
-- Started from the NectarLink app on your phone.
+- Started from the Premium Cast app on your phone.
 - Settings › Devices › Share PC screen to phone.
 
 What it needs
@@ -3949,7 +3949,7 @@ What it needs
 Stream màn hình của PC đến điện thoại của bạn để bạn có thể xem màn hình nền từ nơi khác trong phòng và dùng điện thoại làm trackpad hoặc con trỏ laser.
 
 Tìm nó ở đâu
-- Bắt đầu từ ứng dụng NectarLink trên điện thoại của bạn.
+- Bắt đầu từ ứng dụng Premium Cast trên điện thoại của bạn.
 - Cài đặt › Thiết bị › Chia sẻ màn hình PC sang điện thoại.
 
 Nó cần gì
@@ -3958,7 +3958,7 @@ Nó cần gì
     <message>
         <location filename="rust_strings.h" line="342"/>
         <source>What it does
-Streams your phone camera into the NectarLink Virtual Camera on Windows so Zoom, Teams, Meet, Discord, and OBS can use your phone&apos;s rear or front camera at up to 4K.
+Streams your phone camera into the Premium Cast Virtual Camera on Windows so Zoom, Teams, Meet, Discord, and OBS can use your phone&apos;s rear or front camera at up to 4K.
 
 Where to find it
 - Home › Phone as webcam.
@@ -3968,7 +3968,7 @@ What it needs
 - Camera permission on your phone.
 - For other apps to see it: Virtual camera add-on in Settings › Camera &amp; Audio.</source>
         <translation>Nó làm gì
-Stream máy ảnh điện thoại của bạn vào NectarLink Virtual Camera trên Windows để Zoom, Teams, Meet, Discord và OBS có thể dùng máy ảnh trước hoặc sau của điện thoại ở độ phân giải lên đến 4K.
+Stream máy ảnh điện thoại của bạn vào Premium Cast Virtual Camera trên Windows để Zoom, Teams, Meet, Discord và OBS có thể dùng máy ảnh trước hoặc sau của điện thoại ở độ phân giải lên đến 4K.
 
 Tìm nó ở đâu
 - Trang chủ › Điện thoại làm webcam.
@@ -5029,8 +5029,8 @@ Nó cần gì
     <message>
         <location filename="../qml/IslandWindow.qml" line="18"/>
         <location filename="../qml/IslandWindow.qml" line="18"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="319"/>
@@ -5071,13 +5071,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="334"/>
-        <source>Nectar Island · %1</source>
-        <translation>Nectar Island · %1</translation>
+        <source>Cast Island · %1</source>
+        <translation>Cast Island · %1</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="335"/>
-        <source>Nectar Island · Ready</source>
-        <translation>Nectar Island · Sẵn sàng</translation>
+        <source>Cast Island · Ready</source>
+        <translation>Cast Island · Sẵn sàng</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="340"/>
@@ -5106,8 +5106,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="364"/>
-        <source>Click to view in NectarLink</source>
-        <translation>Nhấp để xem trong NectarLink</translation>
+        <source>Click to view in Premium Cast</source>
+        <translation>Nhấp để xem trong Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="367"/>
@@ -5184,8 +5184,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="360"/>
-        <source>Update NectarLink on %1.</source>
-        <translation>Cập nhật NectarLink trên %1.</translation>
+        <source>Update Premium Cast on %1.</source>
+        <translation>Cập nhật Premium Cast trên %1.</translation>
     </message>
 </context>
 <context>
@@ -5247,43 +5247,43 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="46"/>
-        <source>On your phone, open NectarLink › Settings › Permissions › Control from your PC and turn on the Accessibility service.</source>
-        <translation>Trên điện thoại, mở NectarLink › Cài đặt › Quyền › Điều khiển từ PC và bật dịch vụ Trợ năng.</translation>
+        <source>On your phone, open Premium Cast › Settings › Permissions › Control from your PC and turn on the Accessibility service.</source>
+        <translation>Trên điện thoại, mở Premium Cast › Cài đặt › Quyền › Điều khiển từ PC và bật dịch vụ Trợ năng.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="48"/>
-        <source>Needs Elevated: set it up in NectarLink › Settings › Permissions › Control from your PC, or connect the phone over USB with USB debugging allowed.</source>
-        <translation>Cần quyền Elevated: thiết lập trong NectarLink › Cài đặt › Quyền › Điều khiển từ PC, hoặc kết nối điện thoại qua USB với chế độ gỡ lỗi USB được cho phép.</translation>
+        <source>Needs Elevated: set it up in Premium Cast › Settings › Permissions › Control from your PC, or connect the phone over USB with USB debugging allowed.</source>
+        <translation>Cần quyền Elevated: thiết lập trong Premium Cast › Cài đặt › Quyền › Điều khiển từ PC, hoặc kết nối điện thoại qua USB với chế độ gỡ lỗi USB được cho phép.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="50"/>
-        <source>On your phone, set NectarLink as the default SMS/Caller ID app when prompted.</source>
-        <translation>Trên điện thoại, đặt NectarLink làm ứng dụng SMS/Caller ID mặc định khi được hỏi.</translation>
+        <source>On your phone, set Premium Cast as the default SMS/Caller ID app when prompted.</source>
+        <translation>Trên điện thoại, đặt Premium Cast làm ứng dụng SMS/Caller ID mặc định khi được hỏi.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="53"/>
-        <source>On your phone, open NectarLink and allow Notification access.</source>
-        <translation>Trên điện thoại, mở NectarLink và cho phép Quyền truy cập thông báo.</translation>
+        <source>On your phone, open Premium Cast and allow Notification access.</source>
+        <translation>Trên điện thoại, mở Premium Cast và cho phép Quyền truy cập thông báo.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="55"/>
-        <source>On your phone, open NectarLink and allow Do Not Disturb access.</source>
-        <translation>Trên điện thoại, mở NectarLink và cho phép quyền Không làm phiền.</translation>
+        <source>On your phone, open Premium Cast and allow Do Not Disturb access.</source>
+        <translation>Trên điện thoại, mở Premium Cast và cho phép quyền Không làm phiền.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="57"/>
-        <source>On your phone, open NectarLink and allow Modify system settings.</source>
-        <translation>Trên điện thoại, mở NectarLink và cho phép Sửa đổi cài đặt hệ thống.</translation>
+        <source>On your phone, open Premium Cast and allow Modify system settings.</source>
+        <translation>Trên điện thoại, mở Premium Cast và cho phép Sửa đổi cài đặt hệ thống.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="58"/>
-        <source>Open NectarLink on your phone and grant this permission in Settings.</source>
-        <translation>Mở NectarLink trên điện thoại và cấp quyền này trong Cài đặt.</translation>
+        <source>Open Premium Cast on your phone and grant this permission in Settings.</source>
+        <translation>Mở Premium Cast trên điện thoại và cấp quyền này trong Cài đặt.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="60"/>
-        <source>Open Settings › Camera &amp; Audio to set up the NectarLink virtual camera add-on.</source>
-        <translation>Mở Cài đặt › Máy ảnh &amp; Âm thanh để thiết lập add-on máy ảnh ảo NectarLink.</translation>
+        <source>Open Settings › Camera &amp; Audio to set up the Premium Cast virtual camera add-on.</source>
+        <translation>Mở Cài đặt › Máy ảnh &amp; Âm thanh để thiết lập add-on máy ảnh ảo Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="62"/>
@@ -5902,8 +5902,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="382"/>
-        <source>Set up Wireless debugging in NectarLink on the phone to open its apps here.</source>
-        <translation>Thiết lập Gỡ lỗi không dây trong NectarLink trên điện thoại để mở ứng dụng của điện thoại tại đây.</translation>
+        <source>Set up Wireless debugging in Premium Cast on the phone to open its apps here.</source>
+        <translation>Thiết lập Gỡ lỗi không dây trong Premium Cast trên điện thoại để mở ứng dụng của điện thoại tại đây.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="383"/>
@@ -5912,8 +5912,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="384"/>
-        <source>The app didn&apos;t open on the phone. Try again, or open NectarLink on the phone to check Wireless debugging.</source>
-        <translation>Ứng dụng không mở trên điện thoại. Hãy thử lại, hoặc mở NectarLink trên điện thoại để kiểm tra Gỡ lỗi không dây.</translation>
+        <source>The app didn&apos;t open on the phone. Try again, or open Premium Cast on the phone to check Wireless debugging.</source>
+        <translation>Ứng dụng không mở trên điện thoại. Hãy thử lại, hoặc mở Premium Cast trên điện thoại để kiểm tra Gỡ lỗi không dây.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="385"/>
@@ -5942,8 +5942,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="390"/>
-        <source>This phone&apos;s app doesn&apos;t share its screen yet. Update NectarLink on the phone.</source>
-        <translation>Ứng dụng trên điện thoại này chưa chia sẻ màn hình. Hãy cập nhật NectarLink trên điện thoại.</translation>
+        <source>This phone&apos;s app doesn&apos;t share its screen yet. Update Premium Cast on the phone.</source>
+        <translation>Ứng dụng trên điện thoại này chưa chia sẻ màn hình. Hãy cập nhật Premium Cast trên điện thoại.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="391"/>
@@ -5960,12 +5960,12 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="27"/>
-        <source>%1 · NectarLink</source>
-        <translation>%1 · NectarLink</translation>
+        <source>%1 · Premium Cast</source>
+        <translation>%1 · Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="27"/>
-        <source>Phone screen · NectarLink</source>
+        <source>Phone screen · Premium Cast</source>
         <translation>Màn hình điện thoại · NectarLink</translation>
     </message>
     <message>
@@ -6081,8 +6081,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="927"/>
-        <source>To control the phone, turn on Control from your PC in NectarLink&apos;s settings on the phone.</source>
-        <translation>Để điều khiển điện thoại, hãy bật Điều khiển từ PC của bạn trong Cài đặt của NectarLink trên điện thoại.</translation>
+        <source>To control the phone, turn on Control from your PC in Premium Cast&apos;s settings on the phone.</source>
+        <translation>Để điều khiển điện thoại, hãy bật Điều khiển từ PC của bạn trong Cài đặt của Premium Cast trên điện thoại.</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="936"/>
@@ -6449,8 +6449,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="114"/>
-        <source>Install NectarLink</source>
-        <translation>Cài đặt NectarLink</translation>
+        <source>Install Premium Cast</source>
+        <translation>Cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="114"/>
@@ -6482,8 +6482,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="196"/>
-        <source>Open NectarLink on your phone</source>
-        <translation>Mở NectarLink trên điện thoại của bạn</translation>
+        <source>Open Premium Cast on your phone</source>
+        <translation>Mở Premium Cast trên điện thoại của bạn</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="196"/>
@@ -6492,8 +6492,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="244"/>
-        <source>On your phone, open NectarLink and choose “Pair nearby”. It shows up here.</source>
-        <translation>Trên điện thoại của bạn, mở NectarLink và chọn “Ghép nối gần đây”. Nó sẽ hiển thị ở đây.</translation>
+        <source>On your phone, open Premium Cast and choose “Pair nearby”. It shows up here.</source>
+        <translation>Trên điện thoại của bạn, mở Premium Cast và chọn “Ghép nối gần đây”. Nó sẽ hiển thị ở đây.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="274"/>
@@ -6598,8 +6598,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="407"/>
-        <source>Another build of NectarLink is on this phone</source>
-        <translation>Điện thoại này có một bản NectarLink khác</translation>
+        <source>Another build of Premium Cast is on this phone</source>
+        <translation>Điện thoại này có một bản Premium Cast khác</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="408"/>
@@ -6638,8 +6638,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="415"/>
-        <source>NectarLink needs Android 8.0 or newer.</source>
-        <translation>NectarLink cần Android 8.0 trở lên.</translation>
+        <source>Premium Cast needs Android 8.0 or newer.</source>
+        <translation>Premium Cast cần Android 8.0 trở lên.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="416"/>
@@ -6683,8 +6683,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="424"/>
-        <source>There&apos;s nothing to install. Open NectarLink on the phone to pair it.</source>
-        <translation>Không có gì để cài. Mở NectarLink trên điện thoại để ghép nối.</translation>
+        <source>There&apos;s nothing to install. Open Premium Cast on the phone to pair it.</source>
+        <translation>Không có gì để cài. Mở Premium Cast trên điện thoại để ghép nối.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="425"/>
@@ -6696,13 +6696,13 @@ Nó cần gì
     <name>PhoneInstallPane</name>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="142"/>
-        <source>Put NectarLink on a phone over USB</source>
-        <translation>Cài NectarLink lên điện thoại qua USB</translation>
+        <source>Put Premium Cast on a phone over USB</source>
+        <translation>Cài Premium Cast lên điện thoại qua USB</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="150"/>
-        <source>For phones that block installing from a browser, or when a cable is simply easier. NectarLink checks what&apos;s needed and walks you through the rest.</source>
-        <translation>Dành cho điện thoại chặn cài từ trình duyệt, hoặc khi dùng cáp đơn giản hơn. NectarLink kiểm tra những gì cần thiết và hướng dẫn bạn phần còn lại.</translation>
+        <source>For phones that block installing from a browser, or when a cable is simply easier. Premium Cast checks what&apos;s needed and walks you through the rest.</source>
+        <translation>Dành cho điện thoại chặn cài từ trình duyệt, hoặc khi dùng cáp đơn giản hơn. Premium Cast kiểm tra những gì cần thiết và hướng dẫn bạn phần còn lại.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="168"/>
@@ -6711,8 +6711,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="177"/>
-        <source>USB is turned off for this copy of NectarLink.</source>
-        <translation>USB đã tắt trong bản NectarLink này.</translation>
+        <source>USB is turned off for this copy of Premium Cast.</source>
+        <translation>USB đã tắt trong bản Premium Cast này.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="186"/>
@@ -6721,18 +6721,18 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="188"/>
-        <source>Ready. NectarLink uses the copy it downloaded from Google.</source>
-        <translation>Sẵn sàng. NectarLink dùng bản đã tải từ Google.</translation>
+        <source>Ready. Premium Cast uses the copy it downloaded from Google.</source>
+        <translation>Sẵn sàng. Premium Cast dùng bản đã tải từ Google.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="189"/>
-        <source>Ready. NectarLink uses the ones already on this PC.</source>
-        <translation>Sẵn sàng. NectarLink dùng bản đã có trên PC này.</translation>
+        <source>Ready. Premium Cast uses the ones already on this PC.</source>
+        <translation>Sẵn sàng. Premium Cast dùng bản đã có trên PC này.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="200"/>
-        <source>This PC doesn&apos;t have them yet. NectarLink can get them from Google: about 8 MB, kept in NectarLink&apos;s own folder, and also used to connect phones over a cable.</source>
-        <translation>PC này chưa có. NectarLink có thể tải từ Google: khoảng 8 MB, lưu trong thư mục riêng của NectarLink và cũng dùng để kết nối điện thoại qua cáp.</translation>
+        <source>This PC doesn&apos;t have them yet. Premium Cast can get them from Google: about 8 MB, kept in Premium Cast&apos;s own folder, and also used to connect phones over a cable.</source>
+        <translation>PC này chưa có. Premium Cast có thể tải từ Google: khoảng 8 MB, lưu trong thư mục riêng của Premium Cast và cũng dùng để kết nối điện thoại qua cáp.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="208"/>
@@ -6837,18 +6837,18 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="327"/>
-        <source>Install NectarLink</source>
-        <translation>Cài NectarLink</translation>
+        <source>Install Premium Cast</source>
+        <translation>Cài Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="337"/>
-        <source>NectarLink %1 comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
-        <translation>NectarLink %1 lấy từ các bản phát hành chính thức trên GitHub và được kiểm tra trước khi gửi sang điện thoại.</translation>
+        <source>Premium Cast %1 comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
+        <translation>Premium Cast %1 lấy từ các bản phát hành chính thức trên GitHub và được kiểm tra trước khi gửi sang điện thoại.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="338"/>
-        <source>NectarLink comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
-        <translation>NectarLink lấy từ các bản phát hành chính thức trên GitHub và được kiểm tra trước khi gửi sang điện thoại.</translation>
+        <source>Premium Cast comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
+        <translation>Premium Cast lấy từ các bản phát hành chính thức trên GitHub và được kiểm tra trước khi gửi sang điện thoại.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="608"/>
@@ -6862,18 +6862,18 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="613"/>
-        <source>NectarLink isn&apos;t on it yet</source>
-        <translation>chưa có NectarLink</translation>
+        <source>Premium Cast isn&apos;t on it yet</source>
+        <translation>chưa có Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="615"/>
-        <source>has NectarLink %1, %2 is newer</source>
-        <translation>có NectarLink %1, %2 mới hơn</translation>
+        <source>has Premium Cast %1, %2 is newer</source>
+        <translation>có Premium Cast %1, %2 mới hơn</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="617"/>
-        <source>has NectarLink %1</source>
-        <translation>có NectarLink %1</translation>
+        <source>has Premium Cast %1</source>
+        <translation>có Premium Cast %1</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="632"/>
@@ -6893,13 +6893,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="653"/>
-        <source>Downloading NectarLink… %1%</source>
-        <translation>Đang tải NectarLink… %1%</translation>
+        <source>Downloading Premium Cast… %1%</source>
+        <translation>Đang tải Premium Cast… %1%</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="654"/>
-        <source>Getting NectarLink…</source>
-        <translation>Đang lấy NectarLink…</translation>
+        <source>Getting Premium Cast…</source>
+        <translation>Đang lấy Premium Cast…</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="656"/>
@@ -6918,8 +6918,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="701"/>
-        <source>NectarLink %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.</source>
-        <translation>NectarLink %1 đã được cài và đang mở trên điện thoại. Hoàn tất thiết lập ở đó, rồi ghép nối với PC này từ Trang chủ.</translation>
+        <source>Premium Cast %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.</source>
+        <translation>Premium Cast %1 đã được cài và đang mở trên điện thoại. Hoàn tất thiết lập ở đó, rồi ghép nối với PC này từ Trang chủ.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="714"/>
@@ -6938,8 +6938,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="763"/>
-        <source>Remove the NectarLink on %1 with everything it keeps, including the PCs it&apos;s paired with? This can&apos;t be undone.</source>
-        <translation>Gỡ NectarLink trên %1 cùng mọi thứ nó lưu, kể cả các PC đã ghép nối? Không thể hoàn tác.</translation>
+        <source>Remove the Premium Cast on %1 with everything it keeps, including the PCs it&apos;s paired with? This can&apos;t be undone.</source>
+        <translation>Gỡ Premium Cast trên %1 cùng mọi thứ nó lưu, kể cả các PC đã ghép nối? Không thể hoàn tác.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="769"/>
@@ -6966,16 +6966,16 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="428"/>
-        <source>Update NectarLink on %1 to use its microphone.</source>
-        <translation>Cập nhật NectarLink trên %1 để sử dụng micrô của nó.</translation>
+        <source>Update Premium Cast on %1 to use its microphone.</source>
+        <translation>Cập nhật Premium Cast trên %1 để sử dụng micrô của nó.</translation>
     </message>
 </context>
 <context>
     <name>PhoneSound</name>
     <message>
         <location filename="rust_strings.h" line="429"/>
-        <source>%1 couldn&apos;t ask to share its sound. Check that NectarLink can show notifications on the phone.</source>
-        <translation>%1 không thể yêu cầu chia sẻ âm thanh. Hãy kiểm tra NectarLink có thể hiển thị thông báo trên điện thoại.</translation>
+        <source>%1 couldn&apos;t ask to share its sound. Check that Premium Cast can show notifications on the phone.</source>
+        <translation>%1 không thể yêu cầu chia sẻ âm thanh. Hãy kiểm tra Premium Cast có thể hiển thị thông báo trên điện thoại.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="430"/>
@@ -6989,8 +6989,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="432"/>
-        <source>Update NectarLink on %1 to play its sound here.</source>
-        <translation>Cập nhật NectarLink trên %1 để phát âm thanh của nó tại đây.</translation>
+        <source>Update Premium Cast on %1 to play its sound here.</source>
+        <translation>Cập nhật Premium Cast trên %1 để phát âm thanh của nó tại đây.</translation>
     </message>
 </context>
 <context>
@@ -7042,8 +7042,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="442"/>
-        <source>Update NectarLink on %1 to back up its photos.</source>
-        <translation>Cập nhật NectarLink trên %1 để sao lưu ảnh của nó.</translation>
+        <source>Update Premium Cast on %1 to back up its photos.</source>
+        <translation>Cập nhật Premium Cast trên %1 để sao lưu ảnh của nó.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="443"/>
@@ -7466,8 +7466,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="467"/>
-        <source>Update NectarLink on %1 to play on it.</source>
-        <translation>Cập nhật NectarLink trên %1 để phát trên đó.</translation>
+        <source>Update Premium Cast on %1 to play on it.</source>
+        <translation>Cập nhật Premium Cast trên %1 để phát trên đó.</translation>
     </message>
 </context>
 <context>
@@ -7707,8 +7707,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="476"/>
-        <source>Send to %1 with NectarLink</source>
-        <translation>Gửi đến %1 bằng NectarLink</translation>
+        <source>Send to %1 with Premium Cast</source>
+        <translation>Gửi đến %1 bằng Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="477"/>
@@ -8186,13 +8186,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="966"/>
-        <source>NectarLink follows the system unless you pick one.</source>
-        <translation>NectarLink làm theo hệ thống trừ khi bạn chọn một ngôn ngữ.</translation>
+        <source>Premium Cast follows the system unless you pick one.</source>
+        <translation>Premium Cast làm theo hệ thống trừ khi bạn chọn một ngôn ngữ.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="967"/>
-        <source>NectarLink follows Windows unless you pick one.</source>
-        <translation>NectarLink làm theo Windows trừ khi bạn chọn một ngôn ngữ.</translation>
+        <source>Premium Cast follows Windows unless you pick one.</source>
+        <translation>Premium Cast làm theo Windows trừ khi bạn chọn một ngôn ngữ.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="975"/>
@@ -8230,8 +8230,8 @@ Nó cần gì
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1070"/>
         <location filename="../qml/pages/SettingsPage.qml" line="1073"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1071"/>
@@ -8467,8 +8467,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="589"/>
-        <source>Makes text and everything else bigger. Applies when you restart NectarLink.</source>
-        <translation>Làm văn bản và mọi thứ khác to hơn. Áp dụng khi bạn khởi động lại NectarLink.</translation>
+        <source>Makes text and everything else bigger. Applies when you restart Premium Cast.</source>
+        <translation>Làm văn bản và mọi thứ khác to hơn. Áp dụng khi bạn khởi động lại Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1233"/>
@@ -9334,8 +9334,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3486"/>
-        <source>NectarLink %1</source>
-        <translation>NectarLink %1</translation>
+        <source>Premium Cast %1</source>
+        <translation>Premium Cast %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3489"/>
@@ -9412,8 +9412,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3716"/>
-        <source>The phone asks once to let this PC in. NectarLink there also needs All files access, or this folder under Selected folders only.</source>
-        <translation>Điện thoại hỏi một lần để cho phép PC này truy cập. NectarLink trên điện thoại cũng cần quyền All files access, hoặc thư mục này nằm trong Selected folders only.</translation>
+        <source>The phone asks once to let this PC in. Premium Cast there also needs All files access, or this folder under Selected folders only.</source>
+        <translation>Điện thoại hỏi một lần để cho phép PC này truy cập. Premium Cast trên điện thoại cũng cần quyền All files access, hoặc thư mục này nằm trong Selected folders only.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3719"/>
@@ -9495,8 +9495,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3895"/>
-        <source>Wi-Fi networks this PC has joined before. Your system keeps their passwords; NectarLink never sees them.</source>
-        <translation>Các mạng Wi-Fi mà PC này từng kết nối. Hệ thống của bạn giữ mật khẩu của chúng; NectarLink không bao giờ thấy chúng.</translation>
+        <source>Wi-Fi networks this PC has joined before. Your system keeps their passwords; Premium Cast never sees them.</source>
+        <translation>Các mạng Wi-Fi mà PC này từng kết nối. Hệ thống của bạn giữ mật khẩu của chúng; Premium Cast không bao giờ thấy chúng.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3896"/>
@@ -9505,8 +9505,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3898"/>
-        <source>Wi-Fi networks this PC has joined before. Windows keeps their passwords; NectarLink never sees them.</source>
-        <translation>Các mạng Wi-Fi mà PC này từng kết nối. Windows giữ mật khẩu của chúng; NectarLink không bao giờ thấy chúng.</translation>
+        <source>Wi-Fi networks this PC has joined before. Windows keeps their passwords; Premium Cast never sees them.</source>
+        <translation>Các mạng Wi-Fi mà PC này từng kết nối. Windows giữ mật khẩu của chúng; Premium Cast không bao giờ thấy chúng.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3899"/>
@@ -9649,8 +9649,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="484"/>
-        <source>Couldn&apos;t uninstall NectarLink: %1</source>
-        <translation>Không thể gỡ cài đặt NectarLink: %1</translation>
+        <source>Couldn&apos;t uninstall Premium Cast: %1</source>
+        <translation>Không thể gỡ cài đặt Premium Cast: %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="485"/>
@@ -9679,8 +9679,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="490"/>
-        <source>The uninstaller is missing. Reinstall NectarLink, then uninstall it.</source>
-        <translation>Trình gỡ cài đặt bị thiếu. Hãy cài đặt lại NectarLink, sau đó gỡ cài đặt nó.</translation>
+        <source>The uninstaller is missing. Reinstall Premium Cast, then uninstall it.</source>
+        <translation>Trình gỡ cài đặt bị thiếu. Hãy cài đặt lại Premium Cast, sau đó gỡ cài đặt nó.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="491"/>
@@ -9707,18 +9707,18 @@ Nó cần gì
     <name>SetupWindow</name>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="51"/>
-        <source>Uninstall NectarLink</source>
-        <translation>Gỡ cài đặt NectarLink</translation>
+        <source>Uninstall Premium Cast</source>
+        <translation>Gỡ cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="51"/>
-        <source>NectarLink Setup</source>
-        <translation>Cài đặt NectarLink</translation>
+        <source>Premium Cast Setup</source>
+        <translation>Cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="67"/>
-        <source>Install NectarLink in</source>
-        <translation>Cài đặt NectarLink vào</translation>
+        <source>Install Premium Cast in</source>
+        <translation>Cài đặt Premium Cast vào</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="120"/>
@@ -9730,13 +9730,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="187"/>
-        <source>NectarLink</source>
-        <translation>NectarLink</translation>
+        <source>Premium Cast</source>
+        <translation>Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="216"/>
-        <source>Couldn&apos;t uninstall NectarLink</source>
-        <translation>Không thể gỡ cài đặt NectarLink</translation>
+        <source>Couldn&apos;t uninstall Premium Cast</source>
+        <translation>Không thể gỡ cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="216"/>
@@ -9745,28 +9745,28 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="218"/>
-        <source>Uninstalling NectarLink</source>
-        <translation>Đang gỡ cài đặt NectarLink</translation>
+        <source>Uninstalling Premium Cast</source>
+        <translation>Đang gỡ cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="219"/>
-        <source>Updating NectarLink</source>
-        <translation>Đang cập nhật NectarLink</translation>
+        <source>Updating Premium Cast</source>
+        <translation>Đang cập nhật Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="220"/>
-        <source>Installing NectarLink</source>
-        <translation>Đang cài đặt NectarLink</translation>
+        <source>Installing Premium Cast</source>
+        <translation>Đang cài đặt Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="221"/>
-        <source>Uninstall NectarLink?</source>
-        <translation>Gỡ cài đặt NectarLink?</translation>
+        <source>Uninstall Premium Cast?</source>
+        <translation>Gỡ cài đặt Premium Cast?</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="236"/>
-        <source>Sorry to see you go. This uninstalls NectarLink and deletes its settings and pairings on this PC. Files you received stay in %1.</source>
-        <translation>Rất tiếc khi bạn ra đi. Thao tác này gỡ cài đặt NectarLink và xóa cài đặt cùng các ghép nối trên PC này. Các tệp bạn đã nhận vẫn nằm trong %1.</translation>
+        <source>Sorry to see you go. This uninstalls Premium Cast and deletes its settings and pairings on this PC. Files you received stay in %1.</source>
+        <translation>Rất tiếc khi bạn ra đi. Thao tác này gỡ cài đặt Premium Cast và xóa cài đặt cùng các ghép nối trên PC này. Các tệp bạn đã nhận vẫn nằm trong %1.</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="238"/>
@@ -9815,8 +9815,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="298"/>
-        <source>Keep NectarLink</source>
-        <translation>Giữ lại NectarLink</translation>
+        <source>Keep Premium Cast</source>
+        <translation>Giữ lại Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="356"/>
@@ -9846,13 +9846,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="469"/>
-        <source>NectarLink is uninstalled</source>
-        <translation>NectarLink đã được gỡ cài đặt</translation>
+        <source>Premium Cast is uninstalled</source>
+        <translation>Premium Cast đã được gỡ cài đặt</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="469"/>
-        <source>NectarLink is ready</source>
-        <translation>NectarLink đã sẵn sàng</translation>
+        <source>Premium Cast is ready</source>
+        <translation>Premium Cast đã sẵn sàng</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="481"/>
@@ -9876,13 +9876,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="531"/>
-        <source>Open NectarLink</source>
-        <translation>Mở NectarLink</translation>
+        <source>Open Premium Cast</source>
+        <translation>Mở Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="591"/>
-        <source>NectarLink goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:</source>
-        <translation>NectarLink được cài vào Program Files hoặc thư mục bạn chọn, cho mọi người dùng trên PC này. Cài đặt còn:</translation>
+        <source>Premium Cast goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:</source>
+        <translation>Premium Cast được cài vào Program Files hoặc thư mục bạn chọn, cho mọi người dùng trên PC này. Cài đặt còn:</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="593"/>
@@ -9919,8 +9919,8 @@ Nó cần gì
     <name>ShelfWindow</name>
     <message>
         <location filename="../qml/ShelfWindow.qml" line="16"/>
-        <source>NectarLink Shelf</source>
-        <translation>NectarLink Shelf</translation>
+        <source>Premium Cast Shelf</source>
+        <translation>Premium Cast Shelf</translation>
     </message>
     <message>
         <location filename="../qml/ShelfWindow.qml" line="53"/>
@@ -10143,13 +10143,13 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="496"/>
-        <source>On the phone, allow All files access for NectarLink.</source>
-        <translation>Trên điện thoại, hãy cấp quyền Truy cập toàn bộ tệp cho NectarLink.</translation>
+        <source>On the phone, allow All files access for Premium Cast.</source>
+        <translation>Trên điện thoại, hãy cấp quyền Truy cập toàn bộ tệp cho Premium Cast.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="497"/>
-        <source>On the phone, turn on Browse this phone&apos;s storage in File Explorer in NectarLink.</source>
-        <translation>Trên điện thoại, hãy bật Duyệt bộ nhớ điện thoại này trong File Explorer trong NectarLink.</translation>
+        <source>On the phone, turn on Browse this phone&apos;s storage in File Explorer in Premium Cast.</source>
+        <translation>Trên điện thoại, hãy bật Duyệt bộ nhớ điện thoại này trong File Explorer trong Premium Cast.</translation>
     </message>
 </context>
 <context>
@@ -10617,8 +10617,8 @@ Nó cần gì
     <name>Transfers</name>
     <message>
         <location filename="rust_strings.h" line="527"/>
-        <source>Accept in NectarLink to save to Downloads\Nectarlink</source>
-        <translation>Chấp nhận trong NectarLink để lưu vào Downloads\Nectarlink</translation>
+        <source>Accept in Premium Cast to save to Downloads\Nectarlink</source>
+        <translation>Chấp nhận trong Premium Cast để lưu vào Downloads\Nectarlink</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="528"/>
@@ -10660,28 +10660,28 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="535"/>
-        <source>NectarLink %1 is available</source>
-        <translation>Đã có NectarLink %1</translation>
+        <source>Premium Cast %1 is available</source>
+        <translation>Đã có Premium Cast %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="536"/>
-        <source>NectarLink %1 is available.</source>
-        <translation>Đã có NectarLink %1.</translation>
+        <source>Premium Cast %1 is available.</source>
+        <translation>Đã có Premium Cast %1.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="537"/>
-        <source>NectarLink is still on the version you had. Try again from Settings.</source>
-        <translation>NectarLink vẫn ở phiên bản bạn đang dùng. Hãy thử lại từ Cài đặt.</translation>
+        <source>Premium Cast is still on the version you had. Try again from Settings.</source>
+        <translation>Premium Cast vẫn ở phiên bản bạn đang dùng. Hãy thử lại từ Cài đặt.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="538"/>
-        <source>NectarLink is up to date.</source>
-        <translation>NectarLink đang ở phiên bản mới nhất.</translation>
+        <source>Premium Cast is up to date.</source>
+        <translation>Premium Cast đang ở phiên bản mới nhất.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="539"/>
-        <source>NectarLink is updated to %1</source>
-        <translation>NectarLink đã được cập nhật lên %1</translation>
+        <source>Premium Cast is updated to %1</source>
+        <translation>Premium Cast đã được cập nhật lên %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="540"/>
@@ -10720,8 +10720,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="rust_strings.h" line="547"/>
-        <source>The update is installed. Restart NectarLink to use it.</source>
-        <translation>Bản cập nhật đã được cài đặt. Khởi động lại NectarLink để sử dụng.</translation>
+        <source>The update is installed. Restart Premium Cast to use it.</source>
+        <translation>Bản cập nhật đã được cài đặt. Khởi động lại Premium Cast để sử dụng.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="548"/>
@@ -10915,8 +10915,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1554"/>
-        <source>Keep NectarLink ready in the system tray when you sign in.</source>
-        <translation>Giữ NectarLink sẵn sàng trong khay hệ thống khi bạn đăng nhập.</translation>
+        <source>Keep Premium Cast ready in the system tray when you sign in.</source>
+        <translation>Giữ Premium Cast sẵn sàng trong khay hệ thống khi bạn đăng nhập.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1612"/>
@@ -10960,8 +10960,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="97"/>
-        <source>Welcome to NectarLink</source>
-        <translation>Chào mừng đến với NectarLink</translation>
+        <source>Welcome to Premium Cast</source>
+        <translation>Chào mừng đến với Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="98"/>
@@ -10970,8 +10970,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="99"/>
-        <source>Install NectarLink on your phone</source>
-        <translation>Cài đặt NectarLink trên điện thoại của bạn</translation>
+        <source>Install Premium Cast on your phone</source>
+        <translation>Cài đặt Premium Cast trên điện thoại của bạn</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="100"/>
@@ -11010,8 +11010,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="110"/>
-        <source>Scan the QR code from the NectarLink Android app, or pick your phone from nearby devices.</source>
-        <translation>Quét mã QR từ ứng dụng NectarLink Android, hoặc chọn điện thoại của bạn trong các thiết bị gần đây.</translation>
+        <source>Scan the QR code from the Premium Cast Android app, or pick your phone from nearby devices.</source>
+        <translation>Quét mã QR từ ứng dụng Premium Cast Android, hoặc chọn điện thoại của bạn trong các thiết bị gần đây.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="111"/>
@@ -11160,8 +11160,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1478"/>
-        <source>Notifications are off for NectarLink in Windows Settings.</source>
-        <translation>Thông báo cho NectarLink đang tắt trong Cài đặt Windows.</translation>
+        <source>Notifications are off for Premium Cast in Windows Settings.</source>
+        <translation>Thông báo cho Premium Cast đang tắt trong Cài đặt Windows.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1493"/>
@@ -11195,8 +11195,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1654"/>
-        <source>Open the NectarLink Android app whenever you are ready to scan the QR code.</source>
-        <translation>Mở ứng dụng NectarLink Android bất cứ khi nào bạn sẵn sàng quét mã QR.</translation>
+        <source>Open the Premium Cast Android app whenever you are ready to scan the QR code.</source>
+        <translation>Mở ứng dụng Premium Cast Android bất cứ khi nào bạn sẵn sàng quét mã QR.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1659"/>
@@ -11205,8 +11205,8 @@ Nó cần gì
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1664"/>
-        <source>Browse every feature in NectarLink, see what permissions it needs, and jump straight to it.</source>
-        <translation>Duyệt mọi tính năng trong NectarLink, xem quyền cần thiết và chuyển thẳng đến đó.</translation>
+        <source>Browse every feature in Premium Cast, see what permissions it needs, and jump straight to it.</source>
+        <translation>Duyệt mọi tính năng trong Premium Cast, xem quyền cần thiết và chuyển thẳng đến đó.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1741"/>
@@ -11251,13 +11251,13 @@ Nó cần gì
     <name>WelcomePage</name>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="36"/>
-        <source>Welcome to NectarLink</source>
-        <translation>Chào mừng đến với NectarLink</translation>
+        <source>Welcome to Premium Cast</source>
+        <translation>Chào mừng đến với Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="46"/>
-        <source>NectarLink couldn&apos;t start.</source>
-        <translation>NectarLink không thể khởi động.</translation>
+        <source>Premium Cast couldn&apos;t start.</source>
+        <translation>Premium Cast không thể khởi động.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="47"/>

@@ -557,7 +557,7 @@ Item {
                             title: qsTr("Theme")
                             Segmented {
                                 options: [
-                                    { value: "hive", label: qsTr("Hive") },
+                                    { value: "hive", label: qsTr("Premium") },
                                     { value: "bloom", label: qsTr("Bloom") },
                                     { value: "glass", label: qsTr("Glass") },
                                     { value: "graphite", label: qsTr("Graphite") },
@@ -587,7 +587,7 @@ Item {
                             width: parent.width
                             iconPath: Icons.palette
                             title: qsTr("App size")
-                            description: qsTr("Makes text and everything else bigger. Applies when you restart NectarLink.")
+                            description: qsTr("Makes text and everything else bigger. Applies when you restart Premium Cast.")
                             Segmented {
                                 options: [
                                     { value: 100, label: "100%" },
@@ -851,16 +851,16 @@ Item {
                             width: parent.width
                             visible: Theme.hive
                             iconPath: Icons.sparkle
-                            title: qsTr("Animated comb")
+                            title: qsTr("Animated backdrop")
                             description: AppController.reduceMotion
                                 ? (Qt.platform.os === "linux"
                                     ? qsTr("Still while animations are off in system settings.")
                                     : qsTr("Still while animations are off in Windows."))
                                 : (AppController.powerSaver
                                     ? qsTr("Still while energy saver is on.")
-                                    : qsTr("The honeycomb breathes and pulses."))
+                                    : qsTr("The signal grid breathes and casts waves."))
                             Toggle {
-                                label: qsTr("Animated comb")
+                                label: qsTr("Animated backdrop")
                                 checked: Preferences.combMotion
                                 onToggled: (on) => Preferences.combMotion = on
                             }
@@ -964,8 +964,8 @@ Item {
                             iconPath: Icons.globe
                             title: qsTr("Language")
                             description: Qt.platform.os === "linux"
-                                ? qsTr("NectarLink follows the system unless you pick one.")
-                                : qsTr("NectarLink follows Windows unless you pick one.")
+                                ? qsTr("Premium Cast follows the system unless you pick one.")
+                                : qsTr("Premium Cast follows Windows unless you pick one.")
                             Segmented {
                                 readonly property var other: page.languages.find(
                                     (l) => l.code === Preferences.language && l.code !== "en")
@@ -1052,7 +1052,7 @@ Item {
 
                         Divider { width: parent.width }
 
-                        // Row 2: Nectar Island | Battery alerts
+                        // Row 2: Cast Island | Battery alerts
                         Item {
                             id: islandBatteryPairRow
                             width: parent.width
@@ -1068,10 +1068,10 @@ Item {
                                 y: islandBatteryPairRow.splitCols ? Math.round((parent.height - height) / 2) : 0
                                 width: islandBatteryPairRow.colWidth
                                 iconPath: Icons.island
-                                title: qsTr("Nectar Island")
+                                title: qsTr("Cast Island")
                                 description: qsTr("Top-screen pill for calls, transfers & media.")
                                 Toggle {
-                                    label: qsTr("Nectar Island")
+                                    label: qsTr("Cast Island")
                                     checked: Preferences.nectarIsland
                                     onToggled: (on) => Preferences.nectarIsland = on
                                 }
@@ -1110,7 +1110,7 @@ Item {
                             }
                         }
 
-                        // Sub-row: Granular Nectar Island triggers (Calls, Transfers, Media, Notifications)
+                        // Sub-row: Granular Cast Island triggers (Calls, Transfers, Media, Notifications)
                         Column {
                             id: islandTriggersBlock
                             visible: Preferences.nectarIsland
@@ -3484,7 +3484,7 @@ Item {
                         ListRow {
                             width: parent.width
                             iconPath: Icons.desktop
-                            title: qsTr("NectarLink %1").arg(AppController.version)
+                            title: qsTr("Premium Cast %1").arg(AppController.version)
                             description: AppController.updateStatus.length > 0
                                          ? AppController.updateStatus
                                          : qsTr("This PC: %1").arg(AppController.deviceName)
@@ -3534,6 +3534,14 @@ Item {
                                     onClicked: Qt.openUrlExternally(AppController.logsUrl())
                                 }
                             }
+                        }
+                        Divider { width: parent.width }
+                        // Premium Cast: who made this build, and what it is built on.
+                        ListRow {
+                            width: parent.width
+                            iconPath: Icons.mark
+                            title: qsTr("Copyright © 2026 Bareq Maher")
+                            description: qsTr("Premium Cast is based on NectarLink by The NectarLink contributors, used under GPL-3.0-or-later and MPL-2.0.")
                         }
                         Divider { width: parent.width; visible: AppController.canUpdate }
                         ListRow {
@@ -3714,7 +3722,7 @@ Item {
                 wrapMode: Text.WordWrap
                 role: "body"
                 muted: true
-                text: qsTr("The phone asks once to let this PC in. NectarLink there also needs All files access, or this folder under Selected folders only.")
+                text: qsTr("The phone asks once to let this PC in. Premium Cast there also needs All files access, or this folder under Selected folders only.")
             }
 
             Txt { text: qsTr("Folder on the phone"); role: "label" }
@@ -3893,10 +3901,10 @@ Item {
                 muted: true
                 text: Qt.platform.os === "linux"
                     ? (hotspotSheet.networks.length > 0
-                        ? qsTr("Wi-Fi networks this PC has joined before. Your system keeps their passwords; NectarLink never sees them.")
+                        ? qsTr("Wi-Fi networks this PC has joined before. Your system keeps their passwords; Premium Cast never sees them.")
                         : qsTr("This PC hasn't saved any Wi-Fi networks yet. Join the phone's hotspot once from your system Wi-Fi list first."))
                     : (hotspotSheet.networks.length > 0
-                        ? qsTr("Wi-Fi networks this PC has joined before. Windows keeps their passwords; NectarLink never sees them.")
+                        ? qsTr("Wi-Fi networks this PC has joined before. Windows keeps their passwords; Premium Cast never sees them.")
                         : qsTr("This PC hasn't saved any Wi-Fi networks yet. Join the phone's hotspot once from Windows' Wi-Fi list first."))
             }
             // A PC can have saved dozens of networks: the list scrolls.

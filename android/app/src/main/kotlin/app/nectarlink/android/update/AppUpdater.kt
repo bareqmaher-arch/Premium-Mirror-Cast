@@ -120,8 +120,10 @@ class AppUpdater(context: Context) {
     private val _state = MutableStateFlow<State>(State.Idle)
     val state: StateFlow<State> = _state.asStateFlow()
 
-    /** Whether this build updates itself. */
-    val enabled: Boolean get() = !BuildConfig.DEBUG
+    /** Whether this build updates itself. Premium Cast never does: the
+     *  original project's releases are signed with another key and would
+     *  replace this build. Install a newer Premium Cast APK by hand. */
+    val enabled: Boolean get() = false
 
     private val _autoInstall = MutableStateFlow(prefs.getBoolean(AUTO_INSTALL, true))
 

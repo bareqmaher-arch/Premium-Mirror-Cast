@@ -336,9 +336,9 @@ Item {
                         anchors.verticalCenter: parent.verticalCenter
                         width: 56; height: 56
                         radius: 14
-                        color: Theme.dark ? "#121214" : "#FFF8F3"
+                        color: Theme.dark ? "#0E0F13" : "#F8F8FB"
                         border.width: 1
-                        border.color: Theme.dark ? Qt.rgba(1.0, 0.73, 0.37, 0.24) : Qt.rgba(0.54, 0.32, 0.0, 0.20)
+                        border.color: Theme.dark ? Qt.rgba(0.71, 0.65, 1.0, 0.24) : Qt.rgba(0.35, 0.27, 0.84, 0.20)
                         HiveBackdrop {
                             anchors.fill: parent
                             corner: parent.radius
@@ -347,8 +347,8 @@ Item {
                             time: Theme.combTime
                             animate: !Theme.reduceMotion && !AppController.powerSaver
                             cell: 9
-                            lineColor: Theme.dark ? Qt.rgba(1.0, 0.73, 0.37, 0.28) : Qt.rgba(0.54, 0.32, 0.0, 0.16)
-                            glowColor: Theme.dark ? Qt.rgba(1.0, 0.62, 0.18, 0.70) : Qt.rgba(1.0, 0.72, 0.37, 0.75)
+                            lineColor: Theme.dark ? Qt.rgba(0.71, 0.65, 1.0, 0.28) : Qt.rgba(0.35, 0.27, 0.84, 0.16)
+                            glowColor: Theme.dark ? Qt.rgba(0.71, 0.65, 1.0, 0.70) : Qt.rgba(0.35, 0.27, 0.84, 0.75)
                             origin: Qt.point(width / 2, height / 2)
                         }
                         Icon {
@@ -356,7 +356,7 @@ Item {
                             width: 22; height: 22
                             path: Icons.mark
                             stroke: 2.2
-                            color: Theme.dark ? "#FFB95F" : "#8A5100"
+                            color: Theme.dark ? "#B4A6FF" : "#5A45D6"
                         }
                     }
                     Column {
@@ -370,14 +370,14 @@ Item {
                         Txt {
                             width: parent.width
                             role: "title"
-                            text: qsTr("Try Hive, the new theme")
+                            text: qsTr("Try Premium, the new theme")
                             wrapMode: Text.WordWrap
                         }
                         Txt {
                             width: parent.width
                             role: "bodySmall"
                             muted: true
-                            text: qsTr("Honey on charcoal or warm wax, with a living honeycomb behind the app. Change it any time in Settings › Appearance.")
+                            text: qsTr("Violet on onyx or pearl, with a living signal grid behind the app. Change it any time in Settings › Appearance.")
                             wrapMode: Text.WordWrap
                         }
                     }
@@ -396,7 +396,7 @@ Item {
                             variant: "tonal"
                             size: "sm"
                             iconPath: Icons.sparkle
-                            text: qsTr("Try Hive")
+                            text: qsTr("Try Premium")
                             onClicked: {
                                 Preferences.hiveInviteDismissed = true
                                 Preferences.theme = "hive"
@@ -781,7 +781,7 @@ Item {
                             ? (Theme.dark ? "#17191D" : "#CFD4DC")
                             : (Theme.dark ? Qt.darker(seedColor, 2.55) : Qt.darker(seedColor, 1.25))
                         readonly property color screenInk: Theme.hive
-                            ? (Theme.dark ? "#FFDDB3" : "#2C1600")
+                            ? (Theme.dark ? "#E5DEFF" : "#1A0E5C")
                             : (Theme.graphite && !Theme.dark ? "#1E2025" : "#FFFFFF")
                         readonly property string cutoutSvg: {
                             const s = home.screenData
@@ -873,7 +873,7 @@ Item {
                             frameMs: Theme.comb.frameMs
                             breathSeconds: Theme.comb.breathSeconds
                             pulseSeconds: Theme.comb.pulseSeconds
-                            lineColor: Theme.dark ? Qt.rgba(1.0, 0.73, 0.37, 0.26) : Qt.rgba(0.54, 0.32, 0.0, 0.16)
+                            lineColor: Theme.dark ? Qt.rgba(0.71, 0.65, 1.0, 0.26) : Qt.rgba(0.35, 0.27, 0.84, 0.16)
                             glowColor: Theme.combGlow
                             origin: Qt.point(width / 2, height * 0.42)
                         }

@@ -34,7 +34,8 @@ android {
     ndkVersion = "30.0.16248370"
 
     defaultConfig {
-        applicationId = "app.nectarlink"
+        // Premium Cast: its own package, so it installs beside (not over) NectarLink.
+        applicationId = "app.premiumcast"
         minSdk = 26
         targetSdk = 37
         versionCode = appVersionCode

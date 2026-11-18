@@ -257,7 +257,7 @@ Item {
             area: "camera_audio",
             capKey: "webcam",
             toggleKey: "",
-            summary: qsTr("Use your phone camera as the NectarLink Virtual Camera in Zoom, Teams, Meet, and OBS."),
+            summary: qsTr("Use your phone camera as the Premium Cast Virtual Camera in Zoom, Teams, Meet, and OBS."),
             whereLabel: qsTr("Home › Phone as webcam"),
             needsLabel: qsTr("Camera permission on phone and Virtual Camera registered on PC"),
             targetId: "settings:camera_audio:webcam",
@@ -385,7 +385,7 @@ Item {
         },
         {
             id: "nectar_island",
-            name: qsTr("Nectar Island"),
+            name: qsTr("Cast Island"),
             icon: Icons.island,
             area: "surfaces",
             capKey: "",
@@ -393,8 +393,8 @@ Item {
             pcLocal: true,
             prefKey: "nectarIsland",
             summary: qsTr("Compact floating pill at the top center of your monitor for calls, transfers, media, and alerts."),
-            whereLabel: qsTr("Settings › General › Nectar Island"),
-            needsLabel: qsTr("Nectar Island enabled in Settings"),
+            whereLabel: qsTr("Settings › General › Cast Island"),
+            needsLabel: qsTr("Cast Island enabled in Settings"),
             targetId: "settings:general:island",
             docKey: "nectar-island"
         },
@@ -583,7 +583,7 @@ Item {
 
             Txt {
                 Layout.fillWidth: true
-                text: qsTr("Every feature in NectarLink, what it needs, and where to find it.")
+                text: qsTr("Every feature in Premium Cast, what it needs, and where to find it.")
                 role: "body"
                 color: Theme.surfaceContentVariant
                 wrapMode: Text.WordWrap

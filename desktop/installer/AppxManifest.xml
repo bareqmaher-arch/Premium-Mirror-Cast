@@ -14,8 +14,8 @@
     ProcessorArchitecture="x64" />
 
   <Properties>
-    <DisplayName>Nectarlink</DisplayName>
-    <PublisherDisplayName>The Nectarlink contributors</PublisherDisplayName>
+    <DisplayName>Premium Cast</DisplayName>
+    <PublisherDisplayName>Bareq Maher</PublisherDisplayName>
     <Logo>Assets\Square150x150Logo.png</Logo>
     <uap10:AllowExternalContent>true</uap10:AllowExternalContent>
   </Properties>
@@ -35,14 +35,14 @@
       uap10:TrustLevel="mediumIL"
       uap10:RuntimeBehavior="win32App">
       <uap:VisualElements
-        DisplayName="Nectarlink"
+        DisplayName="Premium Cast"
         Description="Your phone, on your PC"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
         BackgroundColor="transparent" />
       <Extensions>
         <uap:Extension Category="windows.shareTarget">
-          <uap:ShareTarget Description="Send to your phone with Nectarlink">
+          <uap:ShareTarget Description="Send to your phone with Premium Cast">
             <uap:SupportedFileTypes>
               <uap:SupportsAnyFileType />
             </uap:SupportedFileTypes>

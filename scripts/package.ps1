@@ -219,6 +219,14 @@ Copy-Item (Join-Path $crt.FullName '*.dll') $stage
 
 # Licenses.
 Copy-Item (Join-Path $root 'LICENSE') (Join-Path $stage 'LICENSE.txt')
+
+# Premium Cast: its own phone app ships beside the PC app (phone_install.rs).
+$apk = Join-Path $root 'android\app\build\outputs\apk\release\app-release.apk'
+if (Test-Path $apk) {
+    Copy-Item $apk (Join-Path $stage 'PremiumCast-android.apk')
+} else {
+    Write-Warning "No phone app at $apk. Build it first: cd android; .\gradlew assembleRelease"
+}
 Invoke-Native "writing the notices" { cargo xtask notices (Join-Path $stage 'THIRD-PARTY-NOTICES.txt') }
 
 # The icon build.rs drew for the .exe, and Sparse Package assets for Windows Share sheet.
@@ -275,7 +283,7 @@ Step "Installer ($Arch)"
 $makensis = (Get-Command makensis -ErrorAction SilentlyContinue).Source
 if (-not $makensis) { $makensis = Join-Path ${env:ProgramFiles(x86)} 'NSIS\makensis.exe' }
 if (-not (Test-Path $makensis)) { throw "NSIS (makensis) not found" }
-$out = Join-Path $package "Nectarlink-$version-$Arch-setup.exe"
+$out = Join-Path $package "PremiumCast-$version-$Arch-setup.exe"
 Invoke-Native "makensis" {
     & $makensis /V2 "/DVERSION=$numeric" "/DBUILD=$build" "/DDISPLAY_VERSION=$version" "/DARCH=$Arch" "/DSTAGE=$stage" `
         "/DICON=$($icon.FullName)" "/DOUTFILE=$out" (Join-Path $root 'desktop\installer\nectarlink.nsi')

@@ -55,28 +55,28 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="17"/>
-        <source>NectarLink · %1</source>
-        <translation>NectarLink · %1</translation>
+        <source>Premium Cast · %1</source>
+        <translation>Premium Cast · %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="18"/>
-        <source>NectarLink · %1 devices connected</source>
-        <translation>NectarLink · %1 dispositivos conectados</translation>
+        <source>Premium Cast · %1 devices connected</source>
+        <translation>Premium Cast · %1 dispositivos conectados</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="19"/>
-        <source>NectarLink · 1 device connected</source>
-        <translation>NectarLink · 1 dispositivo conectado</translation>
+        <source>Premium Cast · 1 device connected</source>
+        <translation>Premium Cast · 1 dispositivo conectado</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="20"/>
-        <source>NectarLink · no devices paired</source>
-        <translation>NectarLink · ningún dispositivo emparejado</translation>
+        <source>Premium Cast · no devices paired</source>
+        <translation>Premium Cast · ningún dispositivo emparejado</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="21"/>
-        <source>NectarLink · not connected</source>
-        <translation>NectarLink · no conectado</translation>
+        <source>Premium Cast · not connected</source>
+        <translation>Premium Cast · no conectado</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="22"/>
@@ -85,8 +85,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="23"/>
-        <source>Open NectarLink</source>
-        <translation>Abrir NectarLink</translation>
+        <source>Open Premium Cast</source>
+        <translation>Abrir Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="24"/>
@@ -100,8 +100,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="26"/>
-        <source>Quit NectarLink</source>
-        <translation>Salir de NectarLink</translation>
+        <source>Quit Premium Cast</source>
+        <translation>Salir de Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="27"/>
@@ -208,8 +208,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AppsPage.qml" line="94"/>
-        <source>Set up Wireless debugging in NectarLink on the phone to open its apps here.</source>
-        <translation>Configura la depuración inalámbrica en NectarLink en el teléfono para abrir sus aplicaciones aquí.</translation>
+        <source>Set up Wireless debugging in Premium Cast on the phone to open its apps here.</source>
+        <translation>Configura la depuración inalámbrica en Premium Cast en el teléfono para abrir sus aplicaciones aquí.</translation>
     </message>
     <message>
         <location filename="../qml/pages/AppsPage.qml" line="147"/>
@@ -819,8 +819,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="65"/>
-        <source>Update NectarLink on %1 to send it images.</source>
-        <translation>Actualiza NectarLink en %1 para enviarle imágenes.</translation>
+        <source>Update Premium Cast on %1 to send it images.</source>
+        <translation>Actualiza Premium Cast en %1 para enviarle imágenes.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="66"/>
@@ -1077,8 +1077,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="107"/>
-        <source>Opened Recordings folder. Start a voice note in NectarLink on %1 to send it here.</source>
-        <translation>Carpeta de grabaciones abierta. Inicia una nota de voz en NectarLink en %1 para enviarla aquí.</translation>
+        <source>Opened Recordings folder. Start a voice note in Premium Cast on %1 to send it here.</source>
+        <translation>Carpeta de grabaciones abierta. Inicia una nota de voz en Premium Cast en %1 para enviarla aquí.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="108"/>
@@ -1252,8 +1252,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="142"/>
-        <source>Stream %1&apos;s camera into the NectarLink virtual webcam</source>
-        <translation>Transmite la cámara de %1 a la cámara web virtual de NectarLink</translation>
+        <source>Stream %1&apos;s camera into the Premium Cast virtual webcam</source>
+        <translation>Transmite la cámara de %1 a la cámara web virtual de Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="143"/>
@@ -1913,13 +1913,13 @@
     <name>Doctor</name>
     <message>
         <location filename="rust_strings.h" line="192"/>
-        <source>%1 Open NectarLink on the phone and keep both on the same network. If the phone asks to run in the background, allow it.</source>
-        <translation>%1 Abre NectarLink en el teléfono y mantén ambos en la misma red. Si el teléfono pide ejecutarse en segundo plano, permíteselo.</translation>
+        <source>%1 Open Premium Cast on the phone and keep both on the same network. If the phone asks to run in the background, allow it.</source>
+        <translation>%1 Abre Premium Cast en el teléfono y mantén ambos en la misma red. Si el teléfono pide ejecutarse en segundo plano, permíteselo.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="193"/>
-        <source>%1 announces itself at %2, which isn&apos;t in a private range such as 192.168.x.x. NectarLink connects on such a network once both apps are up to date. Until then, turn on Connect over mobile data on both, or connect with a USB cable.</source>
-        <translation>%1 se anuncia en %2, que no está en un rango privado como 192.168.x.x. NectarLink se conectará en esa red cuando ambas aplicaciones estén actualizadas. Hasta entonces, activa Conectar mediante datos móviles en ambos o conéctalos con un cable USB.</translation>
+        <source>%1 announces itself at %2, which isn&apos;t in a private range such as 192.168.x.x. Premium Cast connects on such a network once both apps are up to date. Until then, turn on Connect over mobile data on both, or connect with a USB cable.</source>
+        <translation>%1 se anuncia en %2, que no está en un rango privado como 192.168.x.x. Premium Cast se conectará en esa red cuando ambas aplicaciones estén actualizadas. Hasta entonces, activa Conectar mediante datos móviles en ambos o conéctalos con un cable USB.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="194"/>
@@ -1978,8 +1978,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="205"/>
-        <source>A firewall rule blocks incoming NectarLink connections. Allow it, and your phone can connect.</source>
-        <translation>Una regla del firewall bloquea las conexiones entrantes de NectarLink. Permítelas y tu teléfono podrá conectarse.</translation>
+        <source>A firewall rule blocks incoming Premium Cast connections. Allow it, and your phone can connect.</source>
+        <translation>Una regla del firewall bloquea las conexiones entrantes de Premium Cast. Permítelas y tu teléfono podrá conectarse.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="206"/>
@@ -2048,48 +2048,48 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="219"/>
-        <source>NectarLink can&apos;t show its icon in the top bar</source>
-        <translation>NectarLink no puede mostrar su icono en la barra superior</translation>
+        <source>Premium Cast can&apos;t show its icon in the top bar</source>
+        <translation>Premium Cast no puede mostrar su icono en la barra superior</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="220"/>
-        <source>NectarLink is in the top bar</source>
-        <translation>NectarLink está en la barra superior</translation>
+        <source>Premium Cast is in the top bar</source>
+        <translation>Premium Cast está en la barra superior</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="221"/>
-        <source>NectarLink isn&apos;t allowed through Windows Firewall</source>
-        <translation>NectarLink no está permitido a través del Firewall de Windows</translation>
+        <source>Premium Cast isn&apos;t allowed through Windows Firewall</source>
+        <translation>Premium Cast no está permitido a través del Firewall de Windows</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="222"/>
-        <source>NectarLink isn&apos;t allowed through the firewall</source>
-        <translation>El firewall no permite NectarLink</translation>
+        <source>Premium Cast isn&apos;t allowed through the firewall</source>
+        <translation>El firewall no permite Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="223"/>
-        <source>On Huawei / Honor: open Settings → Battery → App launch, turn off Manage automatically for NectarLink, and keep Auto-launch, Secondary launch, and Run in background on.</source>
-        <translation>En Huawei / Honor: abre Ajustes → Batería → Inicio de aplicaciones, desactiva Gestionar automáticamente para NectarLink y mantén activados Inicio automático, Inicio secundario y Ejecutar en segundo plano.</translation>
+        <source>On Huawei / Honor: open Settings → Battery → App launch, turn off Manage automatically for Premium Cast, and keep Auto-launch, Secondary launch, and Run in background on.</source>
+        <translation>En Huawei / Honor: abre Ajustes → Batería → Inicio de aplicaciones, desactiva Gestionar automáticamente para Premium Cast y mantén activados Inicio automático, Inicio secundario y Ejecutar en segundo plano.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="224"/>
-        <source>On OnePlus / OxygenOS: open Settings → Apps → App management → NectarLink → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
-        <translation>En OnePlus / OxygenOS: abre Ajustes → Aplicaciones → Administración de aplicaciones → NectarLink → Uso de batería y activa Permitir actividad en segundo plano y Permitir inicio automático.</translation>
+        <source>On OnePlus / OxygenOS: open Settings → Apps → App management → Premium Cast → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
+        <translation>En OnePlus / OxygenOS: abre Ajustes → Aplicaciones → Administración de aplicaciones → Premium Cast → Uso de batería y activa Permitir actividad en segundo plano y Permitir inicio automático.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="225"/>
-        <source>On Oppo / Realme: open Settings → Apps → App management → NectarLink → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
-        <translation>En Oppo / Realme: abre Ajustes → Aplicaciones → Administración de aplicaciones → NectarLink → Uso de batería y activa Permitir actividad en segundo plano y Permitir inicio automático.</translation>
+        <source>On Oppo / Realme: open Settings → Apps → App management → Premium Cast → Battery usage and turn on Allow background activity and Allow auto-launch.</source>
+        <translation>En Oppo / Realme: abre Ajustes → Aplicaciones → Administración de aplicaciones → Premium Cast → Uso de batería y activa Permitir actividad en segundo plano y Permitir inicio automático.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="226"/>
-        <source>On Pixel: open Settings → Apps → See all apps → NectarLink → App battery usage, tap Allow background usage, and choose Unrestricted.</source>
-        <translation>En Pixel: abre Ajustes → Aplicaciones → Ver todas las aplicaciones → NectarLink → Uso de batería de la aplicación, toca Permitir uso en segundo plano y elige Sin restricciones.</translation>
+        <source>On Pixel: open Settings → Apps → See all apps → Premium Cast → App battery usage, tap Allow background usage, and choose Unrestricted.</source>
+        <translation>En Pixel: abre Ajustes → Aplicaciones → Ver todas las aplicaciones → Premium Cast → Uso de batería de la aplicación, toca Permitir uso en segundo plano y elige Sin restricciones.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="227"/>
-        <source>On Samsung: open Settings → Apps → NectarLink → Battery and choose Unrestricted, then in Device care → Battery → Background usage limits make sure NectarLink is never put to sleep.</source>
-        <translation>En Samsung: abre Ajustes → Aplicaciones → NectarLink → Batería y elige Sin restricciones; después, en Mantenimiento del dispositivo → Batería → Límites de uso en segundo plano, asegúrate de que NectarLink nunca se suspenda.</translation>
+        <source>On Samsung: open Settings → Apps → Premium Cast → Battery and choose Unrestricted, then in Device care → Battery → Background usage limits make sure Premium Cast is never put to sleep.</source>
+        <translation>En Samsung: abre Ajustes → Aplicaciones → Premium Cast → Batería y elige Sin restricciones; después, en Mantenimiento del dispositivo → Batería → Límites de uso en segundo plano, asegúrate de que Premium Cast nunca se suspenda.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="228"/>
@@ -2098,13 +2098,13 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="229"/>
-        <source>On Vivo / OriginOS / Funtouch: open Settings → Battery → Background power consumption management → NectarLink and choose Unrestricted, and allow Autostart.</source>
-        <translation>En Vivo / OriginOS / Funtouch: abre Ajustes → Batería → Gestión del consumo de energía en segundo plano → NectarLink, elige Sin restricciones y permite el inicio automático.</translation>
+        <source>On Vivo / OriginOS / Funtouch: open Settings → Battery → Background power consumption management → Premium Cast and choose Unrestricted, and allow Autostart.</source>
+        <translation>En Vivo / OriginOS / Funtouch: abre Ajustes → Batería → Gestión del consumo de energía en segundo plano → Premium Cast, elige Sin restricciones y permite el inicio automático.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="230"/>
-        <source>On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → NectarLink, turn on Autostart, and set Battery saver to No restrictions.</source>
-        <translation>En Xiaomi / HyperOS / MIUI: abre Ajustes → Aplicaciones → Administrar aplicaciones → NectarLink, activa Inicio automático y pon Ahorro de batería en Sin restricciones.</translation>
+        <source>On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → Premium Cast, turn on Autostart, and set Battery saver to No restrictions.</source>
+        <translation>En Xiaomi / HyperOS / MIUI: abre Ajustes → Aplicaciones → Administrar aplicaciones → Premium Cast, activa Inicio automático y pon Ahorro de batería en Sin restricciones.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="231"/>
@@ -2143,8 +2143,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="238"/>
-        <source>Phones on a USB cable connect through adb. NectarLink starts it every minute or so; start it now if a phone on a cable isn&apos;t showing up.</source>
-        <translation>Los teléfonos conectados por cable USB se conectan a través de adb. NectarLink lo inicia más o menos cada minuto; inícialo ahora si un teléfono conectado por cable no aparece.</translation>
+        <source>Phones on a USB cable connect through adb. Premium Cast starts it every minute or so; start it now if a phone on a cable isn&apos;t showing up.</source>
+        <translation>Los teléfonos conectados por cable USB se conectan a través de adb. Premium Cast lo inicia más o menos cada minuto; inícialo ahora si un teléfono conectado por cable no aparece.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="239"/>
@@ -2168,8 +2168,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="243"/>
-        <source>The firewall blocks NectarLink</source>
-        <translation>El firewall bloquea NectarLink</translation>
+        <source>The firewall blocks Premium Cast</source>
+        <translation>El firewall bloquea Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="244"/>
@@ -2208,9 +2208,9 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="251"/>
-        <source>To connect over a cable, NectarLink can get Android&apos;s USB tools from Google for you, and the phone needs USB debugging on. Wi-Fi works without them.</source>
+        <source>To connect over a cable, Premium Cast can get Android&apos;s USB tools from Google for you, and the phone needs USB debugging on. Wi-Fi works without them.</source>
         <oldsource>To connect over a cable, install Android&apos;s platform-tools or Android Studio, and turn on USB debugging on the phone. Wi-Fi works without it.</oldsource>
-        <translation>Para conectar por cable, NectarLink puede descargar por ti las herramientas USB de Android desde Google, y el teléfono necesita la depuración USB activada. El Wi-Fi funciona sin ellas.</translation>
+        <translation>Para conectar por cable, Premium Cast puede descargar por ti las herramientas USB de Android desde Google, y el teléfono necesita la depuración USB activada. El Wi-Fi funciona sin ellas.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="252"/>
@@ -2224,8 +2224,8 @@
     </message>
     <message>
         <location filename="rust_strings.h" line="254"/>
-        <source>Windows Firewall blocks NectarLink</source>
-        <translation>El Firewall de Windows bloquea NectarLink</translation>
+        <source>Windows Firewall blocks Premium Cast</source>
+        <translation>El Firewall de Windows bloquea Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="255"/>
@@ -2526,8 +2526,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="586"/>
-        <source>Every feature in NectarLink, what it needs, and where to find it.</source>
-        <translation>Todas las funciones de NectarLink, sus requisitos y dónde encontrarlas.</translation>
+        <source>Every feature in Premium Cast, what it needs, and where to find it.</source>
+        <translation>Todas las funciones de Premium Cast, sus requisitos y dónde encontrarlas.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="625"/>
@@ -2821,8 +2821,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="260"/>
-        <source>Use your phone camera as the NectarLink Virtual Camera in Zoom, Teams, Meet, and OBS.</source>
-        <translation>Usa la cámara de tu teléfono como cámara virtual de NectarLink en Zoom, Teams, Meet y OBS.</translation>
+        <source>Use your phone camera as the Premium Cast Virtual Camera in Zoom, Teams, Meet, and OBS.</source>
+        <translation>Usa la cámara de tu teléfono como cámara virtual de Premium Cast en Zoom, Teams, Meet y OBS.</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="261"/>
@@ -3007,8 +3007,8 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="388"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="395"/>
@@ -3017,13 +3017,13 @@
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="396"/>
-        <source>Settings › General › Nectar Island</source>
-        <translation>Ajustes › General › Nectar Island</translation>
+        <source>Settings › General › Cast Island</source>
+        <translation>Ajustes › General › Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="397"/>
-        <source>Nectar Island enabled in Settings</source>
-        <translation>Nectar Island activada en Ajustes</translation>
+        <source>Cast Island enabled in Settings</source>
+        <translation>Cast Island activada en Ajustes</translation>
     </message>
     <message>
         <location filename="../qml/pages/FeaturesGuidePage.qml" line="403"/>
@@ -3178,15 +3178,15 @@
     <name>Guide</name>
     <message>
         <location filename="rust_strings.h" line="277"/>
-        <source>1. Install NectarLink on your PC (Windows 11 or Linux) and your Android phone (Android 8.0 or newer).
+        <source>1. Install Premium Cast on your PC (Windows 11 or Linux) and your Android phone (Android 8.0 or newer).
 2. Connect both devices to the same Wi-Fi network, or plug your phone into your PC with a USB cable.
 3. Open the Pair step in the setup walkthrough, or click + (Pair a new device) at the bottom of the left rail.
-4. Scan the QR code from the NectarLink Android app, or select your phone from the nearby devices list and confirm that the 6-digit code matches on both screens.
+4. Scan the QR code from the Premium Cast Android app, or select your phone from the nearby devices list and confirm that the 6-digit code matches on both screens.
 5. Choose which features to share for that phone and grant only the Android permissions you want to use.</source>
-        <translation>1. Instala NectarLink en tu PC (Windows 11 o Linux) y en tu teléfono Android (Android 8.0 o posterior).
+        <translation>1. Instala Premium Cast en tu PC (Windows 11 o Linux) y en tu teléfono Android (Android 8.0 o posterior).
 2. Conecta ambos dispositivos a la misma red Wi-Fi o conecta el teléfono al PC con un cable USB.
 3. Abre el paso Emparejar de la guía de configuración o haz clic en + (Emparejar un dispositivo nuevo) al pie de la barra lateral izquierda.
-4. Escanea el código QR desde NectarLink para Android, o selecciona el teléfono en la lista de dispositivos cercanos y comprueba que el código de 6 dígitos coincida en ambas pantallas.
+4. Escanea el código QR desde Premium Cast para Android, o selecciona el teléfono en la lista de dispositivos cercanos y comprueba que el código de 6 dígitos coincida en ambas pantallas.
 5. Elige qué funciones compartir con ese teléfono y concede únicamente los permisos de Android que quieras usar.</translation>
     </message>
     <message>
@@ -3259,15 +3259,15 @@
         <source>If your phone and PC do not see each other:
 
 1. Open Connection Doctor from Settings › Connection &amp; About or the Command Palette.
-2. Check that your Wi-Fi network profile in Windows is set to Private rather than Public, or click Fix in Connection Doctor to allow NectarLink through Windows Firewall.
+2. Check that your Wi-Fi network profile in Windows is set to Private rather than Public, or click Fix in Connection Doctor to allow Premium Cast through Windows Firewall.
 3. Verify that both devices are on the same subnet and that guest Wi-Fi client isolation is turned off on your router.
-4. You can also connect over a USB cable with USB debugging enabled; NectarLink automatically sets up a local tunnel.</source>
+4. You can also connect over a USB cable with USB debugging enabled; Premium Cast automatically sets up a local tunnel.</source>
         <translation>Si el teléfono y el PC no se encuentran:
 
 1. Abre Diagnóstico de conexión desde Ajustes › Conexión y Acerca de o desde la paleta de comandos.
-2. Comprueba que el perfil de red Wi-Fi de Windows esté configurado como Privado y no Público, o haz clic en Reparar en Diagnóstico de conexión para permitir NectarLink en el Firewall de Windows.
+2. Comprueba que el perfil de red Wi-Fi de Windows esté configurado como Privado y no Público, o haz clic en Reparar en Diagnóstico de conexión para permitir Premium Cast en el Firewall de Windows.
 3. Comprueba que ambos dispositivos estén en la misma subred y que el aislamiento de clientes de la red Wi-Fi de invitados esté desactivado en el router.
-4. También puedes conectarlos mediante USB con la depuración USB activada; NectarLink configura automáticamente un túnel local.</translation>
+4. También puedes conectarlos mediante USB con la depuración USB activada; Premium Cast configura automáticamente un túnel local.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="292"/>
@@ -3310,7 +3310,7 @@ Las funciones sensibles, como Compartir carpetas del PC, Entrada remota y Duplic
     </message>
     <message>
         <location filename="rust_strings.h" line="297"/>
-        <source>Most NectarLink features work in Standard mode with regular Android permissions. Two optional modes unlock deeper system integration:
+        <source>Most Premium Cast features work in Standard mode with regular Android permissions. Two optional modes unlock deeper system integration:
 
 Elevated mode (Wireless debugging or root)
 - Captures the phone screen without showing the Android cast confirmation prompt every time.
@@ -3319,8 +3319,8 @@ Elevated mode (Wireless debugging or root)
 
 Assist mode (Android Accessibility Service)
 - Injects mouse clicks, scrolling, and touch gestures when you control your phone from your PC.
-- NectarLink never reads screen text or logs keystrokes through the Accessibility service.</source>
-        <translation>La mayoría de las funciones de NectarLink funcionan en modo Estándar con los permisos habituales de Android. Dos modos opcionales permiten una integración más profunda:
+- Premium Cast never reads screen text or logs keystrokes through the Accessibility service.</source>
+        <translation>La mayoría de las funciones de Premium Cast funcionan en modo Estándar con los permisos habituales de Android. Dos modos opcionales permiten una integración más profunda:
 
 Modo Elevated (depuración inalámbrica o root)
 - Captura la pantalla del teléfono sin mostrar cada vez el aviso de confirmación de Android.
@@ -3329,16 +3329,16 @@ Modo Elevated (depuración inalámbrica o root)
 
 Modo Assist (servicio de accesibilidad de Android)
 - Introduce clics del ratón, desplazamientos y gestos táctiles al controlar el teléfono desde el PC.
-- NectarLink nunca lee el texto de la pantalla ni registra las pulsaciones mediante el servicio de accesibilidad.</translation>
+- Premium Cast nunca lee el texto de la pantalla ni registra las pulsaciones mediante el servicio de accesibilidad.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="298"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="299"/>
-        <source>NectarLink links your Android phone and your PC directly on your local network or over a USB cable.
+        <source>Premium Cast links your Android phone and your PC directly on your local network or over a USB cable.
 
 How it works
 - Devices discover each other over local Wi-Fi (mDNS) or USB (ADB reverse tunnel) and connect over QUIC (TLS 1.3).
@@ -3349,7 +3349,7 @@ Capability tiers on Android
 - Standard mode: Works right after installation with standard Android permissions.
 - Elevated mode (optional): Uses Wireless debugging (set up once in the phone app) or root for phone apps in their own windows, mirroring without the screen capture prompt, and more phone controls.
 - Assist mode (optional): Uses the Android Accessibility service only when you enable Remote input so your PC mouse and keyboard can control the phone.</source>
-        <translation>NectarLink conecta tu teléfono Android y tu PC directamente por la red local o mediante un cable USB.
+        <translation>Premium Cast conecta tu teléfono Android y tu PC directamente por la red local o mediante un cable USB.
 
 Cómo funciona
 - Los dispositivos se detectan mediante Wi-Fi local (mDNS) o USB (túnel inverso ADB) y se conectan mediante QUIC (TLS 1.3).
@@ -3363,14 +3363,14 @@ Niveles de acceso en Android
     </message>
     <message>
         <location filename="rust_strings.h" line="300"/>
-        <source>NectarLink never asks for every permission up front. Each feature works independently:
+        <source>Premium Cast never asks for every permission up front. Each feature works independently:
 
 - Notification Access: Required only if you want phone notifications, inline replies, and notification-backed chat threads on your PC.
 - SMS and Contacts: Required only if you want to read and send SMS/MMS messages or look up contact names on your PC.
 - Phone and Call Log: Required only if you want incoming call alerts, call history, or dialing from your PC.
 - Media and Photos: Required only if you want the Photos gallery, Shelf latest photo, or folder sync.
 - Camera and Microphone: Required only while streaming your phone as a webcam, taking a Continuity Camera shot, or recording a voice note.</source>
-        <translation>NectarLink no solicita todos los permisos al principio. Cada función es independiente:
+        <translation>Premium Cast no solicita todos los permisos al principio. Cada función es independiente:
 
 - Acceso a notificaciones: solo para recibir notificaciones del teléfono, responder directamente y usar conversaciones de chat mediante notificaciones en el PC.
 - SMS y contactos: solo para leer y enviar SMS/MMS o buscar nombres de contactos en el PC.
@@ -3380,8 +3380,8 @@ Niveles de acceso en Android
     </message>
     <message>
         <location filename="rust_strings.h" line="301"/>
-        <source>NectarLink overview</source>
-        <translation>Descripción general de NectarLink</translation>
+        <source>Premium Cast overview</source>
+        <translation>Descripción general de Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="302"/>
@@ -3537,23 +3537,23 @@ Qué necesitas
 Displays a compact pill at the top center of your primary monitor for incoming calls, live file transfer progress, media playback, and optional notification previews.
 
 Where to find it
-- Settings › General › Nectar Island.
+- Settings › General › Cast Island.
 
 What it needs
-- Turn on Nectar Island in Settings › General and pick which events should appear.</source>
+- Turn on Cast Island in Settings › General and pick which events should appear.</source>
         <translation>Qué hace
 Muestra un indicador compacto en la parte superior del monitor principal para llamadas entrantes, progreso de transferencias, reproducción multimedia y vistas previas opcionales de notificaciones.
 
 Dónde encontrarlo
-- Ajustes › General › Nectar Island.
+- Ajustes › General › Cast Island.
 
 Qué necesitas
-- Activar Nectar Island en Ajustes › General y elegir qué eventos aparecen.</translation>
+- Activar Cast Island en Ajustes › General y elegir qué eventos aparecen.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="323"/>
         <source>What it does
-Exposes an opt-in localhost HTTP/JSON and Server-Sent Events API on 127.0.0.1 (default port 53320) protected by a bearer token so scripts, CLI tools, and Stream Deck plugins can trigger NectarLink actions.
+Exposes an opt-in localhost HTTP/JSON and Server-Sent Events API on 127.0.0.1 (default port 53320) protected by a bearer token so scripts, CLI tools, and Stream Deck plugins can trigger Premium Cast actions.
 
 Where to find it
 - Settings › Connection &amp; About › Local automation API.
@@ -3561,7 +3561,7 @@ Where to find it
 What it needs
 - Turn on Local automation API in Settings › Connection &amp; About and read the bearer token from api-token.json.</source>
         <translation>Qué hace
-Ofrece una API local HTTP/JSON y Server-Sent Events en 127.0.0.1 (puerto predeterminado 53320), protegida con un token de acceso, para que scripts, herramientas de línea de comandos y complementos de Stream Deck ejecuten acciones de NectarLink. Es necesario activarla expresamente.
+Ofrece una API local HTTP/JSON y Server-Sent Events en 127.0.0.1 (puerto predeterminado 53320), protegida con un token de acceso, para que scripts, herramientas de línea de comandos y complementos de Stream Deck ejecuten acciones de Premium Cast. Es necesario activarla expresamente.
 
 Dónde encontrarlo
 - Ajustes › Conexión y Acerca de › API de automatización local.
@@ -3579,7 +3579,7 @@ Where to find it
 - Command Palette › Type on phone with PC keyboard.
 
 What it needs
-- Assist mode (Accessibility service), the NectarLink input method, or Elevated mode on your phone.</source>
+- Assist mode (Accessibility service), the Premium Cast input method, or Elevated mode on your phone.</source>
         <translation>Qué hace
 Envía las pulsaciones y el texto pegado desde el teclado del PC directamente al teléfono sin duplicar su pantalla.
 
@@ -3588,7 +3588,7 @@ Dónde encontrarlo
 - Paleta de comandos › Escribir en el teléfono con el teclado del PC.
 
 Qué necesitas
-- Assist (servicio de accesibilidad), el método de entrada de NectarLink o Elevated en el teléfono.</translation>
+- Assist (servicio de accesibilidad), el método de entrada de Premium Cast o Elevated en el teléfono.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="325"/>
@@ -3708,7 +3708,7 @@ Where to find it
 - Settings › General › Copy one-time codes.
 
 What it needs
-- Notification Access permission enabled for NectarLink on your Android phone.
+- Notification Access permission enabled for Premium Cast on your Android phone.
 - The per-device Notifications toggle enabled on your PC.</source>
         <translation>Qué hace
 Muestra las notificaciones del teléfono en Inicio y en las ventanas emergentes de Windows. Puedes responder mensajes, usar los botones de acción, descartar notificaciones individuales o grupos y deshacer un descarte reciente.
@@ -3719,7 +3719,7 @@ Dónde encontrarlo
 - Ajustes › General › Copiar códigos de un solo uso.
 
 Qué necesitas
-- Permiso de acceso a notificaciones concedido a NectarLink en el teléfono Android.
+- Permiso de acceso a notificaciones concedido a Premium Cast en el teléfono Android.
 - Notificaciones activadas para el dispositivo en el PC.</translation>
     </message>
     <message>
@@ -3728,7 +3728,7 @@ Qué necesitas
 Opens a keyboard-first search bar over actions, contacts, message threads, mirrorable apps, phone quick toggles, clipboard history, and navigation pages.
 
 Where to find it
-- Global hotkey Ctrl+Alt+Space (or Ctrl+K inside the NectarLink window).
+- Global hotkey Ctrl+Alt+Space (or Ctrl+K inside the Premium Cast window).
 - Commands in the top bar.
 
 What it needs
@@ -3737,7 +3737,7 @@ What it needs
 Abre una barra de búsqueda con teclado para acciones, contactos, conversaciones, aplicaciones que se pueden duplicar, controles rápidos del teléfono, historial del portapapeles y páginas.
 
 Dónde encontrarlo
-- Atajo global Ctrl+Alt+Space, o Ctrl+K dentro de la ventana de NectarLink.
+- Atajo global Ctrl+Alt+Space, o Ctrl+K dentro de la ventana de Premium Cast.
 - Comandos en la barra superior.
 
 Qué necesitas
@@ -3830,7 +3830,7 @@ Qué necesitas
     <message>
         <location filename="rust_strings.h" line="336"/>
         <source>What it does
-Sends files, folders, links, and text between your phone and PC at local network speed. If your phone is offline when you send, NectarLink places the item in the Waiting to send queue and delivers it automatically as soon as your phone reconnects.
+Sends files, folders, links, and text between your phone and PC at local network speed. If your phone is offline when you send, Premium Cast places the item in the Waiting to send queue and delivers it automatically as soon as your phone reconnects.
 
 Where to find it
 - Home › Send files button, drag-and-drop anywhere on the window, Waiting to send card, and Transfers list.
@@ -3839,7 +3839,7 @@ Where to find it
 What it needs
 - Paired phone and the per-device Files toggle enabled.</source>
         <translation>Qué hace
-Envía archivos, carpetas, enlaces y texto entre el teléfono y el PC a la velocidad de la red local. Si el teléfono está desconectado, NectarLink coloca el elemento en la cola Pendiente de envío y lo entrega al reconectarse.
+Envía archivos, carpetas, enlaces y texto entre el teléfono y el PC a la velocidad de la red local. Si el teléfono está desconectado, Premium Cast coloca el elemento en la cola Pendiente de envío y lo entrega al reconectarse.
 
 Dónde encontrarlo
 - Inicio › Enviar archivos, arrastrando y soltando en la ventana, tarjeta Pendiente de envío y lista Transferencias.
@@ -3878,7 +3878,7 @@ Where to find it
 
 What it needs
 - Automatic PC-to-phone clipboard send works whenever your phone is connected.
-- Background phone-to-PC clipboard sync on Android 10+ uses notifications, the NectarLink quick tile, or Elevated mode.</source>
+- Background phone-to-PC clipboard sync on Android 10+ uses notifications, the Premium Cast quick tile, or Elevated mode.</source>
         <translation>Qué hace
 Comparte texto, texto enriquecido HTML/RTF, imágenes y pequeños conjuntos de archivos copiados entre el PC y el teléfono. Conserva un historial local cifrado de hasta 50 elementos, con fijación y acciones contextuales para enlaces, teléfonos, direcciones y códigos de seguimiento.
 
@@ -3888,7 +3888,7 @@ Dónde encontrarlo
 
 Qué necesitas
 - El envío automático del portapapeles del PC al teléfono funciona mientras este está conectado.
-- En Android 10 o posterior, la sincronización en segundo plano del teléfono al PC utiliza las notificaciones, el recuadro de NectarLink en Ajustes rápidos o Elevated.</translation>
+- En Android 10 o posterior, la sincronización en segundo plano del teléfono al PC utiliza las notificaciones, el recuadro de Premium Cast en Ajustes rápidos o Elevated.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="339"/>
@@ -3897,7 +3897,7 @@ Shows incoming and active phone calls on your PC with Answer, Decline, and Rejec
 
 Where to find it
 - Left navigation rail › Calls.
-- Incoming call banner on Home and Nectar Island.
+- Incoming call banner on Home and Cast Island.
 
 What it needs
 - Phone, Call Log, and Contacts permissions on your Android phone.
@@ -3907,7 +3907,7 @@ Muestra las llamadas entrantes y activas en el PC con opciones para responder, r
 
 Dónde encontrarlo
 - Barra lateral izquierda › Llamadas.
-- Aviso de llamada entrante en Inicio y Nectar Island.
+- Aviso de llamada entrante en Inicio y Cast Island.
 
 Qué necesitas
 - Permisos de teléfono, registro de llamadas y contactos en el teléfono Android.
@@ -3940,7 +3940,7 @@ Qué necesitas
 Streams your PC&apos;s screen to your phone so you can view your desktop from across the room and use your phone as a trackpad or laser pointer.
 
 Where to find it
-- Started from the NectarLink app on your phone.
+- Started from the Premium Cast app on your phone.
 - Settings › Devices › Share PC screen to phone.
 
 What it needs
@@ -3949,7 +3949,7 @@ What it needs
 Transmite la pantalla del PC al teléfono para que puedas ver el escritorio a distancia y usar el teléfono como panel táctil o puntero láser.
 
 Dónde encontrarlo
-- Se inicia desde NectarLink en el teléfono.
+- Se inicia desde Premium Cast en el teléfono.
 - Ajustes › Dispositivos › Compartir la pantalla del PC con el teléfono.
 
 Qué necesitas
@@ -3958,7 +3958,7 @@ Qué necesitas
     <message>
         <location filename="rust_strings.h" line="342"/>
         <source>What it does
-Streams your phone camera into the NectarLink Virtual Camera on Windows so Zoom, Teams, Meet, Discord, and OBS can use your phone&apos;s rear or front camera at up to 4K.
+Streams your phone camera into the Premium Cast Virtual Camera on Windows so Zoom, Teams, Meet, Discord, and OBS can use your phone&apos;s rear or front camera at up to 4K.
 
 Where to find it
 - Home › Phone as webcam.
@@ -3968,7 +3968,7 @@ What it needs
 - Camera permission on your phone.
 - For other apps to see it: Virtual camera add-on in Settings › Camera &amp; Audio.</source>
         <translation>Qué hace
-Transmite la cámara del teléfono a la cámara virtual NectarLink en Windows para que Zoom, Teams, Meet, Discord y OBS puedan usar la cámara frontal o trasera hasta en 4K.
+Transmite la cámara del teléfono a la cámara virtual Premium Cast en Windows para que Zoom, Teams, Meet, Discord y OBS puedan usar la cámara frontal o trasera hasta en 4K.
 
 Dónde encontrarlo
 - Inicio › Teléfono como cámara web.
@@ -5031,8 +5031,8 @@ Qué necesitas
     <message>
         <location filename="../qml/IslandWindow.qml" line="18"/>
         <location filename="../qml/IslandWindow.qml" line="18"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="319"/>
@@ -5073,13 +5073,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="334"/>
-        <source>Nectar Island · %1</source>
-        <translation>Nectar Island · %1</translation>
+        <source>Cast Island · %1</source>
+        <translation>Cast Island · %1</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="335"/>
-        <source>Nectar Island · Ready</source>
-        <translation>Nectar Island · Listo</translation>
+        <source>Cast Island · Ready</source>
+        <translation>Cast Island · Listo</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="340"/>
@@ -5108,8 +5108,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="364"/>
-        <source>Click to view in NectarLink</source>
-        <translation>Haz clic para verlo en NectarLink</translation>
+        <source>Click to view in Premium Cast</source>
+        <translation>Haz clic para verlo en Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/IslandWindow.qml" line="367"/>
@@ -5186,8 +5186,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="360"/>
-        <source>Update NectarLink on %1.</source>
-        <translation>Actualiza NectarLink en %1.</translation>
+        <source>Update Premium Cast on %1.</source>
+        <translation>Actualiza Premium Cast en %1.</translation>
     </message>
 </context>
 <context>
@@ -5249,43 +5249,43 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="46"/>
-        <source>On your phone, open NectarLink › Settings › Permissions › Control from your PC and turn on the Accessibility service.</source>
-        <translation>En tu teléfono, abre NectarLink › Ajustes › Permisos › Control desde el PC y activa el servicio de Accesibilidad.</translation>
+        <source>On your phone, open Premium Cast › Settings › Permissions › Control from your PC and turn on the Accessibility service.</source>
+        <translation>En tu teléfono, abre Premium Cast › Ajustes › Permisos › Control desde el PC y activa el servicio de Accesibilidad.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="48"/>
-        <source>Needs Elevated: set it up in NectarLink › Settings › Permissions › Control from your PC, or connect the phone over USB with USB debugging allowed.</source>
-        <translation>Requiere Elevated: configúralo en NectarLink › Ajustes › Permisos › Control desde el PC, o conecta el teléfono por USB con la depuración USB permitida.</translation>
+        <source>Needs Elevated: set it up in Premium Cast › Settings › Permissions › Control from your PC, or connect the phone over USB with USB debugging allowed.</source>
+        <translation>Requiere Elevated: configúralo en Premium Cast › Ajustes › Permisos › Control desde el PC, o conecta el teléfono por USB con la depuración USB permitida.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="50"/>
-        <source>On your phone, set NectarLink as the default SMS/Caller ID app when prompted.</source>
-        <translation>En tu teléfono, establece NectarLink como aplicación predeterminada de SMS/identificador de llamadas cuando se te pida.</translation>
+        <source>On your phone, set Premium Cast as the default SMS/Caller ID app when prompted.</source>
+        <translation>En tu teléfono, establece Premium Cast como aplicación predeterminada de SMS/identificador de llamadas cuando se te pida.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="53"/>
-        <source>On your phone, open NectarLink and allow Notification access.</source>
-        <translation>En tu teléfono, abre NectarLink y permite el acceso a notificaciones.</translation>
+        <source>On your phone, open Premium Cast and allow Notification access.</source>
+        <translation>En tu teléfono, abre Premium Cast y permite el acceso a notificaciones.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="55"/>
-        <source>On your phone, open NectarLink and allow Do Not Disturb access.</source>
-        <translation>En tu teléfono, abre NectarLink y permite el acceso a No molestar.</translation>
+        <source>On your phone, open Premium Cast and allow Do Not Disturb access.</source>
+        <translation>En tu teléfono, abre Premium Cast y permite el acceso a No molestar.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="57"/>
-        <source>On your phone, open NectarLink and allow Modify system settings.</source>
-        <translation>En tu teléfono, abre NectarLink y permite Modificar ajustes del sistema.</translation>
+        <source>On your phone, open Premium Cast and allow Modify system settings.</source>
+        <translation>En tu teléfono, abre Premium Cast y permite Modificar ajustes del sistema.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="58"/>
-        <source>Open NectarLink on your phone and grant this permission in Settings.</source>
-        <translation>Abre NectarLink en tu teléfono y concede este permiso en Ajustes.</translation>
+        <source>Open Premium Cast on your phone and grant this permission in Settings.</source>
+        <translation>Abre Premium Cast en tu teléfono y concede este permiso en Ajustes.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="60"/>
-        <source>Open Settings › Camera &amp; Audio to set up the NectarLink virtual camera add-on.</source>
-        <translation>Abre Ajustes › Cámara y audio para configurar el complemento de cámara virtual de NectarLink.</translation>
+        <source>Open Settings › Camera &amp; Audio to set up the Premium Cast virtual camera add-on.</source>
+        <translation>Abre Ajustes › Cámara y audio para configurar el complemento de cámara virtual de Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/components/LockChip.qml" line="62"/>
@@ -5905,8 +5905,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="382"/>
-        <source>Set up Wireless debugging in NectarLink on the phone to open its apps here.</source>
-        <translation>Configura la depuración inalámbrica en NectarLink en el teléfono para abrir sus aplicaciones aquí.</translation>
+        <source>Set up Wireless debugging in Premium Cast on the phone to open its apps here.</source>
+        <translation>Configura la depuración inalámbrica en Premium Cast en el teléfono para abrir sus aplicaciones aquí.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="383"/>
@@ -5915,8 +5915,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="384"/>
-        <source>The app didn&apos;t open on the phone. Try again, or open NectarLink on the phone to check Wireless debugging.</source>
-        <translation>La aplicación no se abrió en el teléfono. Inténtalo de nuevo o abre NectarLink en el teléfono para comprobar la depuración inalámbrica.</translation>
+        <source>The app didn&apos;t open on the phone. Try again, or open Premium Cast on the phone to check Wireless debugging.</source>
+        <translation>La aplicación no se abrió en el teléfono. Inténtalo de nuevo o abre Premium Cast en el teléfono para comprobar la depuración inalámbrica.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="385"/>
@@ -5945,8 +5945,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="390"/>
-        <source>This phone&apos;s app doesn&apos;t share its screen yet. Update NectarLink on the phone.</source>
-        <translation>La aplicación de este teléfono aún no comparte su pantalla. Actualiza NectarLink en el teléfono.</translation>
+        <source>This phone&apos;s app doesn&apos;t share its screen yet. Update Premium Cast on the phone.</source>
+        <translation>La aplicación de este teléfono aún no comparte su pantalla. Actualiza Premium Cast en el teléfono.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="391"/>
@@ -5963,12 +5963,12 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="27"/>
-        <source>%1 · NectarLink</source>
-        <translation>%1 · NectarLink</translation>
+        <source>%1 · Premium Cast</source>
+        <translation>%1 · Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="27"/>
-        <source>Phone screen · NectarLink</source>
+        <source>Phone screen · Premium Cast</source>
         <translation>Pantalla del teléfono · NectarLink</translation>
     </message>
     <message>
@@ -6084,8 +6084,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="927"/>
-        <source>To control the phone, turn on Control from your PC in NectarLink&apos;s settings on the phone.</source>
-        <translation>Para controlar el teléfono, activa Control desde el PC en los ajustes de NectarLink del teléfono.</translation>
+        <source>To control the phone, turn on Control from your PC in Premium Cast&apos;s settings on the phone.</source>
+        <translation>Para controlar el teléfono, activa Control desde el PC en los ajustes de Premium Cast del teléfono.</translation>
     </message>
     <message>
         <location filename="../qml/MirrorWindow.qml" line="936"/>
@@ -6453,8 +6453,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="114"/>
-        <source>Install NectarLink</source>
-        <translation>Instalar NectarLink</translation>
+        <source>Install Premium Cast</source>
+        <translation>Instalar Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="114"/>
@@ -6486,8 +6486,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="196"/>
-        <source>Open NectarLink on your phone</source>
-        <translation>Abre NectarLink en tu teléfono</translation>
+        <source>Open Premium Cast on your phone</source>
+        <translation>Abre Premium Cast en tu teléfono</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="196"/>
@@ -6496,8 +6496,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="244"/>
-        <source>On your phone, open NectarLink and choose “Pair nearby”. It shows up here.</source>
-        <translation>En tu teléfono, abre NectarLink y elige “Emparejar cerca”. Aparecerá aquí.</translation>
+        <source>On your phone, open Premium Cast and choose “Pair nearby”. It shows up here.</source>
+        <translation>En tu teléfono, abre Premium Cast y elige “Emparejar cerca”. Aparecerá aquí.</translation>
     </message>
     <message>
         <location filename="../qml/pages/PairingPanel.qml" line="274"/>
@@ -6602,8 +6602,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="407"/>
-        <source>Another build of NectarLink is on this phone</source>
-        <translation>Hay otra compilación de NectarLink en este teléfono</translation>
+        <source>Another build of Premium Cast is on this phone</source>
+        <translation>Hay otra compilación de Premium Cast en este teléfono</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="408"/>
@@ -6642,8 +6642,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="415"/>
-        <source>NectarLink needs Android 8.0 or newer.</source>
-        <translation>NectarLink necesita Android 8.0 o posterior.</translation>
+        <source>Premium Cast needs Android 8.0 or newer.</source>
+        <translation>Premium Cast necesita Android 8.0 o posterior.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="416"/>
@@ -6687,8 +6687,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="424"/>
-        <source>There&apos;s nothing to install. Open NectarLink on the phone to pair it.</source>
-        <translation>No hay nada que instalar. Abre NectarLink en el teléfono para emparejarlo.</translation>
+        <source>There&apos;s nothing to install. Open Premium Cast on the phone to pair it.</source>
+        <translation>No hay nada que instalar. Abre Premium Cast en el teléfono para emparejarlo.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="425"/>
@@ -6700,13 +6700,13 @@ Qué necesitas
     <name>PhoneInstallPane</name>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="142"/>
-        <source>Put NectarLink on a phone over USB</source>
-        <translation>Instala NectarLink en un teléfono por USB</translation>
+        <source>Put Premium Cast on a phone over USB</source>
+        <translation>Instala Premium Cast en un teléfono por USB</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="150"/>
-        <source>For phones that block installing from a browser, or when a cable is simply easier. NectarLink checks what&apos;s needed and walks you through the rest.</source>
-        <translation>Para teléfonos que bloquean la instalación desde el navegador, o cuando un cable es simplemente más fácil. NectarLink comprueba lo que hace falta y te guía en el resto.</translation>
+        <source>For phones that block installing from a browser, or when a cable is simply easier. Premium Cast checks what&apos;s needed and walks you through the rest.</source>
+        <translation>Para teléfonos que bloquean la instalación desde el navegador, o cuando un cable es simplemente más fácil. Premium Cast comprueba lo que hace falta y te guía en el resto.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="168"/>
@@ -6715,8 +6715,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="177"/>
-        <source>USB is turned off for this copy of NectarLink.</source>
-        <translation>El USB está desactivado en esta copia de NectarLink.</translation>
+        <source>USB is turned off for this copy of Premium Cast.</source>
+        <translation>El USB está desactivado en esta copia de Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="186"/>
@@ -6725,18 +6725,18 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="188"/>
-        <source>Ready. NectarLink uses the copy it downloaded from Google.</source>
-        <translation>Listas. NectarLink usa la copia que descargó de Google.</translation>
+        <source>Ready. Premium Cast uses the copy it downloaded from Google.</source>
+        <translation>Listas. Premium Cast usa la copia que descargó de Google.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="189"/>
-        <source>Ready. NectarLink uses the ones already on this PC.</source>
-        <translation>Listas. NectarLink usa las que ya hay en este PC.</translation>
+        <source>Ready. Premium Cast uses the ones already on this PC.</source>
+        <translation>Listas. Premium Cast usa las que ya hay en este PC.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="200"/>
-        <source>This PC doesn&apos;t have them yet. NectarLink can get them from Google: about 8 MB, kept in NectarLink&apos;s own folder, and also used to connect phones over a cable.</source>
-        <translation>Este PC aún no las tiene. NectarLink puede descargarlas de Google: unos 8 MB, guardadas en la carpeta de NectarLink y usadas también para conectar teléfonos por cable.</translation>
+        <source>This PC doesn&apos;t have them yet. Premium Cast can get them from Google: about 8 MB, kept in Premium Cast&apos;s own folder, and also used to connect phones over a cable.</source>
+        <translation>Este PC aún no las tiene. Premium Cast puede descargarlas de Google: unos 8 MB, guardadas en la carpeta de Premium Cast y usadas también para conectar teléfonos por cable.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="208"/>
@@ -6841,18 +6841,18 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="327"/>
-        <source>Install NectarLink</source>
-        <translation>Instalar NectarLink</translation>
+        <source>Install Premium Cast</source>
+        <translation>Instalar Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="337"/>
-        <source>NectarLink %1 comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
-        <translation>NectarLink %1 viene de sus propias versiones en GitHub y se comprueba antes de enviarlo al teléfono.</translation>
+        <source>Premium Cast %1 comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
+        <translation>Premium Cast %1 viene de sus propias versiones en GitHub y se comprueba antes de enviarlo al teléfono.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="338"/>
-        <source>NectarLink comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
-        <translation>NectarLink viene de sus propias versiones en GitHub y se comprueba antes de enviarlo al teléfono.</translation>
+        <source>Premium Cast comes from its own releases on GitHub and is checked before it&apos;s sent to the phone.</source>
+        <translation>Premium Cast viene de sus propias versiones en GitHub y se comprueba antes de enviarlo al teléfono.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="608"/>
@@ -6866,18 +6866,18 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="613"/>
-        <source>NectarLink isn&apos;t on it yet</source>
-        <translation>aún no tiene NectarLink</translation>
+        <source>Premium Cast isn&apos;t on it yet</source>
+        <translation>aún no tiene Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="615"/>
-        <source>has NectarLink %1, %2 is newer</source>
-        <translation>tiene NectarLink %1, %2 es más reciente</translation>
+        <source>has Premium Cast %1, %2 is newer</source>
+        <translation>tiene Premium Cast %1, %2 es más reciente</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="617"/>
-        <source>has NectarLink %1</source>
-        <translation>tiene NectarLink %1</translation>
+        <source>has Premium Cast %1</source>
+        <translation>tiene Premium Cast %1</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="632"/>
@@ -6897,13 +6897,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="653"/>
-        <source>Downloading NectarLink… %1%</source>
-        <translation>Descargando NectarLink… %1%</translation>
+        <source>Downloading Premium Cast… %1%</source>
+        <translation>Descargando Premium Cast… %1%</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="654"/>
-        <source>Getting NectarLink…</source>
-        <translation>Obteniendo NectarLink…</translation>
+        <source>Getting Premium Cast…</source>
+        <translation>Obteniendo Premium Cast…</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="656"/>
@@ -6922,8 +6922,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="701"/>
-        <source>NectarLink %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.</source>
-        <translation>NectarLink %1 está instalado y abriéndose en el teléfono. Termina allí la configuración y luego emparéjalo con este PC desde Inicio.</translation>
+        <source>Premium Cast %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.</source>
+        <translation>Premium Cast %1 está instalado y abriéndose en el teléfono. Termina allí la configuración y luego emparéjalo con este PC desde Inicio.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="714"/>
@@ -6942,8 +6942,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="763"/>
-        <source>Remove the NectarLink on %1 with everything it keeps, including the PCs it&apos;s paired with? This can&apos;t be undone.</source>
-        <translation>¿Quitar el NectarLink de %1 con todo lo que guarda, incluidos los PC con los que está emparejado? No se puede deshacer.</translation>
+        <source>Remove the Premium Cast on %1 with everything it keeps, including the PCs it&apos;s paired with? This can&apos;t be undone.</source>
+        <translation>¿Quitar el Premium Cast de %1 con todo lo que guarda, incluidos los PC con los que está emparejado? No se puede deshacer.</translation>
     </message>
     <message>
         <location filename="../qml/components/PhoneInstallPane.qml" line="769"/>
@@ -6970,16 +6970,16 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="428"/>
-        <source>Update NectarLink on %1 to use its microphone.</source>
-        <translation>Actualiza NectarLink en %1 para usar su micrófono.</translation>
+        <source>Update Premium Cast on %1 to use its microphone.</source>
+        <translation>Actualiza Premium Cast en %1 para usar su micrófono.</translation>
     </message>
 </context>
 <context>
     <name>PhoneSound</name>
     <message>
         <location filename="rust_strings.h" line="429"/>
-        <source>%1 couldn&apos;t ask to share its sound. Check that NectarLink can show notifications on the phone.</source>
-        <translation>%1 no pudo pedir permiso para compartir su sonido. Comprueba que NectarLink pueda mostrar notificaciones en el teléfono.</translation>
+        <source>%1 couldn&apos;t ask to share its sound. Check that Premium Cast can show notifications on the phone.</source>
+        <translation>%1 no pudo pedir permiso para compartir su sonido. Comprueba que Premium Cast pueda mostrar notificaciones en el teléfono.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="430"/>
@@ -6993,8 +6993,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="432"/>
-        <source>Update NectarLink on %1 to play its sound here.</source>
-        <translation>Actualiza NectarLink en %1 para reproducir su sonido aquí.</translation>
+        <source>Update Premium Cast on %1 to play its sound here.</source>
+        <translation>Actualiza Premium Cast en %1 para reproducir su sonido aquí.</translation>
     </message>
 </context>
 <context>
@@ -7046,8 +7046,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="442"/>
-        <source>Update NectarLink on %1 to back up its photos.</source>
-        <translation>Actualiza NectarLink en %1 para hacer una copia de seguridad de sus fotos.</translation>
+        <source>Update Premium Cast on %1 to back up its photos.</source>
+        <translation>Actualiza Premium Cast en %1 para hacer una copia de seguridad de sus fotos.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="443"/>
@@ -7470,8 +7470,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="467"/>
-        <source>Update NectarLink on %1 to play on it.</source>
-        <translation>Actualiza NectarLink en %1 para reproducir en él.</translation>
+        <source>Update Premium Cast on %1 to play on it.</source>
+        <translation>Actualiza Premium Cast en %1 para reproducir en él.</translation>
     </message>
 </context>
 <context>
@@ -7711,8 +7711,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="476"/>
-        <source>Send to %1 with NectarLink</source>
-        <translation>Enviar a %1 con NectarLink</translation>
+        <source>Send to %1 with Premium Cast</source>
+        <translation>Enviar a %1 con Premium Cast</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="477"/>
@@ -8190,13 +8190,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="966"/>
-        <source>NectarLink follows the system unless you pick one.</source>
-        <translation>NectarLink usa el idioma del sistema a menos que elijas uno.</translation>
+        <source>Premium Cast follows the system unless you pick one.</source>
+        <translation>Premium Cast usa el idioma del sistema a menos que elijas uno.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="967"/>
-        <source>NectarLink follows Windows unless you pick one.</source>
-        <translation>NectarLink usa el idioma de Windows a menos que elijas uno.</translation>
+        <source>Premium Cast follows Windows unless you pick one.</source>
+        <translation>Premium Cast usa el idioma de Windows a menos que elijas uno.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="975"/>
@@ -8234,8 +8234,8 @@ Qué necesitas
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1070"/>
         <location filename="../qml/pages/SettingsPage.qml" line="1073"/>
-        <source>Nectar Island</source>
-        <translation>Nectar Island</translation>
+        <source>Cast Island</source>
+        <translation>Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1071"/>
@@ -8256,7 +8256,7 @@ Qué necesitas
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1124"/>
         <source>Island triggers</source>
-        <translation>Eventos de Nectar Island</translation>
+        <translation>Eventos de Cast Island</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1125"/>
@@ -8471,8 +8471,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="589"/>
-        <source>Makes text and everything else bigger. Applies when you restart NectarLink.</source>
-        <translation>Hace que el texto y todo lo demás sea más grande. Se aplica cuando reinicias NectarLink.</translation>
+        <source>Makes text and everything else bigger. Applies when you restart Premium Cast.</source>
+        <translation>Hace que el texto y todo lo demás sea más grande. Se aplica cuando reinicias Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="1233"/>
@@ -9338,8 +9338,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3486"/>
-        <source>NectarLink %1</source>
-        <translation>NectarLink %1</translation>
+        <source>Premium Cast %1</source>
+        <translation>Premium Cast %1</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3489"/>
@@ -9416,8 +9416,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3716"/>
-        <source>The phone asks once to let this PC in. NectarLink there also needs All files access, or this folder under Selected folders only.</source>
-        <translation>El teléfono pide permiso una vez para permitir el acceso a este PC. NectarLink también necesita acceso a todos los archivos o a esta carpeta en Solo carpetas seleccionadas.</translation>
+        <source>The phone asks once to let this PC in. Premium Cast there also needs All files access, or this folder under Selected folders only.</source>
+        <translation>El teléfono pide permiso una vez para permitir el acceso a este PC. Premium Cast también necesita acceso a todos los archivos o a esta carpeta en Solo carpetas seleccionadas.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3719"/>
@@ -9499,8 +9499,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3895"/>
-        <source>Wi-Fi networks this PC has joined before. Your system keeps their passwords; NectarLink never sees them.</source>
-        <translation>Redes Wi-Fi a las que se ha conectado este PC. El sistema conserva sus contraseñas; NectarLink nunca las ve.</translation>
+        <source>Wi-Fi networks this PC has joined before. Your system keeps their passwords; Premium Cast never sees them.</source>
+        <translation>Redes Wi-Fi a las que se ha conectado este PC. El sistema conserva sus contraseñas; Premium Cast nunca las ve.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3896"/>
@@ -9509,8 +9509,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3898"/>
-        <source>Wi-Fi networks this PC has joined before. Windows keeps their passwords; NectarLink never sees them.</source>
-        <translation>Redes Wi-Fi a las que se ha conectado este PC. Windows conserva sus contraseñas; NectarLink nunca las ve.</translation>
+        <source>Wi-Fi networks this PC has joined before. Windows keeps their passwords; Premium Cast never sees them.</source>
+        <translation>Redes Wi-Fi a las que se ha conectado este PC. Windows conserva sus contraseñas; Premium Cast nunca las ve.</translation>
     </message>
     <message>
         <location filename="../qml/pages/SettingsPage.qml" line="3899"/>
@@ -9653,8 +9653,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="484"/>
-        <source>Couldn&apos;t uninstall NectarLink: %1</source>
-        <translation>No se pudo desinstalar NectarLink: %1</translation>
+        <source>Couldn&apos;t uninstall Premium Cast: %1</source>
+        <translation>No se pudo desinstalar Premium Cast: %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="485"/>
@@ -9683,8 +9683,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="490"/>
-        <source>The uninstaller is missing. Reinstall NectarLink, then uninstall it.</source>
-        <translation>Falta el desinstalador. Reinstala NectarLink y luego desinstálalo.</translation>
+        <source>The uninstaller is missing. Reinstall Premium Cast, then uninstall it.</source>
+        <translation>Falta el desinstalador. Reinstala Premium Cast y luego desinstálalo.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="491"/>
@@ -9711,18 +9711,18 @@ Qué necesitas
     <name>SetupWindow</name>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="51"/>
-        <source>Uninstall NectarLink</source>
-        <translation>Desinstalar NectarLink</translation>
+        <source>Uninstall Premium Cast</source>
+        <translation>Desinstalar Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="51"/>
-        <source>NectarLink Setup</source>
-        <translation>Instalación de NectarLink</translation>
+        <source>Premium Cast Setup</source>
+        <translation>Instalación de Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="67"/>
-        <source>Install NectarLink in</source>
-        <translation>Instalar NectarLink en</translation>
+        <source>Install Premium Cast in</source>
+        <translation>Instalar Premium Cast en</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="120"/>
@@ -9734,13 +9734,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="187"/>
-        <source>NectarLink</source>
-        <translation>NectarLink</translation>
+        <source>Premium Cast</source>
+        <translation>Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="216"/>
-        <source>Couldn&apos;t uninstall NectarLink</source>
-        <translation>No se pudo desinstalar NectarLink</translation>
+        <source>Couldn&apos;t uninstall Premium Cast</source>
+        <translation>No se pudo desinstalar Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="216"/>
@@ -9749,28 +9749,28 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="218"/>
-        <source>Uninstalling NectarLink</source>
-        <translation>Desinstalando NectarLink</translation>
+        <source>Uninstalling Premium Cast</source>
+        <translation>Desinstalando Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="219"/>
-        <source>Updating NectarLink</source>
-        <translation>Actualizando NectarLink</translation>
+        <source>Updating Premium Cast</source>
+        <translation>Actualizando Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="220"/>
-        <source>Installing NectarLink</source>
-        <translation>Instalando NectarLink</translation>
+        <source>Installing Premium Cast</source>
+        <translation>Instalando Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="221"/>
-        <source>Uninstall NectarLink?</source>
-        <translation>¿Desinstalar NectarLink?</translation>
+        <source>Uninstall Premium Cast?</source>
+        <translation>¿Desinstalar Premium Cast?</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="236"/>
-        <source>Sorry to see you go. This uninstalls NectarLink and deletes its settings and pairings on this PC. Files you received stay in %1.</source>
-        <translation>Sentimos que te vayas. Se desinstalará NectarLink y se eliminarán sus ajustes y emparejamientos en este PC. Los archivos recibidos permanecerán en %1.</translation>
+        <source>Sorry to see you go. This uninstalls Premium Cast and deletes its settings and pairings on this PC. Files you received stay in %1.</source>
+        <translation>Sentimos que te vayas. Se desinstalará Premium Cast y se eliminarán sus ajustes y emparejamientos en este PC. Los archivos recibidos permanecerán en %1.</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="238"/>
@@ -9819,8 +9819,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="298"/>
-        <source>Keep NectarLink</source>
-        <translation>Conservar NectarLink</translation>
+        <source>Keep Premium Cast</source>
+        <translation>Conservar Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="356"/>
@@ -9850,13 +9850,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="469"/>
-        <source>NectarLink is uninstalled</source>
-        <translation>NectarLink se ha desinstalado</translation>
+        <source>Premium Cast is uninstalled</source>
+        <translation>Premium Cast se ha desinstalado</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="469"/>
-        <source>NectarLink is ready</source>
-        <translation>NectarLink está listo</translation>
+        <source>Premium Cast is ready</source>
+        <translation>Premium Cast está listo</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="481"/>
@@ -9880,13 +9880,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="531"/>
-        <source>Open NectarLink</source>
-        <translation>Abrir NectarLink</translation>
+        <source>Open Premium Cast</source>
+        <translation>Abrir Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="591"/>
-        <source>NectarLink goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:</source>
-        <translation>NectarLink se instala en Archivos de programa, o en la carpeta que elijas, para todos los usuarios de este PC. El instalador también:</translation>
+        <source>Premium Cast goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:</source>
+        <translation>Premium Cast se instala en Archivos de programa, o en la carpeta que elijas, para todos los usuarios de este PC. El instalador también:</translation>
     </message>
     <message>
         <location filename="../qml/setup/SetupWindow.qml" line="593"/>
@@ -9923,8 +9923,8 @@ Qué necesitas
     <name>ShelfWindow</name>
     <message>
         <location filename="../qml/ShelfWindow.qml" line="16"/>
-        <source>NectarLink Shelf</source>
-        <translation>NectarLink Shelf</translation>
+        <source>Premium Cast Shelf</source>
+        <translation>Premium Cast Shelf</translation>
     </message>
     <message>
         <location filename="../qml/ShelfWindow.qml" line="53"/>
@@ -10147,13 +10147,13 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="496"/>
-        <source>On the phone, allow All files access for NectarLink.</source>
-        <translation>En el teléfono, permite a NectarLink acceder a todos los archivos.</translation>
+        <source>On the phone, allow All files access for Premium Cast.</source>
+        <translation>En el teléfono, permite a Premium Cast acceder a todos los archivos.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="497"/>
-        <source>On the phone, turn on Browse this phone&apos;s storage in File Explorer in NectarLink.</source>
-        <translation>En el teléfono, activa en NectarLink la opción para explorar su almacenamiento desde el Explorador de archivos.</translation>
+        <source>On the phone, turn on Browse this phone&apos;s storage in File Explorer in Premium Cast.</source>
+        <translation>En el teléfono, activa en Premium Cast la opción para explorar su almacenamiento desde el Explorador de archivos.</translation>
     </message>
 </context>
 <context>
@@ -10621,8 +10621,8 @@ Qué necesitas
     <name>Transfers</name>
     <message>
         <location filename="rust_strings.h" line="527"/>
-        <source>Accept in NectarLink to save to Downloads\Nectarlink</source>
-        <translation>Acepta en NectarLink para guardar en Downloads\Nectarlink</translation>
+        <source>Accept in Premium Cast to save to Downloads\Nectarlink</source>
+        <translation>Acepta en Premium Cast para guardar en Downloads\Nectarlink</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="528"/>
@@ -10664,28 +10664,28 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="535"/>
-        <source>NectarLink %1 is available</source>
-        <translation>NectarLink %1 está disponible</translation>
+        <source>Premium Cast %1 is available</source>
+        <translation>Premium Cast %1 está disponible</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="536"/>
-        <source>NectarLink %1 is available.</source>
-        <translation>NectarLink %1 está disponible.</translation>
+        <source>Premium Cast %1 is available.</source>
+        <translation>Premium Cast %1 está disponible.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="537"/>
-        <source>NectarLink is still on the version you had. Try again from Settings.</source>
-        <translation>NectarLink sigue en la versión que tenías. Inténtalo de nuevo desde Ajustes.</translation>
+        <source>Premium Cast is still on the version you had. Try again from Settings.</source>
+        <translation>Premium Cast sigue en la versión que tenías. Inténtalo de nuevo desde Ajustes.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="538"/>
-        <source>NectarLink is up to date.</source>
-        <translation>NectarLink está actualizado.</translation>
+        <source>Premium Cast is up to date.</source>
+        <translation>Premium Cast está actualizado.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="539"/>
-        <source>NectarLink is updated to %1</source>
-        <translation>NectarLink se ha actualizado a %1</translation>
+        <source>Premium Cast is updated to %1</source>
+        <translation>Premium Cast se ha actualizado a %1</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="540"/>
@@ -10724,8 +10724,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="rust_strings.h" line="547"/>
-        <source>The update is installed. Restart NectarLink to use it.</source>
-        <translation>La actualización está instalada. Reinicia NectarLink para usarla.</translation>
+        <source>The update is installed. Restart Premium Cast to use it.</source>
+        <translation>La actualización está instalada. Reinicia Premium Cast para usarla.</translation>
     </message>
     <message>
         <location filename="rust_strings.h" line="548"/>
@@ -10919,8 +10919,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1554"/>
-        <source>Keep NectarLink ready in the system tray when you sign in.</source>
-        <translation>Mantén NectarLink disponible en la bandeja del sistema al iniciar sesión.</translation>
+        <source>Keep Premium Cast ready in the system tray when you sign in.</source>
+        <translation>Mantén Premium Cast disponible en la bandeja del sistema al iniciar sesión.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1612"/>
@@ -10964,8 +10964,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="97"/>
-        <source>Welcome to NectarLink</source>
-        <translation>Te damos la bienvenida a NectarLink</translation>
+        <source>Welcome to Premium Cast</source>
+        <translation>Te damos la bienvenida a Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="98"/>
@@ -10974,8 +10974,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="99"/>
-        <source>Install NectarLink on your phone</source>
-        <translation>Instala NectarLink en tu teléfono</translation>
+        <source>Install Premium Cast on your phone</source>
+        <translation>Instala Premium Cast en tu teléfono</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="100"/>
@@ -11014,8 +11014,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="110"/>
-        <source>Scan the QR code from the NectarLink Android app, or pick your phone from nearby devices.</source>
-        <translation>Escanea el código QR desde la aplicación NectarLink para Android o elige tu teléfono entre los dispositivos cercanos.</translation>
+        <source>Scan the QR code from the Premium Cast Android app, or pick your phone from nearby devices.</source>
+        <translation>Escanea el código QR desde la aplicación Premium Cast para Android o elige tu teléfono entre los dispositivos cercanos.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="111"/>
@@ -11164,8 +11164,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1478"/>
-        <source>Notifications are off for NectarLink in Windows Settings.</source>
-        <translation>Las notificaciones de NectarLink están desactivadas en la configuración de Windows.</translation>
+        <source>Notifications are off for Premium Cast in Windows Settings.</source>
+        <translation>Las notificaciones de Premium Cast están desactivadas en la configuración de Windows.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1493"/>
@@ -11199,8 +11199,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1654"/>
-        <source>Open the NectarLink Android app whenever you are ready to scan the QR code.</source>
-        <translation>Abre la aplicación NectarLink para Android cuando quieras escanear el código QR.</translation>
+        <source>Open the Premium Cast Android app whenever you are ready to scan the QR code.</source>
+        <translation>Abre la aplicación Premium Cast para Android cuando quieras escanear el código QR.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1659"/>
@@ -11209,8 +11209,8 @@ Qué necesitas
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1664"/>
-        <source>Browse every feature in NectarLink, see what permissions it needs, and jump straight to it.</source>
-        <translation>Explora todas las funciones de NectarLink, consulta los permisos que necesitan y accede directamente a ellas.</translation>
+        <source>Browse every feature in Premium Cast, see what permissions it needs, and jump straight to it.</source>
+        <translation>Explora todas las funciones de Premium Cast, consulta los permisos que necesitan y accede directamente a ellas.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WalkthroughPage.qml" line="1741"/>
@@ -11255,13 +11255,13 @@ Qué necesitas
     <name>WelcomePage</name>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="36"/>
-        <source>Welcome to NectarLink</source>
-        <translation>Te damos la bienvenida a NectarLink</translation>
+        <source>Welcome to Premium Cast</source>
+        <translation>Te damos la bienvenida a Premium Cast</translation>
     </message>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="46"/>
-        <source>NectarLink couldn&apos;t start.</source>
-        <translation>No se pudo iniciar NectarLink.</translation>
+        <source>Premium Cast couldn&apos;t start.</source>
+        <translation>No se pudo iniciar Premium Cast.</translation>
     </message>
     <message>
         <location filename="../qml/pages/WelcomePage.qml" line="47"/>

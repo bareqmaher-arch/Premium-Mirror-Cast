@@ -139,7 +139,7 @@ Column {
                 width: parent.width
                 role: "title"
                 horizontalAlignment: Text.AlignHCenter
-                text: qsTr("Put NectarLink on a phone over USB")
+                text: qsTr("Put Premium Cast on a phone over USB")
             }
             Txt {
                 width: parent.width
@@ -147,7 +147,7 @@ Column {
                 muted: true
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
-                text: qsTr("For phones that block installing from a browser, or when a cable is simply easier. NectarLink checks what's needed and walks you through the rest.")
+                text: qsTr("For phones that block installing from a browser, or when a cable is simply easier. Premium Cast checks what's needed and walks you through the rest.")
             }
         }
     }
@@ -174,7 +174,7 @@ Column {
                     role: "bodySmall"
                     muted: true
                     wrapMode: Text.WordWrap
-                    text: qsTr("USB is turned off for this copy of NectarLink.")
+                    text: qsTr("USB is turned off for this copy of Premium Cast.")
                 }
                 Txt {
                     width: parent.width
@@ -185,8 +185,8 @@ Column {
                     text: !pane.s.server
                         ? qsTr("Starting them…")
                         : pane.tools.own
-                            ? qsTr("Ready. NectarLink uses the copy it downloaded from Google.")
-                            : qsTr("Ready. NectarLink uses the ones already on this PC.")
+                            ? qsTr("Ready. Premium Cast uses the copy it downloaded from Google.")
+                            : qsTr("Ready. Premium Cast uses the ones already on this PC.")
                 }
                 Column {
                     width: parent.width
@@ -197,7 +197,7 @@ Column {
                         role: "bodySmall"
                         muted: true
                         wrapMode: Text.WordWrap
-                        text: qsTr("This PC doesn't have them yet. NectarLink can get them from Google: about 8 MB, kept in NectarLink's own folder, and also used to connect phones over a cable.")
+                        text: qsTr("This PC doesn't have them yet. Premium Cast can get them from Google: about 8 MB, kept in Premium Cast's own folder, and also used to connect phones over a cable.")
                     }
                     Txt {
                         width: parent.width
@@ -324,7 +324,7 @@ Column {
                 done: pane.installed
                 current: pane.phoneReady && !pane.installed
                 enabled: pane.phoneReady
-                title: qsTr("Install NectarLink")
+                title: qsTr("Install Premium Cast")
                 last: true
 
                 Txt {
@@ -334,8 +334,8 @@ Column {
                     muted: true
                     wrapMode: Text.WordWrap
                     text: pane.s.latest
-                        ? qsTr("NectarLink %1 comes from its own releases on GitHub and is checked before it's sent to the phone.").arg(pane.s.latest)
-                        : qsTr("NectarLink comes from its own releases on GitHub and is checked before it's sent to the phone.")
+                        ? qsTr("Premium Cast %1 for the phone comes with this PC app, from its own folder. Nothing is downloaded.").arg(pane.s.latest)
+                        : qsTr("Premium Cast for the phone comes with this PC app, from its own folder. Nothing is downloaded.")
                 }
 
                 Repeater {
@@ -610,11 +610,11 @@ Column {
                             if (row.phone.tooOld)
                                 app = qsTr("needs Android 8.0 or newer")
                             else if (!row.phone.installed)
-                                app = qsTr("NectarLink isn't on it yet")
+                                app = qsTr("Premium Cast isn't on it yet")
                             else if (row.phone.outdated)
-                                app = qsTr("has NectarLink %1, %2 is newer").arg(row.phone.installed).arg(pane.s.latest)
+                                app = qsTr("has Premium Cast %1, %2 is newer").arg(row.phone.installed).arg(pane.s.latest)
                             else
-                                app = qsTr("has NectarLink %1").arg(row.phone.installed)
+                                app = qsTr("has Premium Cast %1").arg(row.phone.installed)
                             return android ? android + " · " + app : app
                         }
                     }
@@ -650,8 +650,8 @@ Column {
                     role: "bodySmall"
                     wrapMode: Text.WordWrap
                     text: row.mine.kind === "downloading"
-                        ? (row.mine.total > 0 ? qsTr("Downloading NectarLink… %1%").arg(pane.percent(row.mine.done, row.mine.total))
-                                              : qsTr("Getting NectarLink…"))
+                        ? (row.mine.total > 0 ? qsTr("Downloading Premium Cast… %1%").arg(pane.percent(row.mine.done, row.mine.total))
+                                              : qsTr("Getting Premium Cast…"))
                         : row.mine.kind === "sending"
                             ? qsTr("Sending it to the phone… %1%").arg(pane.percent(row.mine.done, row.mine.total))
                             : row.mine.kind === "uninstalling"
@@ -698,7 +698,7 @@ Column {
                         role: "bodySmall"
                         wrapMode: Text.WordWrap
                         color: Theme.primaryContainerContent
-                        text: qsTr("NectarLink %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.").arg(row.mine.version || "")
+                        text: qsTr("Premium Cast %1 is installed and opening on the phone. Finish its setup there, then pair it with this PC from Home.").arg(row.mine.version || "")
                     }
                     Row {
                         spacing: 8
@@ -760,7 +760,7 @@ Column {
                     role: "bodySmall"
                     wrapMode: Text.WordWrap
                     color: Theme.error
-                    text: qsTr("Remove the NectarLink on %1 with everything it keeps, including the PCs it's paired with? This can't be undone.").arg(row.phone.name)
+                    text: qsTr("Remove the Premium Cast on %1 with everything it keeps, including the PCs it's paired with? This can't be undone.").arg(row.phone.name)
                 }
                 Row {
                     spacing: 8

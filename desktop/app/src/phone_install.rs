@@ -35,7 +35,10 @@ use sha2::{Digest, Sha256};
 use crate::{core_host, state::Changes, version, win::http};
 
 /// The phone app's package.
-pub const PACKAGE: &str = "app.nectarlink";
+pub const PACKAGE: &str = "app.premiumcast";
+/// Premium Cast ships its phone app next to the PC app (built from the same
+/// source and signed with Premium Cast's own key), so it is never downloaded.
+pub const BUNDLED_APK: &str = "PremiumCast-android.apk";
 /// The oldest Android the phone app runs on (8.0).
 const MIN_SDK: u32 = 26;
 
@@ -655,20 +658,36 @@ fn crc32(data: &[u8]) -> u32 {
 
 // ---- The phone app ----
 
-/// The newest phone app on this PC's update channel: (version, file).
-fn latest_apk() -> Result<(String, crate::feed::FeedFile), String> {
-    let feed = crate::feed::fetch(crate::updater::channel())?.ok_or("no release feed")?;
+/// The phone app that came with this PC app, in its folder.
+pub fn bundled_apk() -> Option<PathBuf> {
+    let path = std::env::current_exe().ok()?.parent()?.join(BUNDLED_APK);
+    path.is_file().then_some(path)
+}
+
+/// The phone app this PC app installs: (version, file). Premium Cast's own,
+/// the same version as the PC app, never the original project's download.
+fn latest_apk() -> Result<(String, PathBuf), String> {
+    let path = bundled_apk().ok_or("the phone app isn't in Premium Cast's folder")?;
+    Ok((env!("CARGO_PKG_VERSION").to_owned(), path))
+}
+
+/// The phone app (Premium Cast's own, from this PC app's folder).
+fn phone_app(_serial: &str) -> Result<(String, PathBuf), Problem> {
+    latest_apk().map_err(Problem::Download)
+}
+
+/// The original project's phone app, downloaded and checked (unused in Premium Cast).
+#[allow(dead_code)]
+fn downloaded_phone_app(serial: &str) -> Result<(String, PathBuf), Problem> {
+    let feed = crate::feed::fetch(crate::updater::channel())
+        .map_err(Problem::Download)?
+        .ok_or_else(|| Problem::Download("no release feed".into()))?;
+    let version = feed.version;
     let file = feed
         .files
         .into_iter()
         .find(|f| f.name.ends_with("-android.apk"))
-        .ok_or("no phone app in the release")?;
-    Ok((feed.version, file))
-}
-
-/// The phone app, downloaded (or already here) and checked. Older ones go.
-fn phone_app(serial: &str) -> Result<(String, PathBuf), Problem> {
-    let (version, file) = latest_apk().map_err(Problem::Download)?;
+        .ok_or_else(|| Problem::Download("no phone app in the release".into()))?;
     let data = data_dir().ok_or_else(|| Problem::Download("no data folder".into()))?;
     let dir = data.join("cache").join("phone-app");
     std::fs::create_dir_all(&dir).map_err(|e| Problem::Download(e.to_string()))?;

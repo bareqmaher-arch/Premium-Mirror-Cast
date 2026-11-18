@@ -31,8 +31,9 @@ QtObject {
     readonly property bool combMotion: hive && Preferences.combMotion && !reduceMotion && !AppController.powerSaver
     readonly property color combLine: Qt.rgba(primary.r, primary.g, primary.b,
                                               dark ? comb.lineAlphaDark : comb.lineAlphaLight)
-    readonly property color combGlow: dark ? Qt.rgba(1.0, 0.62, 0.18, comb.glowAlphaDark)
-                                           : Qt.rgba(1.0, 0.72, 0.37, comb.glowAlphaLight)
+    // Premium Cast: the glow is the violet signal itself.
+    readonly property color combGlow: Qt.rgba(primary.r, primary.g, primary.b,
+                                              dark ? comb.glowAlphaDark : comb.glowAlphaLight)
     // One clock for every comb in the app (seconds), so two combs never draw
     // twice as often. The main window runs it while it's in front.
     property real combTime: 0

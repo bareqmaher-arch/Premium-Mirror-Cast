@@ -200,7 +200,7 @@ fn problem_json(problem: &Problem) -> Value {
         Problem::OldAndroid => (
             "oldAndroid",
             tr!("PhoneInstall", "This phone's Android is too old"),
-            tr!("PhoneInstall", "NectarLink needs Android 8.0 or newer."),
+            tr!("PhoneInstall", "Premium Cast needs Android 8.0 or newer."),
             "",
         ),
         Problem::Restricted => (
@@ -215,7 +215,7 @@ fn problem_json(problem: &Problem) -> Value {
         ),
         Problem::OtherBuild => (
             "otherBuild",
-            tr!("PhoneInstall", "Another build of NectarLink is on this phone"),
+            tr!("PhoneInstall", "Another build of Premium Cast is on this phone"),
             tr!(
                 "PhoneInstall",
                 "It was signed differently (a test build, or one from another store), so Android \
@@ -227,7 +227,7 @@ fn problem_json(problem: &Problem) -> Value {
         Problem::Newer => (
             "newer",
             tr!("PhoneInstall", "The phone already has a newer version"),
-            tr!("PhoneInstall", "There's nothing to install. Open NectarLink on the phone to pair it."),
+            tr!("PhoneInstall", "There's nothing to install. Open Premium Cast on the phone to pair it."),
             "",
         ),
         Problem::NoSpace => (

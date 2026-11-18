@@ -951,11 +951,11 @@ mod imp {
         }
         let name = core_host::host().hub.read(|s| s.name_of(&device)).unwrap_or_else(|| "your phone".into());
         let body = if no_all_files_access {
-            tr!("Storage", "On the phone, allow All files access for NectarLink.")
+            tr!("Storage", "On the phone, allow All files access for Premium Cast.")
         } else {
             tr!(
                 "Storage",
-                "On the phone, turn on Browse this phone's storage in File Explorer in NectarLink."
+                "On the phone, turn on Browse this phone's storage in File Explorer in Premium Cast."
             )
         };
         crate::win::toast::show(crate::win::toast::Toast {
@@ -963,7 +963,7 @@ mod imp {
             key: format!("storage-refused-{device}"),
             title: tr!("Storage", "%1's files aren't shared with this PC", name),
             body,
-            attribution: "NectarLink".into(),
+            attribution: "Premium Cast".into(),
             icon: None,
             image: None,
             actions: Vec::new(),

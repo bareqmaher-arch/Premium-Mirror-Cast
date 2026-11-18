@@ -18,7 +18,8 @@ FocusScope {
 
     readonly property int totalSteps: 7
     // Matches the APK name on the GitHub release (see .github/workflows/release.yml).
-    readonly property string adbCommand: "adb install -r Nectarlink-" + AppController.version + "-android.apk"
+    readonly property string apkPath: AppController.phoneApkPath()
+    readonly property string adbCommand: "adb install -r \"" + (apkPath.length > 0 ? apkPath : "PremiumCast-android.apk") + "\""
     property int step: Math.max(0, Math.min(totalSteps - 1, Preferences.walkthroughStep))
     property alias currentStep: walkthrough.step
 
@@ -94,9 +95,9 @@ FocusScope {
     ]
 
     readonly property var stepTitles: [
-        qsTr("Welcome to NectarLink"),
+        qsTr("Welcome to Premium Cast"),
         qsTr("Your data stays on your devices"),
-        qsTr("Install NectarLink on your phone"),
+        qsTr("Install Premium Cast on your phone"),
         qsTr("Pair your phone and PC"),
         qsTr("Choose what to share"),
         qsTr("Optional setup"),
@@ -107,7 +108,7 @@ FocusScope {
         qsTr("Your Android phone and your PC, working together on your local network."),
         qsTr("No accounts, no cloud servers, and no telemetry."),
         qsTr("Get the Android app from GitHub Releases or install the APK over USB."),
-        qsTr("Scan the QR code from the NectarLink Android app, or pick your phone from nearby devices."),
+        qsTr("Scan the QR code from the Premium Cast Android app, or pick your phone from nearby devices."),
         qsTr("Safe features are on by default. Higher-trust access stays off until you turn it on."),
         qsTr("Three quick checks so notifications and discovery work reliably on your PC."),
         qsTr("Reopen it from Settings or the Command Palette.")
@@ -365,17 +366,10 @@ FocusScope {
                         implicitWidth: 640
                         implicitHeight: 148
 
+                        // Premium Cast: every cell is a round signal node (no honeycomb).
                         function drawHex(ctx, cx, cy, r) {
                             ctx.beginPath()
-                            for (let i = 0; i < 6; i++) {
-                                let angle = (Math.PI / 3) * i - Math.PI / 6
-                                let px = cx + r * Math.cos(angle)
-                                let py = cy + r * Math.sin(angle)
-                                if (i === 0)
-                                    ctx.moveTo(px, py)
-                                else
-                                    ctx.lineTo(px, py)
-                            }
+                            ctx.arc(cx, cy, r * 0.88, 0, Math.PI * 2)
                             ctx.closePath()
                         }
 
@@ -446,16 +440,20 @@ FocusScope {
                             let outlineCell = Theme.outlineVariant.toString()
                             let mutedColor = Theme.surfaceContentVariant.toString()
 
-                            // Left: 7-cell honeycomb cluster (6 outer ring + 1 center cell) filling as steps complete
-                            let ringDist = 29
-                            let cellR = 14
+                            // Left: Premium Cast's step track, seven signal nodes in a line
+                            // that fill as steps complete (no honeycomb).
+                            let nodeGap = 26
+                            let cellR = 10
                             for (let s = 0; s < 7; s++) {
-                                let hx = clusterX
+                                let hx = clusterX + (s - 3) * nodeGap
                                 let hy = cy
                                 if (s < 6) {
-                                    let ang = (Math.PI / 3) * s - Math.PI / 2
-                                    hx = clusterX + ringDist * Math.cos(ang)
-                                    hy = cy + ringDist * Math.sin(ang)
+                                    ctx.strokeStyle = Qt.rgba(Theme.outlineVariant.r, Theme.outlineVariant.g, Theme.outlineVariant.b, 0.9).toString()
+                                    ctx.lineWidth = 1.2
+                                    ctx.beginPath()
+                                    ctx.moveTo(hx + cellR * 0.9, hy)
+                                    ctx.lineTo(hx + nodeGap - cellR * 0.9, hy)
+                                    ctx.stroke()
                                 }
                                 let isDone = s < walkthrough.step
                                 let isCurr = s === walkthrough.step
@@ -920,7 +918,7 @@ FocusScope {
                             }
                         }
 
-                        // STEP 2: Install NectarLink on your phone
+                        // STEP 2: Install Premium Cast on your phone
                         ColumnLayout {
                             Layout.fillWidth: true
                             spacing: 12
@@ -954,7 +952,7 @@ FocusScope {
 
                                         Txt {
                                             Layout.fillWidth: true
-                                            text: qsTr("Option 1: Download the Android APK (Android 8.0+)")
+                                            text: qsTr("Option 1: Copy the Android APK to your phone (Android 8.0+)")
                                             role: "title"
                                             wrapMode: Text.WordWrap
                                         }
@@ -962,7 +960,7 @@ FocusScope {
 
                                     Txt {
                                         Layout.fillWidth: true
-                                        text: qsTr("Open the latest GitHub Release on your phone or copy the release link.")
+                                        text: qsTr("Premium Cast's phone app, PremiumCast-android.apk, is in Premium Cast's folder. Copy it to your phone and open it there.")
                                         role: "caption"
                                         color: Theme.surfaceContentVariant
                                         wrapMode: Text.WordWrap
@@ -973,24 +971,24 @@ FocusScope {
                                         spacing: 8
 
                                         Button {
-                                            text: qsTr("Open release page")
+                                            text: qsTr("Show APK in folder")
                                             iconPath: Icons.openExternal
                                             variant: "tonal"
                                             size: "sm"
-                                            Accessible.name: qsTr("Open Android release page in browser")
-                                            onClicked: Qt.openUrlExternally("https://github.com/thtbee/nectarlink/releases/latest")
+                                            Accessible.name: qsTr("Show the Android APK in File Explorer")
+                                            onClicked: AppController.showPhoneApk()
                                         }
 
                                         Button {
                                             id: copyUrlBtn
                                             property bool copied: false
-                                            text: copied ? qsTr("Copied link") : qsTr("Copy link")
+                                            text: copied ? qsTr("Copied path") : qsTr("Copy path")
                                             iconPath: copied ? Icons.check : Icons.copy
                                             variant: "outline"
                                             size: "sm"
-                                            Accessible.name: qsTr("Copy Android release URL")
+                                            Accessible.name: qsTr("Copy the Android APK's path")
                                             onClicked: {
-                                                AppController.copyText("https://github.com/thtbee/nectarlink/releases/latest")
+                                                AppController.copyText(walkthrough.apkPath)
                                                 copied = true
                                                 resetCopyUrlTimer.restart()
                                             }
@@ -1475,7 +1473,7 @@ FocusScope {
                                                     : qsTr("Enabled in Windows Settings."))
                                                 : (Qt.platform.os === "linux"
                                                     ? qsTr("Notifications are muted or Do Not Disturb is active.")
-                                                    : qsTr("Notifications are off for NectarLink in Windows Settings."))
+                                                    : qsTr("Notifications are off for Premium Cast in Windows Settings."))
                                             role: "caption"
                                             color: Theme.surfaceContentVariant
                                             wrapMode: Text.WordWrap
@@ -1551,7 +1549,7 @@ FocusScope {
 
                                         Txt {
                                             Layout.fillWidth: true
-                                            text: qsTr("Keep NectarLink ready in the system tray when you sign in.")
+                                            text: qsTr("Keep Premium Cast ready in the system tray when you sign in.")
                                             role: "caption"
                                             color: Theme.surfaceContentVariant
                                             wrapMode: Text.WordWrap
@@ -1651,7 +1649,7 @@ FocusScope {
                                             : qsTr("Pair a phone anytime from Home"),
                                         body: walkthrough.hasPairedDevice
                                             ? qsTr("Your phone is linked and ready on your local network.")
-                                            : qsTr("Open the NectarLink Android app whenever you are ready to scan the QR code.")
+                                            : qsTr("Open the Premium Cast Android app whenever you are ready to scan the QR code.")
                                     },
                                     {
                                         icon: Icons.search,
@@ -1661,7 +1659,7 @@ FocusScope {
                                     {
                                         icon: Icons.book,
                                         title: qsTr("Features guide"),
-                                        body: qsTr("Browse every feature in NectarLink, see what permissions it needs, and jump straight to it.")
+                                        body: qsTr("Browse every feature in Premium Cast, see what permissions it needs, and jump straight to it.")
                                     }
                                 ]
 

@@ -33,4 +33,11 @@ When a file's header and this table disagree, the file's header applies.
 The NectarLink name and logo are not licensed under any of the licenses above.
 See TRADEMARKS.md.
 
+Premium Cast
+Copyright (C) 2026 Bareq Maher.
+Premium Cast is a modified version of NectarLink, renamed and redesigned. The
+changes by Bareq Maher are released under the same licenses as the parts they
+change (GPL-3.0-or-later for the apps, MPL-2.0 for the core libraries).
+
+Original work:
 Copyright (C) 2026 The NectarLink contributors.

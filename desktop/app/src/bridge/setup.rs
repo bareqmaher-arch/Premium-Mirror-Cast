@@ -288,7 +288,7 @@ impl qobject::Setup {
         if let Some(dir) = dir
             && let Err(e) = setup::open_app(&dir)
         {
-            tracing::warn!(error = %e, "can't open NectarLink");
+            tracing::warn!(error = %e, "can't open Premium Cast");
         }
     }
 

@@ -6,10 +6,10 @@
 # (channels.yml).
 name: Release
 
+# Premium Cast: run by hand only. Releases are built locally and signed with
+# Premium Cast's own key (it isn't stored in this repository), then uploaded.
 on:
-  push:
-    # Releases only: nightly tags (v1.2.3-nightly.N) are made by nightly.yml.
-    tags: ["v*", "!v*-nightly.*"]
+  workflow_dispatch:
 
 permissions:
   contents: write

@@ -46,7 +46,7 @@ SetCompressor /SOLID zlib
 ; APP names the install folder, registry keys and the firewall rule; DISPLAY is
 ; the name people see.
 !define APP "Nectarlink"
-!define DISPLAY "NectarLink"
+!define DISPLAY "Premium Cast"
 !define EXE "nectarlink-desktop.exe"
 !define SETUP_EXE "Nectarlink Setup.exe"
 !define UNINSTALL_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APP}"
@@ -67,8 +67,8 @@ ShowUninstDetails nevershow
 VIProductVersion "${VERSION}.${BUILD}"
 VIAddVersionKey "ProductName" "${DISPLAY}"
 VIAddVersionKey "FileDescription" "${DISPLAY} Setup"
-VIAddVersionKey "CompanyName" "The NectarLink contributors"
-VIAddVersionKey "LegalCopyright" "GPL-3.0-or-later"
+VIAddVersionKey "CompanyName" "Bareq Maher"
+VIAddVersionKey "LegalCopyright" "Copyright (C) 2026 Bareq Maher. Based on NectarLink (C) The NectarLink contributors. GPL-3.0-or-later"
 VIAddVersionKey "FileVersion" "${VERSION}"
 VIAddVersionKey "ProductVersion" "${DISPLAY_VERSION}"
 
@@ -388,7 +388,7 @@ Section "Install"
   ; Phones reach this PC over UDP (QUIC) and find it with mDNS.
   !insertmacro Progress "step firewall"
   nsExec::Exec 'netsh advfirewall firewall delete rule name="${FIREWALL_RULE}"'
-  nsExec::Exec 'netsh advfirewall firewall add rule name="${FIREWALL_RULE}" dir=in action=allow program="$INSTDIR\${EXE}" enable=yes profile=private,domain description="Lets paired phones connect to NectarLink."'
+  nsExec::Exec 'netsh advfirewall firewall add rule name="${FIREWALL_RULE}" dir=in action=allow program="$INSTDIR\${EXE}" enable=yes profile=private,domain description="Lets paired phones connect to Premium Cast."'
 
   ; Updates without an administrator prompt: a task that runs this app as
   ; SYSTEM to install a newer release (desktop/app/src/updater.rs). Only
@@ -406,11 +406,10 @@ Section "Install"
   CreateDirectory "$APPDATA\${APP}\updates"
   nsExec::Exec 'icacls "$APPDATA\${APP}" /setowner *S-1-5-32-544'
   nsExec::Exec 'icacls "$APPDATA\${APP}" /grant *S-1-5-32-545:(OI)(CI)M'
-  ${If} $AdminOnly != 1
-    ; Updates ask for permission in this folder (see the top of this file).
-    nsExec::Exec 'schtasks /Delete /TN "Nectarlink Update" /F'
-    Goto updates_done
-  ${EndIf}
+  ; Premium Cast: no self-updating, so never a SYSTEM update task (the
+  ; original project's task would install its own releases over this one).
+  nsExec::Exec 'schtasks /Delete /TN "Nectarlink Update" /F'
+  Goto updates_done
   InitPluginsDir
   ${WordReplace} "$INSTDIR" "&" "&amp;" "+" $1
   FileOpen $0 "$PLUGINSDIR\update-task.xml" w
@@ -473,7 +472,7 @@ Section "Install"
   WriteRegDWORD HKLM "Software\${APP}" "AdminOnlyFolder" $AdminOnly
   WriteRegStr HKLM "${UNINSTALL_KEY}" "DisplayName" "${DISPLAY}"
   WriteRegStr HKLM "${UNINSTALL_KEY}" "DisplayVersion" "${DISPLAY_VERSION}"
-  WriteRegStr HKLM "${UNINSTALL_KEY}" "Publisher" "The NectarLink contributors"
+  WriteRegStr HKLM "${UNINSTALL_KEY}" "Publisher" "Bareq Maher"
   WriteRegStr HKLM "${UNINSTALL_KEY}" "DisplayIcon" "$INSTDIR\${EXE}"
   WriteRegStr HKLM "${UNINSTALL_KEY}" "InstallLocation" "$INSTDIR"
   WriteRegStr HKLM "${UNINSTALL_KEY}" "URLInfoAbout" "https://github.com/thtbee/nectarlink"

@@ -1,3 +1,16 @@
+> [!NOTE]
+> **Premium Cast**: Copyright (C) 2026 Bareq Maher. This is a renamed and
+> redesigned build of [NectarLink](https://github.com/thtbee/nectarlink)
+> by The NectarLink contributors (GPL-3.0-or-later / MPL-2.0), for Windows and
+> Android. It is not the official NectarLink, and neither app updates itself.
+>
+> **Download:** [Releases](https://github.com/bareqmaher-arch/Premium-Mirror-Cast/releases):
+> `PremiumCast-<version>-x64-setup.exe` for Windows 11 (it also carries the
+> phone app and installs it over USB) and `PremiumCast-<version>-android.apk`
+> for Android 8.0 or newer. The APK is signed with Premium Cast's own key
+> (certificate SHA-256 `92:EC:40:E4:87:B4:32:C0:C0:BE:E4:D4:AE:F1:3A:90:AA:F3:03:D4:3D:81:6E:94:C7:B2:E2:D3:AF:37:BE:02`),
+> so it installs beside the official NectarLink app, not over it.
+
 <div align="center">
 
 <img src="assets/brand/icon.svg" alt="" width="96" height="96">

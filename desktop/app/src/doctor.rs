@@ -148,8 +148,8 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             "Samsung",
             tr!(
                 "Doctor",
-                "On Samsung: open Settings → Apps → NectarLink → Battery and choose Unrestricted, then in \
-             Device care → Battery → Background usage limits make sure NectarLink is never put to sleep."
+                "On Samsung: open Settings → Apps → Premium Cast → Battery and choose Unrestricted, then in \
+             Device care → Battery → Background usage limits make sure Premium Cast is never put to sleep."
             ),
         ))
     } else if lower.contains("xiaomi") || lower.contains("redmi") || lower.contains("poco") {
@@ -157,7 +157,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             "Xiaomi",
             tr!(
                 "Doctor",
-                "On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → NectarLink, turn on \
+                "On Xiaomi / HyperOS / MIUI: open Settings → Apps → Manage apps → Premium Cast, turn on \
              Autostart, and set Battery saver to No restrictions."
             ),
         ))
@@ -166,7 +166,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             "OnePlus",
             tr!(
                 "Doctor",
-                "On OnePlus / OxygenOS: open Settings → Apps → App management → NectarLink → Battery usage and \
+                "On OnePlus / OxygenOS: open Settings → Apps → App management → Premium Cast → Battery usage and \
              turn on Allow background activity and Allow auto-launch."
             ),
         ))
@@ -175,7 +175,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             "Oppo / Realme",
             tr!(
                 "Doctor",
-                "On Oppo / Realme: open Settings → Apps → App management → NectarLink → Battery usage and turn \
+                "On Oppo / Realme: open Settings → Apps → App management → Premium Cast → Battery usage and turn \
              on Allow background activity and Allow auto-launch."
             ),
         ))
@@ -185,7 +185,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             tr!(
                 "Doctor",
                 "On Vivo / OriginOS / Funtouch: open Settings → Battery → Background power consumption \
-             management → NectarLink and choose Unrestricted, and allow Autostart."
+             management → Premium Cast and choose Unrestricted, and allow Autostart."
             ),
         ))
     } else if lower.contains("huawei") || lower.contains("honor") {
@@ -194,7 +194,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             tr!(
                 "Doctor",
                 "On Huawei / Honor: open Settings → Battery → App launch, turn off Manage automatically for \
-             NectarLink, and keep Auto-launch, Secondary launch, and Run in background on."
+             Premium Cast, and keep Auto-launch, Secondary launch, and Run in background on."
             ),
         ))
     } else if lower.contains("pixel") || lower.contains("google") {
@@ -202,7 +202,7 @@ fn match_oem(raw: &str) -> Option<(&'static str, String)> {
             "Pixel",
             tr!(
                 "Doctor",
-                "On Pixel: open Settings → Apps → See all apps → NectarLink → App battery usage, tap Allow \
+                "On Pixel: open Settings → Apps → See all apps → Premium Cast → App battery usage, tap Allow \
              background usage, and choose Unrestricted."
             ),
         ))
@@ -273,15 +273,15 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
         Some(f) if f.blocked => {
             #[cfg(target_os = "linux")]
             let (title, detail) = (
-                tr!("Doctor", "The firewall blocks NectarLink"),
+                tr!("Doctor", "The firewall blocks Premium Cast"),
                 tr!(
                     "Doctor",
-                    "A firewall rule blocks incoming NectarLink connections. Allow it, and your phone can connect."
+                    "A firewall rule blocks incoming Premium Cast connections. Allow it, and your phone can connect."
                 ),
             );
             #[cfg(not(target_os = "linux"))]
             let (title, detail) = (
-                tr!("Doctor", "Windows Firewall blocks NectarLink"),
+                tr!("Doctor", "Windows Firewall blocks Premium Cast"),
                 tr!(
                     "Doctor",
                     "Someone chose not to allow it when Windows asked. Allow it, and your phone can connect."
@@ -291,9 +291,9 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
         }
         Some(f) if !f.allowed => {
             #[cfg(target_os = "linux")]
-            let title = tr!("Doctor", "NectarLink isn't allowed through the firewall");
+            let title = tr!("Doctor", "Premium Cast isn't allowed through the firewall");
             #[cfg(not(target_os = "linux"))]
-            let title = tr!("Doctor", "NectarLink isn't allowed through Windows Firewall");
+            let title = tr!("Doctor", "Premium Cast isn't allowed through Windows Firewall");
             checks.push(check(
                 "firewall",
                 Outcome::Warn,
@@ -338,7 +338,7 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
             tr!("Doctor", "adb isn't running"),
             tr!(
                 "Doctor",
-                "Phones on a USB cable connect through adb. NectarLink starts it every minute or so; \
+                "Phones on a USB cable connect through adb. Premium Cast starts it every minute or so; \
                  start it now if a phone on a cable isn't showing up."
             ),
             Some("start-adb"),
@@ -352,7 +352,7 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
                 tr!("Doctor", "A USB cable needs adb"),
                 tr!(
                     "Doctor",
-                    "To connect over a cable, NectarLink can get Android's USB tools from Google \
+                    "To connect over a cable, Premium Cast can get Android's USB tools from Google \
                      for you, and the phone needs USB debugging on. Wi-Fi works without them."
                 ),
                 Some("get-adb"),
@@ -413,7 +413,7 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
                 tr!(
                     "Doctor",
                     "%1 announces itself at %2, which isn't in a private range such as 192.168.x.x. \
-                     NectarLink connects on such a network once both apps are up to date. Until then, \
+                     Premium Cast connects on such a network once both apps are up to date. Until then, \
                      turn on Connect over mobile data on both, or connect with a USB cable.",
                     name,
                     d.mdns_addrs[0].ip()
@@ -478,7 +478,7 @@ pub fn diagnose(facts: &Facts, now_secs: i64) -> Vec<Check> {
                     tr!("Doctor", "%1 isn't connected", name),
                     tr!(
                         "Doctor",
-                        "%1 Open NectarLink on the phone and keep both on the same network. If the phone \
+                        "%1 Open Premium Cast on the phone and keep both on the same network. If the phone \
                          asks to run in the background, allow it.",
                         seen
                     ),

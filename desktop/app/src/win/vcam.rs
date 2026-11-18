@@ -35,7 +35,7 @@ use windows::{
 };
 
 pub const CLSID_STR: &str = "{8E6C3B74-5D4A-4B9E-9A12-7C8F1E2D3A40}";
-pub const FRIENDLY_NAME: &str = "NectarLink Webcam";
+pub const FRIENDLY_NAME: &str = "Premium Cast Webcam";
 pub const REGISTER_ARG: &str = "--register-vcam";
 pub const UNREGISTER_ARG: &str = "--unregister-vcam";
 
@@ -141,7 +141,7 @@ pub fn register_under(
     let inproc_key = format!(r"{clsid_key}\InprocServer32");
     let fs_key = format!(r"{frameserver_prefix}\{CLSID_STR}");
 
-    create_and_set(root, &clsid_key, &[(None, "NectarLink Virtual Camera Media Source")])?;
+    create_and_set(root, &clsid_key, &[(None, "Premium Cast Virtual Camera Media Source")])?;
     create_and_set(root, &inproc_key, &[(None, dll_str.as_ref()), (Some("ThreadingModel"), "Both")])?;
     create_and_set(root, &fs_key, &[(Some("FriendlyName"), FRIENDLY_NAME)])?;
     Ok(())

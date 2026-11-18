@@ -15,7 +15,7 @@ Window {
 
     // GNOME on Wayland lets no app keep its own window on top. The "PiP on top"
     // extension does it for windows titled like this, for those who have it.
-    title: onWayland ? qsTr("Nectar Island") + " - PiP" : qsTr("Nectar Island")
+    title: onWayland ? qsTr("Cast Island") + " - PiP" : qsTr("Cast Island")
     // Clicks pass through while it's waiting with nothing to show (see keptForMinutes).
     flags: Qt.Tool | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.WindowDoesNotAcceptFocus
         | (hasActivity ? 0 : Qt.WindowTransparentForInput)
@@ -172,7 +172,7 @@ Window {
         for (let i = 0; i < count; i++) {
             const item = mediaRepeater.itemAt(i)
             if (!item) continue
-            // Only surface phone media in Nectar Island (never PC-local media, which is already on the PC)
+            // Only surface phone media in Cast Island (never PC-local media, which is already on the PC)
             if (item.deviceId === "local") continue
             if (item.playing) {
                 if (!best || !best.playing) {
@@ -331,8 +331,8 @@ Window {
         if (mode === "waiting")
             return qsTr("%1 waiting").arg(TransferList.waitingCount)
         return DeviceList.count > 0
-            ? qsTr("Nectar Island · %1").arg(DeviceList.deviceNameAt(0))
-            : qsTr("Nectar Island · Ready")
+            ? qsTr("Cast Island · %1").arg(DeviceList.deviceNameAt(0))
+            : qsTr("Cast Island · Ready")
     }
 
     readonly property string secondaryLabel: {
@@ -361,7 +361,7 @@ Window {
                 : base
         }
         if (mode === "notification")
-            return qsTr("Click to view in NectarLink")
+            return qsTr("Click to view in Premium Cast")
         if (mode === "waiting") {
             return DeviceList.count > 0
                 ? qsTr("Will send when %1 is back").arg(DeviceList.deviceNameAt(0))

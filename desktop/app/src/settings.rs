@@ -15,9 +15,10 @@ const FILE_NAME: &str = "desktop-settings.json";
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Default)]
 #[serde(rename_all = "lowercase")]
 pub enum Theme {
-    #[default]
     Bloom,
-    /// Honey on charcoal or wax, with the living comb.
+    /// Premium Cast's own look (the default): violet on onyx or pearl, with
+    /// the living signal grid. Its name stays "hive" for older settings files.
+    #[default]
     Hive,
     Glass,
     Graphite,
@@ -37,14 +38,15 @@ impl Theme {
         }
     }
 
-    /// A theme by name; anything unknown is Bloom, the default.
+    /// A theme by name; anything unknown is Premium ("hive"), the default.
     pub fn parse(name: &str) -> Theme {
         match name.trim().to_ascii_lowercase().as_str() {
             "hive" => Theme::Hive,
             "graphite" => Theme::Graphite,
             "glass" | "blurry" => Theme::Glass,
             "fluent" => Theme::Fluent,
-            _ => Theme::Bloom,
+            "bloom" => Theme::Bloom,
+            _ => Theme::Hive,
         }
     }
 }
@@ -585,19 +587,19 @@ pub struct Settings {
     /// Configured one-way / two-way folder synchronization rules.
     #[serde(default, skip_serializing_if = "Vec::is_empty", alias = "folder_sync_rules")]
     pub folder_sync_rules: Vec<crate::folder_sync::FolderSyncRule>,
-    /// Show the optional top-of-screen Nectar Island status pill when phone activity is ongoing.
+    /// Show the optional top-of-screen Cast Island status pill when phone activity is ongoing.
     #[serde(default, alias = "nectar_island")]
     pub nectar_island: bool,
-    /// Trigger Nectar Island for incoming and active phone calls.
+    /// Trigger Cast Island for incoming and active phone calls.
     #[serde(default = "default_true", alias = "nectar_island_calls")]
     pub nectar_island_calls: bool,
-    /// Trigger Nectar Island for active file transfers.
+    /// Trigger Cast Island for active file transfers.
     #[serde(default = "default_true", alias = "nectar_island_transfers")]
     pub nectar_island_transfers: bool,
-    /// Trigger Nectar Island for active media playback.
+    /// Trigger Cast Island for active media playback.
     #[serde(default = "default_true", alias = "nectar_island_media")]
     pub nectar_island_media: bool,
-    /// Trigger Nectar Island for phone notifications.
+    /// Trigger Cast Island for phone notifications.
     #[serde(default, alias = "nectar_island_notifications")]
     pub nectar_island_notifications: bool,
     /// Configured "When X, Do Y" automation rules.
@@ -911,7 +913,7 @@ mod tests {
         }
         assert_eq!(Theme::parse("Fluent "), Theme::Fluent);
         assert_eq!(Theme::parse("blurry"), Theme::Glass);
-        assert_eq!(Theme::parse("unknown"), Theme::Bloom);
+        assert_eq!(Theme::parse("unknown"), Theme::Hive);
     }
 
     #[test]
@@ -1254,7 +1256,8 @@ mod tests {
         }"#;
         fs::write(dir.path().join(FILE_NAME), unknown_enums).unwrap();
         let s = Settings::load(dir.path());
-        assert_eq!(s.theme, Theme::Bloom);
+        // Unknown themes fall back to the default: Premium ("hive").
+        assert_eq!(s.theme, Theme::Hive);
         assert_eq!(s.seed, "ultraviolet");
         assert_eq!(s.color_mode, ColorMode::System);
         assert_eq!(s.recordings_format, RecordingFormat::M4a);

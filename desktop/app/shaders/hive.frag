@@ -1,10 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// The Hive theme's backdrop (and the installer's): a honeycomb that grows
-// outward from the logo, breathes slowly, and sends a soft pulse of light
-// outward every few seconds.
+// Copyright (C) 2026 Bareq Maher (Premium Cast changes)
+// The Premium theme's backdrop (and the installer's): a fine signal grid of
+// dots that spreads outward from the logo, crossed by faint broadcast rings,
+// with a soft cast wave travelling outward every few seconds.
 // Samples no textures. Output is premultiplied.
 //
-// Compiled to hive.frag.qsb with Qt's qsb (see shaders.qrc).
+// Compiled to hive.frag.qsb with Qt's qsb (see shaders.qrc). The file keeps
+// its old name so the build and the QML that load it stay unchanged.
 #version 440
 
 layout(location = 0) in vec2 qt_TexCoord0;
@@ -14,35 +16,20 @@ layout(std140, binding = 0) uniform buf {
     mat4 qt_Matrix;
     float qt_Opacity;
     vec2 itemSize;
-    vec2 origin;      // where it grows from, in pixels
+    vec2 origin;      // where it spreads from, in pixels
     float time;       // seconds
-    float reveal;     // how far it has grown, in pixels
-    float cell;       // hexagon size, in pixels
-    float pulse;      // 0: still (reduced motion), 1: pulsing
+    float reveal;     // how far it has spread, in pixels
+    float cell;       // grid pitch, in pixels
+    float pulse;      // 0: still (reduced motion), 1: animated
     float strength;   // overall intensity
     float breathPeriod; // seconds per breath
-    float pulsePeriod;  // seconds between pulses
+    float pulsePeriod;  // seconds between cast waves
     float corner;       // rounded-rectangle mask radius in pixels (0: none)
-    float reach;        // how far the comb carries (fraction of the diagonal)
-    float pulseReach;   // how far a pulse travels (fraction of the diagonal)
+    float reach;        // how far the grid carries (fraction of the diagonal)
+    float pulseReach;   // how far a wave travels (fraction of the diagonal)
     vec4 lineColor;
     vec4 glowColor;
 };
-
-const vec2 S = vec2(1.0, 1.7320508);
-
-// Nearest hexagon centre: xy is the offset from it, zw identifies the cell.
-vec4 hexCoords(vec2 p) {
-    vec4 c = floor(vec4(p, p - vec2(0.5, 1.0)) / S.xyxy) + 0.5;
-    vec4 h = vec4(p - c.xy * S, p - (c.zw + 0.5) * S);
-    return dot(h.xy, h.xy) < dot(h.zw, h.zw) ? vec4(h.xy, c.xy) : vec4(h.zw, c.zw + 0.5);
-}
-
-// 0 at the centre of a cell, 0.5 on its edge.
-float hexDist(vec2 p) {
-    p = abs(p);
-    return max(dot(p, S * 0.5), p.x);
-}
 
 float hash(vec2 p) {
     return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
@@ -53,30 +40,37 @@ void main() {
     float d = distance(px, origin);
     float far = length(itemSize);
 
-    vec4 h = hexCoords((px - origin) / cell);
-    float edge = 0.5 - hexDist(h.xy);
-    float lineWidth = 1.5 / cell;
-    float line = 1.0 - smoothstep(0.0, lineWidth, edge);
+    // The dot grid: one small round dot per cell.
+    vec2 g = (px - origin) / cell;
+    vec2 id = floor(g);
+    float dotDist = length(fract(g) - 0.5) * cell;   // pixels from the dot centre
+    float dotMask = 1.0 - smoothstep(0.9, 1.7, dotDist);
 
-    // Grows from the logo; the front is soft.
+    // Broadcast rings around the origin, every four cells, one pixel wide.
+    float spacing = cell * 4.0;
+    float ringDist = abs(fract(d / spacing + 0.5) - 0.5) * spacing;
+    float rings = (1.0 - smoothstep(0.0, 1.1, ringDist)) * 0.35;
+
+    // Spreads from the logo; the front is soft.
     float grown = 1.0 - smoothstep(reveal - 90.0, reveal, d);
     // Fades towards the corners so the content stays calm.
     float falloff = exp(-d / (far * reach));
 
-    // Breathing: a slow rise and fall of the whole comb.
-    float breathe = 0.78 + 0.22 * sin(time * 6.2831853 / breathPeriod) * pulse;
+    // Breathing: a slow rise and fall of the whole field.
+    float breathe = 0.80 + 0.20 * sin(time * 6.2831853 / breathPeriod) * pulse;
 
-    // A pulse of light travelling outward every few seconds.
+    // A cast wave travelling outward every few seconds.
     float t = fract(time / pulsePeriod);
-    float ringRadius = t * far * pulseReach;
-    float ring = exp(-pow((d - ringRadius) / 70.0, 2.0)) * (1.0 - t) * pulse;
+    float waveRadius = t * far * pulseReach;
+    float wave = exp(-pow((d - waveRadius) / 60.0, 2.0)) * (1.0 - t) * pulse;
 
-    // A little variation from cell to cell, like light on real comb.
-    float shade = 0.75 + 0.5 * hash(h.zw);
+    // A little variation from dot to dot, like a live signal.
+    float shade = 0.7 + 0.6 * hash(id);
 
-    float lineA = line * grown * falloff * breathe * shade * 1.6 + line * grown * ring * 1.8;
-    float fillA = grown * ring * 0.08 * shade;
-    float glowA = exp(-d / 150.0) * breathe * 0.32 * grown;
+    float lineA = (dotMask * shade + rings) * grown * falloff * breathe * 1.5
+                + (dotMask + rings) * grown * wave * 1.9;
+    float fillA = grown * wave * 0.05;
+    float glowA = exp(-d / 170.0) * breathe * 0.30 * grown;
 
     vec3 rgb = lineColor.rgb * lineA * lineColor.a + glowColor.rgb * (glowA + fillA) * glowColor.a;
     float a = clamp(lineA * lineColor.a + (glowA + fillA) * glowColor.a, 0.0, 1.0);

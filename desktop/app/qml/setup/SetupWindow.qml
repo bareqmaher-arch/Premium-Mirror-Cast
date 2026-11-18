@@ -15,21 +15,21 @@ NativeWindow {
     readonly property bool animate: !Setup.reduceMotion
     readonly property string phase: Setup.phase
 
-    readonly property color bg: dark ? "#121214" : "#FFF8F3"
-    readonly property color ink: dark ? "#EDE6DD" : "#1F1B16"
-    readonly property color muted: dark ? "#A39A90" : "#6B5E52"
-    readonly property color honey: dark ? "#FFB95F" : "#8A5100"
-    readonly property color onHoney: dark ? "#2C1600" : "#FFFFFF"
-    readonly property color track: dark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0.12, 0.10, 0.08, 0.08)
-    readonly property color danger: dark ? "#F0A39C" : "#9E2B25"
-    readonly property color panel: dark ? "#1C1B1D" : "#FFFFFF"
+    readonly property color bg: dark ? "#0E0F13" : "#F8F8FB"
+    readonly property color ink: dark ? "#ECEDF3" : "#15161C"
+    readonly property color muted: dark ? "#A3A5B3" : "#4F5262"
+    readonly property color honey: dark ? "#B4A6FF" : "#5A45D6"
+    readonly property color onHoney: dark ? "#1E1450" : "#FFFFFF"
+    readonly property color track: dark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0.08, 0.09, 0.11, 0.08)
+    readonly property color danger: dark ? "#FFA8A0" : "#B3261E"
+    readonly property color panel: dark ? "#17181E" : "#FFFFFF"
     // Removing: the comb goes grey and dim.
     readonly property color comb: removing
-        ? (dark ? Qt.rgba(1, 1, 1, 0.09) : Qt.rgba(0.30, 0.26, 0.22, 0.06))
-        : (dark ? Qt.rgba(1.0, 0.73, 0.37, 0.22) : Qt.rgba(0.54, 0.32, 0.0, 0.085))
+        ? (dark ? Qt.rgba(1, 1, 1, 0.09) : Qt.rgba(0.24, 0.25, 0.30, 0.06))
+        : (dark ? Qt.rgba(0.71, 0.65, 1.0, 0.22) : Qt.rgba(0.35, 0.27, 0.84, 0.085))
     readonly property color combGlow: removing
-        ? (dark ? Qt.rgba(0.55, 0.52, 0.48, 0.55) : Qt.rgba(0.72, 0.68, 0.62, 0.55))
-        : (dark ? Qt.rgba(1.0, 0.62, 0.18, 0.75) : Qt.rgba(1.0, 0.72, 0.37, 0.80))
+        ? (dark ? Qt.rgba(0.50, 0.51, 0.56, 0.55) : Qt.rgba(0.66, 0.67, 0.72, 0.55))
+        : (dark ? Qt.rgba(0.71, 0.65, 1.0, 0.75) : Qt.rgba(0.35, 0.27, 0.84, 0.35))
 
     // Not Theme's: Theme reads the app's settings and data, which setup and
     // the uninstaller (which deletes them) must leave alone.
@@ -48,7 +48,7 @@ NativeWindow {
     minimumHeight: height
     maximumHeight: height
     visible: true
-    title: removing ? qsTr("Uninstall NectarLink") : qsTr("NectarLink Setup")
+    title: removing ? qsTr("Uninstall Premium Cast") : qsTr("Premium Cast Setup")
     color: bg
     backdrop: false
     darkFrame: dark
@@ -64,7 +64,7 @@ NativeWindow {
 
     FolderDialog {
         id: dirPicker
-        title: qsTr("Install NectarLink in")
+        title: qsTr("Install Premium Cast in")
         onAccepted: Setup.chooseDir(selectedFolder.toString())
     }
 
@@ -177,20 +177,21 @@ NativeWindow {
                 anchors.centerIn: parent
                 width: 96
                 height: 96
-                visible: !window.removing
+                // Premium Cast: the mark, dimmed while uninstalling (no bee).
+                opacity: window.removing ? 0.45 : 1
                 source: Setup.iconUrl
                 sourceSize: Qt.size(192, 192)
                 smooth: true
                 mipmap: true
                 scale: 1 + emblem.breath * 0.04
                 Accessible.role: Accessible.Graphic
-                Accessible.name: qsTr("NectarLink")
+                Accessible.name: qsTr("Premium Cast")
             }
             SadBee {
                 anchors.centerIn: parent
                 width: 150
                 height: 128
-                visible: window.removing
+                visible: false
                 animate: window.animate
                 dark: window.dark
             }
@@ -213,13 +214,13 @@ NativeWindow {
                 font.weight: Font.DemiBold
                 color: window.ink
                 text: window.phase === "failed"
-                    ? (window.removing ? qsTr("Couldn't uninstall NectarLink") : qsTr("Setup couldn't finish"))
+                    ? (window.removing ? qsTr("Couldn't uninstall Premium Cast") : qsTr("Setup couldn't finish"))
                     : window.phase === "working"
-                    ? (window.action === "remove" ? qsTr("Uninstalling NectarLink")
-                       : window.action === "update" ? qsTr("Updating NectarLink")
-                       : qsTr("Installing NectarLink"))
-                    : window.removing ? qsTr("Uninstall NectarLink?")
-                    : "NectarLink"
+                    ? (window.action === "remove" ? qsTr("Uninstalling Premium Cast")
+                       : window.action === "update" ? qsTr("Updating Premium Cast")
+                       : qsTr("Installing Premium Cast"))
+                    : window.removing ? qsTr("Uninstall Premium Cast?")
+                    : "Premium Cast"
             }
             Item { width: 1; height: 10 }
             Text {
@@ -233,7 +234,7 @@ NativeWindow {
                 text: window.phase === "failed" ? Setup.message
                     : window.phase === "working" ? Setup.step
                     : window.removing
-                    ? qsTr("Sorry to see you go. This uninstalls NectarLink and deletes its settings and pairings on this PC. Files you received stay in %1.").arg("Downloads\\Nectarlink")
+                    ? qsTr("Sorry to see you go. This uninstalls Premium Cast and deletes its settings and pairings on this PC. Files you received stay in %1.").arg("Downloads\\Nectarlink")
                     : Setup.kind === "update"
                     ? qsTr("Update from %1 to %2. Your settings and pairings stay as they are.").arg(Setup.installedVersion).arg(Setup.version)
                     : Setup.kind === "reinstall"
@@ -295,7 +296,7 @@ NativeWindow {
                 SetupButton {
                     visible: window.removing || window.phase === "failed"
                     filled: false
-                    text: window.removing && window.phase !== "failed" ? qsTr("Keep NectarLink") : qsTr("Close")
+                    text: window.removing && window.phase !== "failed" ? qsTr("Keep Premium Cast") : qsTr("Close")
                     ink: window.ink
                     focusColor: window.honey
                     onClicked: window.close()
@@ -466,7 +467,7 @@ NativeWindow {
                 font.pixelSize: 28
                 font.weight: Font.DemiBold
                 color: window.ink
-                text: window.removing ? qsTr("NectarLink is uninstalled") : qsTr("NectarLink is ready")
+                text: window.removing ? qsTr("Premium Cast is uninstalled") : qsTr("Premium Cast is ready")
             }
             Item { width: 1; height: 8 }
             Text {
@@ -479,19 +480,20 @@ NativeWindow {
                 color: window.muted
                 text: window.removing
                     ? qsTr("Your received files are still in %1. Thanks for giving it a try.").arg("Downloads\\Nectarlink")
-                    : qsTr("Next, get the Android app. Scan this code with your phone's camera to open its download page.")
+                    : qsTr("Next, put Premium Cast on your phone: open Premium Cast and connect your phone by USB, or copy PremiumCast-android.apk from its folder to your phone.")
             }
 
             Item { width: 1; height: window.removing ? 0 : 20 }
             Rectangle {
-                visible: !window.removing
+                visible: false // Premium Cast: no download page; the APK ships with the PC app.
+                //visible: !window.removing
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: 148
                 height: 148
                 radius: 18
                 color: "#FFFFFF"
                 border.width: window.dark ? 0 : 1
-                border.color: Qt.rgba(0.12, 0.10, 0.08, 0.10)
+                border.color: Qt.rgba(0.08, 0.09, 0.11, 0.10)
                 Image {
                     anchors.centerIn: parent
                     width: 124
@@ -503,9 +505,9 @@ NativeWindow {
                     Accessible.name: qsTr("QR code for the Android app download page")
                 }
             }
-            Item { width: 1; height: window.removing ? 0 : 12 }
+            Item { width: 1; height: 0 }
             Text {
-                visible: !window.removing
+                visible: false // Premium Cast: no download page.
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.family: "Figtree"
                 font.pixelSize: 13
@@ -528,7 +530,7 @@ NativeWindow {
                 anchors.horizontalCenter: parent.horizontalCenter
                 spacing: 12
                 SetupButton {
-                    text: window.removing ? qsTr("Close") : qsTr("Open NectarLink")
+                    text: window.removing ? qsTr("Close") : qsTr("Open Premium Cast")
                     fill: window.removing ? window.ink : window.honey
                     ink: window.removing ? window.bg : window.onHoney
                     focusColor: window.honey
@@ -588,7 +590,7 @@ NativeWindow {
                         font.pixelSize: 14
                         color: window.muted
                         textFormat: Text.StyledText
-                        text: qsTr("NectarLink goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:")
+                        text: qsTr("Premium Cast goes into Program Files, or the folder you choose, for everyone on this PC. Setup also:")
                             + "<br>&#8226; " + qsTr("allows it through Windows Firewall on private networks, so your phone can connect")
                             + "<br>&#8226; " + qsTr("adds a task that installs updates without an administrator prompt, where only administrators can change the folder")
                             + "<br>&#8226; " + qsTr("adds a Start menu shortcut, and a desktop one if you leave that ticked, and starts it with Windows (turn this off in Settings)")

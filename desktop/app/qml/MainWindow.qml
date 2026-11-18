@@ -119,7 +119,7 @@ NativeWindow {
 
     width: normalWidth
     height: normalHeight
-    title: "NectarLink"
+    title: "Premium Cast"
 
     function screenKey(s) {
         if (!s) return ""
@@ -572,12 +572,16 @@ NativeWindow {
             y: (Theme.topBarHeight - height) / 2
             width: 38; height: 38
             radius: Theme.radiusSm
-            color: Theme.graphite ? Theme.surfaceContent : Theme.primary
+            // Premium: the app icon's own onyx tile and violet rim, so the
+            // rail and the taskbar show one mark.
+            color: Theme.hive ? "#15122E" : (Theme.graphite ? Theme.surfaceContent : Theme.primary)
+            border.width: Theme.hive ? 1 : 0
+            border.color: Qt.rgba(0.71, 0.65, 1.0, 0.45)
             Icon {
                 anchors.centerIn: parent
                 path: Icons.mark
                 stroke: 2.4
-                color: Theme.graphite ? Theme.surface : Theme.primaryContent
+                color: Theme.hive ? "#F4F2FF" : (Theme.graphite ? Theme.surface : Theme.primaryContent)
             }
         }
         Column {
@@ -995,7 +999,8 @@ NativeWindow {
     }
 
     StarPrompt {
-        eligible: AppController.status === "ready" && !window.showWalkthrough && window.active
+        // Premium Cast: never asks to star or fund the original project's pages.
+        eligible: false
         onStarred: Qt.openUrlExternally("https://github.com/thtbee/nectarlink")
         onSupported: Qt.openUrlExternally("https://buymeacoffee.com/thtbee_")
     }

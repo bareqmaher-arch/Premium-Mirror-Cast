@@ -27,7 +27,6 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.ShaderBrush
-import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.lifecycle.Lifecycle
@@ -36,7 +35,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import kotlinx.coroutines.delay
 import kotlin.math.PI
 import kotlin.math.sin
-import kotlin.math.sqrt
 
 /** The Hive theme is active. */
 val LocalHiveTheme = compositionLocalOf { false }
@@ -60,15 +58,15 @@ fun rememberPowerSaver(): Boolean {
 }
 
 /**
- * Hive's living honeycomb behind the app, the same comb as the Windows app
- * and the installer: it breathes slowly and sends a soft pulse of light
- * outward from [origin] every few seconds.
+ * Premium's living signal grid behind the app, the same grid as the Windows
+ * app: a field of dots with faint rings that breathes slowly and sends a
+ * cast wave outward from [origin] every few seconds.
  *
  * Light on the battery: on Android 13 and newer one GPU shader draws it;
  * time advances about 30 times a second (the motion is slow enough that more
  * looks the same), and only while the app is in front. Only the backdrop
  * redraws, never the content above it. With [animate] false it holds still.
- * Older Android draws the same comb from a cached path and only breathes.
+ * Older Android draws the same dots from a cached path and only breathes.
  */
 @Composable
 fun HiveComb(
@@ -79,14 +77,14 @@ fun HiveComb(
     origin: (androidx.compose.ui.geometry.Size) -> Offset = { Offset(it.width / 2f, it.height * 0.18f) },
 ) {
     val line = if (dark) {
-        Color(0xFFFFB95F).copy(alpha = Tokens.COMB_LINE_ALPHA_DARK)
+        Color(0xFFB4A6FF).copy(alpha = Tokens.COMB_LINE_ALPHA_DARK)
     } else {
-        Color(0xFF8A5100).copy(alpha = Tokens.COMB_LINE_ALPHA_LIGHT)
+        Color(0xFF5A45D6).copy(alpha = Tokens.COMB_LINE_ALPHA_LIGHT)
     }
     val glow = if (dark) {
-        Color(1.0f, 0.62f, 0.18f, Tokens.COMB_GLOW_ALPHA_DARK)
+        Color(0.71f, 0.65f, 1.0f, Tokens.COMB_GLOW_ALPHA_DARK)
     } else {
-        Color(1.0f, 0.72f, 0.37f, Tokens.COMB_GLOW_ALPHA_LIGHT)
+        Color(0.35f, 0.27f, 0.84f, Tokens.COMB_GLOW_ALPHA_LIGHT)
     }
     val cellPx = with(LocalDensity.current) { cellDp * density }
 
@@ -141,7 +139,7 @@ private fun ShaderComb(
     }
 }
 
-/** Android 12 and older: the comb as one cached path, breathing as a whole. */
+/** Android 12 and older: the dots as one cached path, breathing as a whole. */
 @Composable
 private fun PathComb(
     modifier: Modifier,
@@ -155,12 +153,11 @@ private fun PathComb(
     androidx.compose.foundation.layout.Box(
         modifier.fillMaxSize().drawWithCache {
             val path = combPath(size.width, size.height, cell, origin(size))
-            val stroke = Stroke(width = 1.2f * density)
             val o = origin(size)
             val glowRadius = 150f * density
             onDrawBehind {
                 val breathe = 0.78f + 0.22f * sin(time() * 2f * PI.toFloat() / Tokens.COMB_BREATH_SECONDS) * pulse
-                drawPath(path, line.copy(alpha = line.alpha * breathe), style = stroke)
+                drawPath(path, line.copy(alpha = line.alpha * breathe))
                 drawCircle(
                     brush = androidx.compose.ui.graphics.Brush.radialGradient(
                         listOf(glow.copy(alpha = glow.alpha * 0.32f * breathe), Color.Transparent),
@@ -175,36 +172,25 @@ private fun PathComb(
     )
 }
 
-/** Hexagons of the shader's grid (flat sides left and right), in pixels. */
+/** One small dot per cell of the shader's grid, in pixels. */
 private fun combPath(width: Float, height: Float, cell: Float, origin: Offset): Path {
     val path = Path()
-    val s = sqrt(3f)
-    val half = 0.5f * cell
-    val top = cell / s
-    val side = 0.5f * cell / s
-    val rows = (height / (s * cell)).toInt() + 3
+    val r = cell * 0.07f
     val cols = (width / cell).toInt() + 3
+    val rows = (height / cell).toInt() + 3
     val startCol = -(origin.x / cell).toInt() - 2
-    val startRow = -(origin.y / (s * cell)).toInt() - 2
+    val startRow = -(origin.y / cell).toInt() - 2
     for (row in startRow until startRow + rows) {
         for (col in startCol until startCol + cols) {
-            for (shift in 0..1) {
-                val cx = origin.x + (col + 0.5f * shift) * cell
-                val cy = origin.y + (row + 0.5f * shift) * s * cell
-                path.moveTo(cx, cy - top)
-                path.lineTo(cx + half, cy - side)
-                path.lineTo(cx + half, cy + side)
-                path.lineTo(cx, cy + top)
-                path.lineTo(cx - half, cy + side)
-                path.lineTo(cx - half, cy - side)
-                path.close()
-            }
+            val cx = origin.x + (col + 0.5f) * cell
+            val cy = origin.y + (row + 0.5f) * cell
+            path.addOval(androidx.compose.ui.geometry.Rect(cx - r, cy - r, cx + r, cy + r))
         }
     }
     return path
 }
 
-/** The comb's shader, the same as the Windows app's (desktop/app/shaders/hive.frag). */
+/** The signal grid's shader, the same as the Windows app's (desktop/app/shaders/hive.frag). */
 private const val COMB_AGSL = """
 uniform float2 size;
 uniform float2 origin;
@@ -216,19 +202,6 @@ uniform float pulsePeriod;
 uniform float4 lineColor;
 uniform float4 glowColor;
 
-const float2 S = float2(1.0, 1.7320508);
-
-float4 hexCoords(float2 p) {
-    float4 c = floor(float4(p, p - float2(0.5, 1.0)) / S.xyxy) + 0.5;
-    float4 h = float4(p - c.xy * S, p - (c.zw + 0.5) * S);
-    return dot(h.xy, h.xy) < dot(h.zw, h.zw) ? float4(h.xy, c.xy) : float4(h.zw, c.zw + 0.5);
-}
-
-float hexDist(float2 p) {
-    p = abs(p);
-    return max(dot(p, S * 0.5), p.x);
-}
-
 float hash(float2 p) {
     return fract(sin(dot(p, float2(127.1, 311.7))) * 43758.5453);
 }
@@ -237,22 +210,31 @@ half4 main(float2 px) {
     float d = distance(px, origin);
     float far = length(size);
 
-    float4 h = hexCoords((px - origin) / cell);
-    float edge = 0.5 - hexDist(h.xy);
-    float line = 1.0 - smoothstep(0.0, 1.5 / cell, edge);
+    // The dot grid: one small round dot per cell.
+    float2 g = (px - origin) / cell;
+    float2 id = floor(g);
+    float dotDist = length(fract(g) - 0.5) * cell;
+    float dotMask = 1.0 - smoothstep(cell * 0.05, cell * 0.085, dotDist);
+
+    // Broadcast rings around the origin, every four cells, a hairline wide.
+    float spacing = cell * 4.0;
+    float ringDist = abs(fract(d / spacing + 0.5) - 0.5) * spacing;
+    float rings = (1.0 - smoothstep(0.0, cell * 0.05, ringDist)) * 0.35;
 
     // Carries across the whole screen, fading only a little.
     float falloff = exp(-d / (far * 2.4));
-    float breathe = 0.78 + 0.22 * sin(time * 6.2831853 / breathPeriod) * pulse;
+    float breathe = 0.80 + 0.20 * sin(time * 6.2831853 / breathPeriod) * pulse;
 
+    // A cast wave travelling outward every few seconds.
     float t = fract(time / pulsePeriod);
-    float ring = exp(-pow((d - t * far * 1.05) / (far * 0.06), 2.0)) * (1.0 - t) * pulse;
+    float wave = exp(-pow((d - t * far * 1.05) / (far * 0.06), 2.0)) * (1.0 - t) * pulse;
 
-    float shade = 0.75 + 0.5 * hash(h.zw);
+    // A little variation from dot to dot, like a live signal.
+    float shade = 0.7 + 0.6 * hash(id);
 
-    float lineA = line * falloff * breathe * shade * 1.2 + line * ring * 1.6;
-    float fillA = ring * 0.08 * shade;
-    float glowA = exp(-d / (far * 0.12)) * breathe * 0.32;
+    float lineA = (dotMask * shade + rings) * falloff * breathe * 1.5 + (dotMask + rings) * wave * 1.9;
+    float fillA = wave * 0.05;
+    float glowA = exp(-d / (far * 0.12)) * breathe * 0.30;
 
     float3 rgb = lineColor.rgb * lineA * lineColor.a + glowColor.rgb * (glowA + fillA) * glowColor.a;
     float a = clamp(lineA * lineColor.a + (glowA + fillA) * glowColor.a, 0.0, 1.0);

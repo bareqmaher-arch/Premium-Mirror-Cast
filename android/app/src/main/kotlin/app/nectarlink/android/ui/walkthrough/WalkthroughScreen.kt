@@ -787,14 +787,10 @@ private fun DrawScope.buildHexPath(
     center: Offset,
     radius: Float,
 ) {
+    // Premium Cast: round signal nodes instead of honeycomb cells.
     path.reset()
-    for (i in 0 until 6) {
-        val angleRad = Math.toRadians((60.0 * i) - 30.0)
-        val x = center.x + (radius * cos(angleRad)).toFloat()
-        val y = center.y + (radius * sin(angleRad)).toFloat()
-        if (i == 0) path.moveTo(x, y) else path.lineTo(x, y)
-    }
-    path.close()
+    val r = radius * 0.88f
+    path.addOval(androidx.compose.ui.geometry.Rect(center.x - r, center.y - r, center.x + r, center.y + r))
 }
 
 private fun DrawScope.drawHexCell(

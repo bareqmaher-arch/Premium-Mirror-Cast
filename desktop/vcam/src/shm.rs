@@ -837,7 +837,7 @@ fn build_placeholder_card(width: u32, height: u32, phone_name: &str) -> CachedPl
     } else {
         format!("Start the webcam on {phone_name}")
     };
-    let caption = "NectarLink Camera";
+    let caption = "Premium Cast Camera";
 
     let font = TrueTypeFont::parse(FIGTREE_TTF);
     let head_px = (22.0 * scale).clamp(12.0, 38.0);
@@ -1171,7 +1171,7 @@ mod tests {
             .0
             .iter()
             .any(|px| px[0] == 0x00 && px[1] == 0x51 && px[2] == 0x8A && px[3] == 0xFF);
-        assert!(has_honey_mark, "placeholder should include the NectarLink honey mark");
+        assert!(has_honey_mark, "placeholder should include the Premium Cast honey mark");
         let has_text_ink =
             frame.as_chunks::<4>().0.iter().any(|px| px[0] > 0xD0 && px[1] > 0xD0 && px[2] > 0xD0);
         assert!(has_text_ink, "placeholder should include bright headline text ink");

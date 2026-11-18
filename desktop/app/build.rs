@@ -221,13 +221,13 @@ BEGIN
   BEGIN
     BLOCK "040904B0"
     BEGIN
-      VALUE "CompanyName", "The NectarLink contributors"
-      VALUE "FileDescription", "NectarLink"
+      VALUE "CompanyName", "Bareq Maher"
+      VALUE "FileDescription", "Premium Cast"
       VALUE "FileVersion", "{version}"
       VALUE "InternalName", "nectarlink-desktop"
-      VALUE "LegalCopyright", "GPL-3.0-or-later"
+      VALUE "LegalCopyright", "Copyright (C) 2026 Bareq Maher. Based on NectarLink. GPL-3.0-or-later"
       VALUE "OriginalFilename", "nectarlink-desktop.exe"
-      VALUE "ProductName", "NectarLink"
+      VALUE "ProductName", "Premium Cast"
       VALUE "ProductVersion", "{version}"
     END
   END
